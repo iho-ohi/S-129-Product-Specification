@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © Copyright 2011, 2014-2016, International Hydrographic Organisation 
+License (Draft)
+Certain parts of this document refer to or are based on the standards, documents, schemas,
+or other material of the International Organization for Standardization (ISO), Open Geospatial
+Consortium (OGC), International Hydrographic Organization / Organisation Hydrographique
+Internationale (IHO/OHI).
+The ISO material can be obtained from any ISO member and from the Web site of the ISO Central
+Secretariat at www.iso.org.
+The OGC material can be obtained from the OGC Web site at www.opengeospatial.org.
+The IHO material can be obtained from the IHO Web site at www.iho.int or from the International
+Hydrographic Bureau.
+
+Permission to copy and distribute this document is hereby granted provided that this notice is
+retained on all copies, and that the IHO is credited when the material is redistributed
+or used in part or whole in derivative works.
+Redistributions in binary form must reproduce this notice in the documentation and/or other
+materials provided with the distribution.
+
+Disclaimer
+This work is provided by the copyright holders and contributors "as is" and any express or implied
+warranties, including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose are disclaimed. In no event shall the copyright owner or contributors be
+liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including,
+but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or
+business interruption) however caused and on any theory of liability, whether in contract, strict
+liability, or tort (including negligence or otherwise) arising in any way out of the use of this
+software, even if advised of the possibility of such damage.
+-->
+<!-- Date: 04 September 2014; Modification: Updated for S-100 Ed. 2.0.0 -->
+<!-- Date: 16 September 2014; Modification: added schema version; -->
+<!-- 2015-09-21 Raphael Malyankar Added S100_ prefix and replaced intervaltype with
+     closure in S100_NumericRange to conform names to S-100 edition 2.0.0;
+     2016-07-15: Updated copyright/license statement
+     Note: This should be updated to use the ISO schemas or a profile of them wherever S-100 is using the ISO type 
+-->
+  <!-- Prepared for the International Hydrographic Organisation (IHO).
+    Contributors: Holger Bothien (SevenCs/Chartworld); Tom Richardson (UKHO); Sewoong Oh (KRISO);
+    Yong Baek (KHOA); Raphael Malyankar (Jeppesen)
+  -->
+<xs:schema targetNamespace="http://www.iho.int/S100Base" elementFormDefault="qualified" 
+           xmlns="http://www.iho.int/S100Base" 
+           xmlns:mstns="http://www.iho.int/S100Base" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.1">
+  <xs:complexType name="UnlimitedInteger">
+    <xs:simpleContent>
+      <xs:extension base="xs:nonNegativeInteger">
+        <xs:attribute name="infinite" type="xs:boolean" default="false" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="S100_Multiplicity">
+    <xs:sequence>
+      <xs:element name="lower" type="xs:nonNegativeInteger" />
+      <xs:element name="upper" type="UnlimitedInteger" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="S100_IntervalType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="openInterval" />
+      <xs:enumeration value="geLtInterval" />
+      <xs:enumeration value="gtLeInterval" />
+      <xs:enumeration value="closedInterval" />
+      <xs:enumeration value="gtSemiInterval" />
+      <xs:enumeration value="geSemiInterval" />
+      <xs:enumeration value="ltSemiInterval" />
+      <xs:enumeration value="leSemiInterval" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="S100_NumericRange">
+    <xs:sequence>
+      <xs:element name="lowerBound" type="xs:double" maxOccurs="1" minOccurs="0" />
+      <xs:element name="upperBound" type="xs:double" maxOccurs="1" minOccurs="0" />
+      <xs:element name="closure" type="S100_IntervalType" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Locale">
+    <xs:sequence>
+      <xs:element name="languageCode" type="LanguageCode" />
+      <xs:element name="countryCode" type="CountryCode" />
+      <xs:element name="characterSet" type="CharacterSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="LanguageCode">
+    <xs:restriction base="xs:string">
+      <xs:length value="2" />
+      <xs:pattern value="[a-z][a-z]" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CountryCode">
+    <xs:restriction base="xs:string">
+      <xs:length value="2" />
+      <xs:pattern value="[A-Z][A-Z]" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CharacterSet">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ucs2" />
+      <xs:enumeration value="ucs4" />
+      <xs:enumeration value="utf7" />
+      <xs:enumeration value="utf8" />
+      <xs:enumeration value="utf16" />
+      <xs:enumeration value="8859part1" />
+      <xs:enumeration value="8859part2" />
+      <xs:enumeration value="8859part3" />
+      <xs:enumeration value="8859part4" />
+      <xs:enumeration value="8859part5" />
+      <xs:enumeration value="8859part6" />
+      <xs:enumeration value="8859part7" />
+      <xs:enumeration value="8859part8" />
+      <xs:enumeration value="8859part9" />
+      <xs:enumeration value="8859part11" />
+      <xs:enumeration value="8859part14" />
+      <xs:enumeration value="8859part15" />
+      <xs:enumeration value="jis" />
+      <xs:enumeration value="shiftJIS" />
+      <xs:enumeration value="eucJP" />
+      <xs:enumeration value="usAscii" />
+      <xs:enumeration value="ebcdic" />
+      <xs:enumeration value="eucKR" />
+      <xs:enumeration value="big5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="S100_UnitOfMeasure">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="definition" minOccurs="0" type="xs:string"/>        
+      <xs:element name="symbol" minOccurs="0" type="xs:string"/>            
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
