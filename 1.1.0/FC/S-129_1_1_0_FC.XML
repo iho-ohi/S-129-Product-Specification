@@ -11,9 +11,9 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>5.0.0</S100FC:versionNumber>
-  <S100FC:versionDate>2023-10-05</S100FC:versionDate>
-    
+  <S100FC:versionNumber>1.1.0</S100FC:versionNumber>
+  <S100FC:versionDate>2023-11-02</S100FC:versionDate>
+  <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
     <S100CI:party>
@@ -266,7 +266,7 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
           <S100FC:value>2</S100FC:value>
           <S100FC:value>3</S100FC:value>
         </S100FC:permittedValues>
-        <S100FC:attribute ref="UnderKeelClearancePurpose"/>
+        <S100FC:attribute ref="underKeelClearancePurposeType"/>
       </S100FC:attributeBinding>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -277,7 +277,7 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
           <S100FC:value>1</S100FC:value>
           <S100FC:value>2</S100FC:value>          
         </S100FC:permittedValues>
-        <S100FC:attribute ref="UnderKeelClearanceCalculationRequested"/>
+        <S100FC:attribute ref="underKeelClearanceCalculationRequestedType"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>meta</S100FC:featureUseType>
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
