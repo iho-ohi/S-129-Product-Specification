@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<S100FC:S100_FC_FeatureCatalogue
-xmlns:S100FC="http://www.iho.int/S100FC/5.0"
-xmlns:S100Base="http://www.iho.int/S100Base/5.0"
-xmlns:S100CI="http://www.iho.int/S100CI/5.0"
-xmlns:xlink="http://www.w3.org/1999/xlink"
-xmlns:S100CD="http://www.iho.int/S100CD/5.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/schemas/S100/5.0.0/S100FC/20220610/S100FC.xsd">
+<S100FC:S100_FC_FeatureCatalogue 
+  xmlns:S100FC="http://www.iho.int/S100FC/5.0" 
+  xmlns:S100Base="http://www.iho.int/S100Base/5.0"
+  xmlns:S100CI="http://www.iho.int/S100CI/5.0" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:S100CD="http://www.iho.int/S100CD/5.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/schemas/S100/5.0.0/S100FC/20220610/S100FC.xsd">
 
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
   <S100FC:versionNumber>1.1.0</S100FC:versionNumber>
   <S100FC:versionDate>2023-11-02</S100FC:versionDate>
-  <S100FC:productId>S-129</S100FC:productId>
+    <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
     <S100CI:party>
@@ -109,29 +109,13 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
       <S100FC:code>timeEnd</S100FC:code>
       <S100FC:valueType>dateTime</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
-	<S100FC:S100_FC_SimpleAttribute>
+	  <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Distance Above UKC Limit</S100FC:name>
       <S100FC:definition></S100FC:definition>
       <S100FC:code>distanceAboveUKCLimit</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
 	
-	<!-- geometric attributes (temporary) -->
-	<!-- 
-	<S100FC:S100_FC_SimpleAttribute>
-      <S100FC:name>Geometric Point</S100FC:name>
-      <S100FC:definition></S100FC:definition>
-      <S100FC:code>geoPoint</S100FC:code>
-      <S100FC:valueType></S100FC:valueType>
-    </S100FC:S100_FC_SimpleAttribute>
-	<S100FC:S100_FC_SimpleAttribute>
-      <S100FC:name>Geometric Surface</S100FC:name>
-      <S100FC:definition></S100FC:definition>
-      <S100FC:code>geoSurface</S100FC:code>
-      <S100FC:valueType></S100FC:valueType>
-    </S100FC:S100_FC_SimpleAttribute> 
-	-->
-
     <!--attributes - enumeration-->
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Under Keel Clearance Purpose</S100FC:name>

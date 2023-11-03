@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/1.0"
-	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S129/gml/cs0/0.1"
-	xmlns:S100EXT="http://www.iho.int/s100gml/1.0+EXT"
-	targetNamespace="http://www.iho.int/S129/gml/cs0/0.1" elementFormDefault="unqualified"
-	version="0.2-20200924">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S129/gml/cs0/1.0"
+	targetNamespace="http://www.iho.int/S129/gml/cs0/1.0" elementFormDefault="unqualified"
+	version="1.0-20231103">
 	<!--
 =============================================================================================================
 S100 XML/GML Schema for S-129 (S-129 Under Keel Clearance Management Information Product Specification).                   
@@ -28,14 +27,10 @@ Draft 1.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded o
         (2) add profile namespace xmlns:s100="http://www.iho.int/S-100/profile/s100_gmlProfile"
         (3) update import statement below correspondingly -->
 
-	<xs:import namespace="http://www.iho.int/s100gml/1.0"
-		schemaLocation="../../../S100/4.0.0/S100GML/20180502/s100gmlbase.xsd"/>
+	<xs:import namespace="http://www.iho.int/s100gml/5.0"
+		schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
 	<xs:import namespace="http://www.opengis.net/gml/3.2"
-		schemaLocation="../../../S100/4.0.0/S100GML/20180502/S100_gmlProfile.xsd"/>
-	<xs:import namespace="http://www.iho.int/S-100/profile/s100_gmlProfile"
-		schemaLocation="../../../S100/4.0.0/S100GML/20180502/S100_gmlProfileLevels.xsd"/>
-	<xs:import namespace="http://www.iho.int/s100gml/1.0+EXT"
-		schemaLocation="../../../S100/4.0.0/S100GML/20180502/s100gmlbaseExt.xsd"/>
+		schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
 
 	<!-- ============= -->
 	<!-- common types  -->
@@ -105,7 +100,7 @@ Draft 1.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded o
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="underKeelClearanceCalculationType">
+	<xs:simpleType name="underKeelClearanceCalculationRequestedType">
 		<xs:annotation>
 			<xs:documentation>Indication of the aim of the UKC plan: to find the maximum safe vessel draught for transiting the UKCM region, or to find sailing windows for a nominated vessel draught</xs:documentation>
 		</xs:annotation>
@@ -157,7 +152,8 @@ Draft 1.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded o
 					<xs:element name="underKeelClearancePurpose"
 						type="underKeelClearancePurposeType" minOccurs="1" maxOccurs="1"/>
 					<xs:element name="underKeelClearanceCalculationRequested"
-						type="underKeelClearanceCalculationRequestedType" minOccurs="1" maxOccurs="1"/>
+						type="underKeelClearanceCalculationRequestedType" minOccurs="1"
+						maxOccurs="1"/>
 					<xs:element name="geometry" type="GM_Surface" minOccurs="1" maxOccurs="1"/>
 					<xs:element name="consistOf" type="gml:ReferenceType" minOccurs="1"
 						maxOccurs="unbounded"/>
@@ -273,12 +269,6 @@ Draft 1.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded o
 						type="S100:DataSetIdentificationType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Dataset identification information</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="DatasetStructureInformation"
-						type="S100:DataSetStructureInformationType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Dataset structure information</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:group ref="S100:Geometry" minOccurs="0" maxOccurs="unbounded">
