@@ -2,7 +2,7 @@
 <colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="s100ColorProfile.xsd">
   <colors>
     <color token="ORG" name="orange">
-      <description>Orange color for Almost Navigable Area</description>
+      <description>Orange color for Almost Non Navigable Area</description>
     </color>
     <color token="RED" name="red">
       <description>Red color for Non Navigable Area</description>

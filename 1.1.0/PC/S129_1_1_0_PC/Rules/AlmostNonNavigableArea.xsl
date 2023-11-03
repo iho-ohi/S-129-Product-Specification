@@ -4,7 +4,7 @@
   <xsl:import href="./templates/areaHatchFillTemplate.xsl"/>
   <xsl:import href="./templates/areaSimpleColorFillTemplate.xsl"/>
   
-  <xsl:template match="UnderKeelClearanceAlmostNavigableArea">
+  <xsl:template match="UnderKeelClearanceAlmostNonNavigableArea">
   
     <xsl:call-template name="AreaSimpleColorFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>

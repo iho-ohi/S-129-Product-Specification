@@ -102,7 +102,7 @@
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="NavigableArea">
-      <fileName>AlmostNavigableArea.xsl</fileName>
+      <fileName>AlmostNonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
