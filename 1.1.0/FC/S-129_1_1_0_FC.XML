@@ -134,9 +134,9 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
 
     <!--attributes - enumeration-->
     <S100FC:S100_FC_SimpleAttribute>
-      <S100FC:name>Under Keel Clearance Purpose Type</S100FC:name>
+      <S100FC:name>Under Keel Clearance Purpose</S100FC:name>
       <S100FC:definition></S100FC:definition>
-      <S100FC:code>underKeelClearancePurposeType</S100FC:code> 
+      <S100FC:code>underKeelClearancePurpose</S100FC:code> 
       <S100FC:remarks>remarks</S100FC:remarks>      
       <S100FC:valueType>enumeration</S100FC:valueType>
       <S100FC:listedValues>
@@ -162,9 +162,9 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
     </S100FC:S100_FC_SimpleAttribute>
 
     <S100FC:S100_FC_SimpleAttribute>
-      <S100FC:name>Under Keel Clearance Calculation Requested Type</S100FC:name>
+      <S100FC:name>Under Keel Clearance Calculation Requested</S100FC:name>
       <S100FC:definition></S100FC:definition>
-      <S100FC:code>underKeelClearanceCalculationRequestedType</S100FC:code>
+      <S100FC:code>underKeelClearanceCalculationRequested</S100FC:code>
       <S100FC:remarks>remarks</S100FC:remarks>
       <S100FC:valueType>enumeration</S100FC:valueType>
       <S100FC:listedValues>
@@ -266,7 +266,7 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
           <S100FC:value>2</S100FC:value>
           <S100FC:value>3</S100FC:value>
         </S100FC:permittedValues>
-        <S100FC:attribute ref="UnderKeelClearancePurpose"/>
+        <S100FC:attribute ref="underKeelClearancePurpose"/>
       </S100FC:attributeBinding>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -277,7 +277,7 @@ xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/sc
           <S100FC:value>1</S100FC:value>
           <S100FC:value>2</S100FC:value>          
         </S100FC:permittedValues>
-        <S100FC:attribute ref="UnderKeelClearanceCalculationRequested"/>
+        <S100FC:attribute ref="underKeelClearanceCalculationRequested"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>meta</S100FC:featureUseType>
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
