@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="SVGStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="9.700001mm" height="4.2mm" viewBox="-4.9 -1.5 9.700001 4.2">
+  <title>EMVTSARE</title>
+  <desc>Embedded symbol VTS</desc>
+  <metadata>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+      <iho:Description publisher="IHO" creationDate="21/12/2023" source="S52Preslib4.0" format="S100SVG" version="0.1" />
+    </iho:S100SVG>
+  </metadata>
+  <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
+  <rect class="symbolBox layout" fill="none" x="-4.9" y="2.7" height="4.2" width="9.700001" />
+  <rect class="svgBox layout" fill="none" x="-4.9" y="-1.5" height="4.2" width="9.700001" />
+  <path d=" M -2,2.2 L -2,-1" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -4.4,-1 L -4.4,1.7 L -4.1,2.2 L -3.1,2.2 L -2.8,1.7 L -2.8,-1" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -2,0.6 L -0.4,-1" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -2,0.6 L -0.4,2.2" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M 2,-0.5 L 1.6,-1 L 0.8,-1 L 0.4,-0.5 L 0.4,1.7 L 0.8,2.2 L 1.6,2.2 L 2,1.7" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M 2.7,2.2 L 2.7,-1 L 3.5,0.6 L 4.3,-1 L 4.3,2.2" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+</svg>
