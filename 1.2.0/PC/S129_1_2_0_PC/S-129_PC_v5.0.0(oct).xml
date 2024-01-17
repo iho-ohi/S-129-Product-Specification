@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<portrayalCatalog version="1.0" productId="S-129" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <colorProfiles>
+    <colorProfile id="UKCColorProfile">
+      <description>
+        <name>UKC Color profile</name>
+        <description>Color profile for UKC information</description>
+        <language>en</language>
+      </description>
+      <fileName>colorProfile.xml</fileName>
+      <fileType>ColorProfile</fileType>
+      <fileFormat>XML</fileFormat>
+    </colorProfile>
+  </colorProfiles>
+
+  <symbols>
+    <symbol id="CP">
+      <description>
+        <name>Control Point</name>
+        <description>Control Point in UKC</description>
+        <language>en</language>
+      </description>
+      <fileName>CP.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+    <symbol id="EMAREMG1">
+      <description>
+         <name>EMAREMG1</name>
+         <description>Embedded symbol</description>
+         <language>en</language>
+      </description>
+      <fileName>EMAREMG1.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+   </symbol>
+    <symbol id="EMUKCARE_20231221_v2">
+      <description>
+        <name>EMUKCARE_20231221_v2</name>
+        <description>Embedded symbol UKCM</description>
+        <language>en</language>
+      </description>
+      <fileName>EMUKCARE_20231221_v2.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+  </symbols>
+
+  <lineStyles>
+    <lineStyle id="ROUTE">
+      <description>
+        <name>ROUTE</name>
+        <description>route</description>
+        <language>eng</language>
+     </description>      
+      <fileName>ROUTE.xml</fileName>
+      <fileType>LineStyle</fileType>
+      <fileFormat>XML</fileFormat>
+    </lineStyle>
+    <lineStyle id="UKCARE01_20240110">
+       <description>
+          <name>UKCARE01_20240110</name>
+          <description>boundary of an under keel clearance analysed area</description>
+          <language>eng</language>
+       </description>
+       <fileName>UKCARE01_20240110.xml</fileName>
+       <fileType>LineStyle</fileType>
+       <fileFormat>XML</fileFormat>
+    </lineStyle>
+  </lineStyles>
+
+  <areaFills>
+    <areaFill id="ANA">
+      <fileName>ANA.xml</fileName>
+      <fileType>AreaFill</fileType>
+      <fileFormat>XML</fileFormat>
+    </areaFill>
+    <areaFill id="NNA">
+      <fileName>NNA.xml</fileName>
+      <fileType>AreaFill</fileType>
+      <fileFormat>XML</fileFormat>
+    </areaFill>
+  </areaFills>
+
+  <fonts>
+  </fonts>
+
+  <viewingGroups>
+    <viewingGroup id="UKCViewingGroup"></viewingGroup>
+  </viewingGroups>
+
+  <foundationMode>
+    <viewingGroup>UKCViewingGroup</viewingGroup>
+  </foundationMode>
+
+  <viewingGroupLayers>
+    <viewingGroupLayer id="UKCViewingGroupLayer">
+      <viewingGroup>10000</viewingGroup>
+    </viewingGroupLayer>
+  </viewingGroupLayers>
+
+  <displayModes>
+    <displayMode id="1">
+      <description>
+        <name>Standard</name>
+        <description>The Standard display</description>
+        <language>en</language>
+      </description>
+      <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
+    </displayMode>
+  </displayModes>
+
+  <displayPlane>
+    <displayPlane id="UKCDisplayPlane">
+
+    </displayPlane>
+  </displayPlane>
+
+  <context>
+  </context>
+
+  <rules>
+    <ruleFile id="main">
+      <fileName>main.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="route">
+      <fileName>PlannedRoute.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="UnderKeelClearancePlan">
+      <fileName>UnderKeelClearancePlan.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>    
+    <ruleFile id="controlpoint">
+      <fileName>ControlPoint.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="InformationBox">
+      <fileName>InformationBox.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="NavigableArea">
+      <fileName>AlmostNonNavigableArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="NonNavigableArea">
+      <fileName>NonNavigableArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+
+    <!--
+    <ruleFile id="simpleline">
+      <fileName>SimpleLineTemplate.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="pointsimplesymbol">
+      <fileName>PointSimpleSymbolTemplate.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="areasimplecolorfill">
+      <fileName>areaSimpleColorFillTemplate.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+	-->
+
+  </rules>
+</portrayalCatalog>
