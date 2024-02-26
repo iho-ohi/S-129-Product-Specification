@@ -13,6 +13,9 @@
     <color token="WHITE" name="white">
       <description>White color for Text with background</description>
     </color>
+    <color token="CHMGD" name="magenta">
+      <description>Chart magenta dominant</description>
+  </color>
   </colors>
 
   <palette name="Day">
@@ -70,6 +73,20 @@
         <red>255</red>
         <green>255</green>
         <blue>255</blue>
+      </srgb>
+    </item>
+    <item token="CHMGD">
+      <cie>
+        <xyL>
+          <x>0.3</x>
+          <y>0.17</y>
+          <L>20</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>192</red>
+        <green>69</green>
+        <blue>209</blue>
       </srgb>
     </item>
   </palette>
