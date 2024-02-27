@@ -31,9 +31,9 @@
             <xsl:value-of select="$drawingPriority"/>
           </xsl:element>
           <xsl:element name="symbol">
-            <xsl:element name="symbolReference">
+            <xsl:attribute name="reference">
               <xsl:value-of select="$symbolReference"/>
-            </xsl:element>
+            </xsl:attribute>
             <xsl:element name="rotation">
               <xsl:value-of select="$rotation"/>
             </xsl:element>

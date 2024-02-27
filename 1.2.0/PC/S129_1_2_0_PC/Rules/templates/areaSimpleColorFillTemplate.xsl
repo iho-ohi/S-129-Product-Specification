@@ -27,12 +27,10 @@
           </xsl:element>
           <xsl:element name="colorFill">
             <xsl:element name="color">
-              <xsl:element name="token">
-                <xsl:value-of select="$colorToken"/>
-              </xsl:element>
-              <xsl:element name="transparency">
+              <xsl:attribute name="transparency">
                 <xsl:value-of select="$transparency"/>
-              </xsl:element>
+              </xsl:attribute>
+              <xsl:value-of select="$colorToken"/>
             </xsl:element>
           </xsl:element>
         </xsl:element>

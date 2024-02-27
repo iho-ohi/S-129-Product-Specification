@@ -12,10 +12,10 @@
       <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
       <xsl:with-param name="drawingPriority" select="9"/>
       <xsl:with-param name="colorToken" select="'RED'"/>
-      <xsl:with-param name="transparency" select="0.9"/>
+      <xsl:with-param name="transparency" select="0.5"/>
     </xsl:call-template>
 
-    <xsl:call-template name="AreaHatchFillTemplate">
+    <!-- <xsl:call-template name="AreaHatchFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
       <xsl:with-param name="viewingGroup" select="33022"/>
       <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
@@ -29,7 +29,7 @@
       <xsl:with-param name="penWidth" select="1"/>
       <xsl:with-param name="colorToken" select="'RED'"/>
       <xsl:with-param name="transparency" select="1"/>     
-    </xsl:call-template>      
+    </xsl:call-template>       -->
 	
   </xsl:template>
 </xsl:transform>

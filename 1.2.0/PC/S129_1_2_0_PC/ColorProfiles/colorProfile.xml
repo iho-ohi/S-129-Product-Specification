@@ -15,7 +15,10 @@
     </color>
     <color token="CHMGD" name="magenta">
       <description>Chart magenta dominant</description>
-  </color>
+    </color>
+    <color token="SNDG2" name="black">
+      <description>Sounding shallow</description>
+    </color>
   </colors>
 
   <palette name="Day">
@@ -89,5 +92,19 @@
         <blue>209</blue>
       </srgb>
     </item>
+    <item token="SNDG2">
+      <cie>
+      <xyL>
+      <x>0.28</x>
+      <y>0.31</y>
+      <L>0</L>
+      </xyL>
+      </cie>
+      <srgb>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+      </srgb>
+      </item>
   </palette>
 </colorProfile>
