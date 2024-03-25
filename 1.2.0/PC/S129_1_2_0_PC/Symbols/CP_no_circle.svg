@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="SVGStyle.css" type="text/css"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="7.23mm" height="7.21mm" viewBox="-3.61 -3.6 7.23 7.21">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="6mm" height="4.2mm" viewBox="-3 -2.1 6 4.2">
   <title>CP</title>
   <desc>pattern of symbol</desc>
   <metadata>
@@ -8,8 +8,7 @@
       <Description publisher="IHB" creationDate="2018-09-12" source="S52Preslib4.0" format="S100SVG" version="0.1" />
     </S100SVG>
   </metadata>
-  <rect class="symbolBox layout" fill="none" x="-3.61" y="3.6" height="7.21" width="7.23" />
-  <rect class="svgBox layout" fill="none" x="-3.61" y="-3.6" height="7.21" width="7.23" />
-  <circle class="f0 sSNDG2" fill="none" style="stroke-width: 0.32;" cx="0" cy="0" r="3.1"/>
+  <rect class="symbolBox layout" fill="none" x="-3" y="2.1" height="4.2" width="6" />
+  <rect class="svgBox layout" fill="none" x="-3" y="-2.1" height="4.2" width="6" />
   <path d=" M -2.5,-1.6 L -2.5,1.6 L 2.5,-1.6 L 2.5,1.6 L -2.5,-1.6 L -2.5,-1.6" class="fSNDG2" style="stroke-width:0.32;" />
 </svg>

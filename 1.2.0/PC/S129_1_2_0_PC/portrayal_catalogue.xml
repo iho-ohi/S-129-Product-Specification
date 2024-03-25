@@ -117,6 +117,15 @@
   </displayPlane>
 
   <context>
+    <parameter id="PlainBoundaries">
+      <description>
+        <name>Plain boundaries</name>
+        <description>Line symbol style</description>
+        <language>eng</language>
+      </description>
+      <type>Boolean</type>
+      <default>true</default>
+    </parameter>
   </context>
 
   <rules>

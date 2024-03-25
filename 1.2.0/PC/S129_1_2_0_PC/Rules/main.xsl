@@ -9,6 +9,8 @@
   <xsl:include href="ControlPoint.xsl"/>
   <xsl:include href="InformationBox.xsl"/>
 
+  <xsl:param name="PlainBoundaries">true</xsl:param>
+
   <xsl:template match="/">
     <displayList>
       <xsl:apply-templates select="Dataset/Features/*"></xsl:apply-templates>
