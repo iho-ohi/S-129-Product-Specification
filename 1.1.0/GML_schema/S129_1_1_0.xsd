@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0"
 	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S129/gml/cs0/1.0"
 	targetNamespace="http://www.iho.int/S129/gml/cs0/1.0" elementFormDefault="unqualified"
-	version="1.0-20231103">
+	version="1.1.0">
 	<!--
 =============================================================================================================
 S100 XML/GML Schema for S-129 (S-129 Under Keel Clearance Management Information Product Specification).                   
@@ -15,8 +15,8 @@ Draft Copyright, license, and disclaimer
 THIS IS A DRAFT AND NO WARRANTIES ARE GIVEN TO ACCURACY OR FUNCTION OF THIS DOCUMENT
 
 Document history
-Draft 1.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded on IHO S100 page, March, 2019).
-
+Draft 1.0.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded on IHO S100 page, March, 2019).
+Draft 1.1.0	20231117 Draft based on S-129 UML as is in PS v1.1 (current uploaded on IHO GI Registry, November, 2023).
 ===============================================================================================================
 -->
 
