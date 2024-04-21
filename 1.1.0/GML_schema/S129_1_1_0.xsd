@@ -119,12 +119,6 @@
       </xs:annotation>
       <xs:restriction base="xs:decimal"><!--No constraints--></xs:restriction>
    </xs:simpleType>
-   <xs:simpleType name="scaleMimimumType">
-      <xs:annotation>
-         <xs:documentation>(definition not in XML FC)</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer"><!--No constraints--></xs:restriction>
-   </xs:simpleType>
    <xs:simpleType name="nameType">
       <xs:annotation>
          <xs:documentation>(definition not in XML FC)</xs:documentation>
