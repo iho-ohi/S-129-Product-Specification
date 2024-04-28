@@ -76,7 +76,7 @@
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Scale Mimimum</S100FC:name>
       <S100FC:definition></S100FC:definition>
-      <S100FC:code>scaleMimimum</S100FC:code>
+      <S100FC:code>scaleMinimum</S100FC:code>
       <S100FC:valueType>integer</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
