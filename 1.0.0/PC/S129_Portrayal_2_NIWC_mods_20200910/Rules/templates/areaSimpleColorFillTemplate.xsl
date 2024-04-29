@@ -13,14 +13,11 @@
     <xsl:choose>
       <xsl:when test="$featureReference!=''">
         <xsl:element name="areaInstruction">
-        <xsl:element name="featureReference">
-		  <xsl:value-of select="$featureReference"/>
-          <!-- <xsl:attribute name="reference">
+          <xsl:element name="featureReference">
             <xsl:value-of select="$featureReference"/>
-          </xsl:attribute> -->
-        </xsl:element>
-          <xsl:element name="viewingGroup">            
-              <xsl:value-of select="$viewingGroup"/>            
+          </xsl:element>
+          <xsl:element name="viewingGroup">
+            <xsl:value-of select="$viewingGroup"/>
           </xsl:element>
           <xsl:element name="displayPlane">
             <xsl:value-of select="$displayPlane"/>
@@ -29,11 +26,11 @@
             <xsl:value-of select="$drawingPriority"/>
           </xsl:element>
           <xsl:element name="colorFill">
-                <xsl:attribute name="transparency">
-                  <xsl:value-of select="$transparency"/>
-				</xsl:attribute>
+            <xsl:attribute name="transparency">
+              <xsl:value-of select="$transparency"/>
+            </xsl:attribute>
             <xsl:element name="color">
-                <xsl:value-of select="$colorToken"/>
+              <xsl:value-of select="$colorToken"/>
             </xsl:element>
           </xsl:element>
           <!-- <xsl:element name="colorFill">
@@ -51,4 +48,3 @@
     </xsl:choose>
   </xsl:template>
 </xsl:transform>
-
