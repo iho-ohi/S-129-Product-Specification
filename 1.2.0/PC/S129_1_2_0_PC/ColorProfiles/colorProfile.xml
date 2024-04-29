@@ -112,27 +112,27 @@
 				<xyL>
 					<x>0.5</x>
 					<y>0.4</y>
-					<L>32</L>
+					<L>10</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>227</red>
-				<green>128</green>
-				<blue>57</blue>
+				<red>134</red>
+				<green>73</green>
+				<blue>30</blue>
 			</srgb>
 		</item>
 		<item token="RED">
 			<cie>
 				<xyL>
 					<x>0.48</x>
-					<y>0.30</y>
-					<L>25</L>
+					<y>0.3</y>
+					<L>10</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>234</red>
-				<green>84</green>
-				<blue>113</blue>
+				<red>155</red>
+				<green>53</green>
+				<blue>73</blue>
 			</srgb>
 		</item>
 		<item token="BLK">
@@ -140,13 +140,13 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>0</L>
+					<L>20</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
+				<red>107</red>
+				<green>127</green>
+				<blue>137</blue>
 			</srgb>
 		</item>
 		<item token="WHITE">
@@ -154,27 +154,27 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>80</L>
+					<L>36</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>255</red>
-				<green>255</green>
-				<blue>255</blue>
+				<red>140</red>
+				<green>166</green>
+				<blue>179</blue>
 			</srgb>
 		</item>
 		<item token="CHMGD">
 			<cie>
 				<xyL>
-					<x>0.3</x>
-					<y>0.17</y>
-					<L>20</L>
+					<x>0.28</x>
+					<y>0.24</y>
+					<L>18</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>192</red>
-				<green>69</green>
-				<blue>209</blue>
+				<red>130</red>
+				<green>108</green>
+				<blue>161</blue>
 			</srgb>
 		</item>
 		<item token="SNDG2">
@@ -182,13 +182,13 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>0</L>
+					<L>36</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
+				<red>140</red>
+				<green>166</green>
+				<blue>179</blue>
 			</srgb>
 		</item>
 	</palette>
@@ -198,27 +198,27 @@
 				<xyL>
 					<x>0.5</x>
 					<y>0.4</y>
-					<L>32</L>
+					<L>1.25</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>227</red>
-				<green>128</green>
-				<blue>57</blue>
+				<red>48</red>
+				<green>23</green>
+				<blue>5</blue>
 			</srgb>
 		</item>
 		<item token="RED">
 			<cie>
 				<xyL>
 					<x>0.48</x>
-					<y>0.30</y>
-					<L>25</L>
+					<y>0.3</y>
+					<L>1.25</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>234</red>
-				<green>84</green>
-				<blue>113</blue>
+				<red>57</red>
+				<green>14</green>
+				<blue>22</blue>
 			</srgb>
 		</item>
 		<item token="BLK">
@@ -226,13 +226,13 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>0</L>
+					<L>2.5</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
+				<red>37</red>
+				<green>45</green>
+				<blue>49</blue>
 			</srgb>
 		</item>
 		<item token="WHITE">
@@ -240,13 +240,13 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>80</L>
+					<L>5</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>255</red>
-				<green>255</green>
-				<blue>255</blue>
+				<red>54</red>
+				<green>65</green>
+				<blue>71</blue>
 			</srgb>
 		</item>
 		<item token="CHMGD">
@@ -254,13 +254,13 @@
 				<xyL>
 					<x>0.3</x>
 					<y>0.17</y>
-					<L>20</L>
+					<L>2</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>192</red>
-				<green>69</green>
-				<blue>209</blue>
+				<red>65</red>
+				<green>18</green>
+				<blue>71</blue>
 			</srgb>
 		</item>
 		<item token="SNDG2">
@@ -268,13 +268,13 @@
 				<xyL>
 					<x>0.28</x>
 					<y>0.31</y>
-					<L>0</L>
+					<L>5</L>
 				</xyL>
 			</cie>
 			<srgb>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
+				<red>54</red>
+				<green>65</green>
+				<blue>71</blue>
 			</srgb>
 		</item>
 	</palette>
