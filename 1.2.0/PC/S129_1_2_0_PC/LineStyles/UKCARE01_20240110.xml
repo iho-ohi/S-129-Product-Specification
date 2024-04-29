@@ -3,7 +3,7 @@
 <?S100Meta name="UKCARE01" exposition="boundary of an under keel clearance analysed area"?>
 <lineStyle offset="0">
   <pen width="0.32">
-    <color>CHMGD</color>
+    <color transparency="0.5">CHMGD</color>
   </pen>
   <intervalLength>35</intervalLength>
   <dash>
