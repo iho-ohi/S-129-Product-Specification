@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S129/gml/cs0/1.0"
+	targetNamespace="http://www.iho.int/S129/gml/cs0/1.0" elementFormDefault="unqualified"
+	version="1.1.1">
+	<!--
+=============================================================================================================
+S100 XML/GML Schema for S-129 (S-129 Under Keel Clearance Management Information Product Specification).                   
+=============================================================================================================
+
+Draft Copyright, license, and disclaimer
+© Copyright 2018 ... (Formal Copyright and disclaimer statements to be supplied by IHO)
+© Copyright 2018 IHB
+
+THIS IS A DRAFT AND NO WARRANTIES ARE GIVEN TO ACCURACY OR FUNCTION OF THIS DOCUMENT
+
+Document history
+Draft 1.0.0	20200924 Draft based on S-129 UML as is in PS v1.0 (current uploaded on IHO S100 page, March, 2019).
+Draft 1.1.0	20231117 Draft based on S-129 UML as is in PS v1.1 (current uploaded on IHO GI Registry, November, 2023).
+===============================================================================================================
+-->
+
+	<!-- To do: Schematron validation rules; -->
+	<!-- profile: xmlns:gml="http://www.iho.int/S-100/profile/s100_gmlProfile"
+        deployment:
+        (1) change gml namespace to official GML namespace http://www.opengis.net/gml/3.2
+        (2) add profile namespace xmlns:s100="http://www.iho.int/S-100/profile/s100_gmlProfile"
+        (3) update import statement below correspondingly -->
+
+	<xs:import namespace="http://www.iho.int/s100gml/5.0"
+		schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
+	<xs:import namespace="http://www.opengis.net/gml/3.2"
+		schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
+
+	<!-- ============= -->
+	<!-- common types  -->
+	<!-- ============= -->
+
+	<!-- none included in this version since it seems the schema can be created with built-in types -->
+
+	<!-- ===================================== -->
+	<!-- spatial property convenience types    -->
+	<!-- ===================================== -->
+
+	<xs:complexType name="GM_Point">
+		<xs:choice>
+			<xs:element ref="S100:pointProperty"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GM_Curve">
+		<!-- likely not needed -->
+		<xs:choice>
+			<xs:element ref="S100:curveProperty"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GM_Surface">
+		<xs:choice>
+			<xs:element ref="S100:surfaceProperty"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<!-- ============================ -->
+	<!-- complex attributes           -->
+	<!-- ============================ -->
+
+	<xs:complexType name="fixedTimeRangeType">
+		<xs:annotation>
+			<xs:documentation>Time interval</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="timeStart" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="timeEnd" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- ========================================= -->
+	<!--   enumeration types           			   -->
+	<!-- ========================================= -->
+
+	<xs:simpleType name="underKeelClearancePurposeType">
+		<xs:annotation>
+			<xs:documentation>The relevant phase of a UKC passage plan</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="prePlan">
+				<xs:annotation>
+					<xs:documentation>An indicative UKC plan that identifies potential sailing windows for a nominated vessel draught, days, weeks or months prior to the planned passage through the UKCM region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="actualPlan">
+				<xs:annotation>
+					<xs:documentation>A detailed UKC plan that identifies sailing windows and no-go areas, integrating live weather data, hours or days prior to transiting the UKCM region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="actualUpdate'">
+				<xs:annotation>
+					<xs:documentation>A near real-time, detailed, UKC plan that identifies sailing windows and no-go areas, using live weather, vessel position and traffic data, while the vessel is transiting the UKCM region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="underKeelClearanceCalculationRequestedType">
+		<xs:annotation>
+			<xs:documentation>Indication of the aim of the UKC plan: to find the maximum safe vessel draught for transiting the UKCM region, or to find sailing windows for a nominated vessel draught</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="time window">
+				<xs:annotation>
+					<xs:documentation>The available wim window(s) for a given draught.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="max draught">
+				<xs:annotation>
+					<xs:documentation>The maximum draught for a given time window.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ========================================= -->
+	<!--   				feature types              -->
+	<!-- ========================================= -->
+
+	<xs:element name="FeatureType" type="FeatureType" abstract="true"
+		substitutionGroup="gml:AbstractFeature"/>
+	<xs:complexType name="FeatureType" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Generalized feature type which carries all the common attributes</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType"/>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="UnderKeelClearancePlan" type="UnderKeelClearancePlanType"
+		substitutionGroup="FeatureType"/>
+	<xs:complexType name="UnderKeelClearancePlanType">
+		<xs:annotation>
+			<xs:documentation>A UKC plan calculated for a particular vessel, for a particular passage.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FeatureType">
+				<xs:sequence>
+					<xs:element name="fixedTimeRange" type="fixedTimeRangeType" minOccurs="1"
+						maxOccurs="1"/>
+					<xs:element name="generationTime" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="vesselID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="sourceRouteName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="sourceRouteVersion" type="xs:int" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="maximumDraught" type="xs:float" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="underKeelClearancePurpose"
+						type="underKeelClearancePurposeType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="underKeelClearanceCalculationRequested"
+						type="underKeelClearanceCalculationRequestedType" minOccurs="1"
+						maxOccurs="1"/>
+					<xs:element name="geometry" type="GM_Surface" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="consistOf" type="gml:ReferenceType" minOccurs="1"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="UnderKeelClearanceNonNavigableArea"
+		type="UnderKeelClearanceNonNavigableAreaType" substitutionGroup="FeatureType"/>
+	<xs:complexType name="UnderKeelClearanceNonNavigableAreaType">
+		<xs:annotation>
+			<xs:documentation>Anarea of depth less than the calculated safe limit.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FeatureType">
+				<xs:sequence>
+					<xs:element name="scaleMinimum" type="xs:int" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="geometry" type="GM_Surface" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="componentOf" type="gml:ReferenceType" minOccurs="0"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="UnderKeelClearanceAlmostNonNavigableArea"
+		type="UnderKeelClearanceAlmostNonNavigableAreaType" substitutionGroup="FeatureType"/>
+	<xs:complexType name="UnderKeelClearanceAlmostNonNavigableAreaType">
+		<xs:annotation>
+			<xs:documentation>An area of depth almost less than the valculated safe limit, as established for the waterway.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FeatureType">
+				<xs:sequence>
+					<xs:element name="distanceAboveUKCLimit" type="xs:float" minOccurs="1"
+						maxOccurs="1"/>
+					<xs:element name="scaleMinimum" type="xs:int" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="geometry" type="GM_Surface" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="componentOf" type="gml:ReferenceType" minOccurs="0"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="UnderKeelClearanceControlPoint" type="UnderKeelClearanceControlPointType"
+		substitutionGroup="FeatureType"/>
+	<xs:complexType name="UnderKeelClearanceControlPointType">
+		<xs:annotation>
+			<xs:documentation>Selected critical passage point or line</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FeatureType">
+				<xs:sequence>
+					<xs:element name="distanceAboveUKCLimit" type="xs:float" minOccurs="0"
+						maxOccurs="1"/>
+					<xs:element name="expectedPassingSpeed" type="xs:float" minOccurs="0"
+						maxOccurs="1"/>
+					<xs:element name="expectedPassingTime" type="xs:dateTime" minOccurs="0"
+						maxOccurs="1"/>
+					<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="fixedTimeRange" type="fixedTimeRangeType" minOccurs="0"
+						maxOccurs="1"/>
+					<xs:element name="geometry" type="GM_Point" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="componentOf" type="gml:ReferenceType" minOccurs="1"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- ==================================================== -->
+	<!-- 				cartographic features				  -->
+	<!-- ==================================================== -->
+
+	<!-- none in the specification -->
+
+	<!-- ========================================= -->
+	<!--    		   information types           -->
+	<!-- ========================================= -->
+
+	<xs:element name="InformationType" type="InformationType" abstract="true"
+		substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="InformationType" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Generalized information type which carry all the common attributes</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractInformationType"/>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- none in the specification, abstract type retained for dataset structure -->
+
+	<!-- ============================================= -->
+	<!-- 				codelists					   -->
+	<!-- ============================================= -->
+
+	<!-- none in the specification -->
+
+	<!-- ============================================= -->
+	<!-- types and elements for the dataset definition -->
+	<!-- ============================================= -->
+	<xs:complexType name="DatasetType">
+		<xs:annotation>
+			<xs:documentation>Dataset element for dataset as "GML document"</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="DatasetIdentificationInformation"
+						type="S100:DataSetIdentificationType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Dataset identification information</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:group ref="S100:Geometry" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Allows spatial objects to be located outside feature objects (for references, and compatibility with ISO 8211 encoding)</xs:documentation>
+						</xs:annotation>
+					</xs:group>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="imember" minOccurs="0" maxOccurs="unbounded"
+							type="IMemberType">
+							<xs:annotation>
+								<xs:documentation>intended for S100 information types. Extension of GML practice, not addressed by ISO 19136.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="member" minOccurs="0" maxOccurs="unbounded"
+							type="MemberType">
+							<xs:annotation>
+								<xs:documentation>intended for technical GML 3.2 requirement for making the dataset a "GML document" and clause 21.3 of the OGC GML standard</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- treatment of S-100 Information types is provisional, because GML does not have the concept, and they must be modeled as AbstractGML -->
+	<xs:complexType name="MemberType">
+		<xs:annotation>
+			<xs:documentation>dataset member</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractFeatureMemberType">
+				<xs:sequence>
+					<xs:element ref="gml:AbstractFeature"/>
+				</xs:sequence>
+				<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="IMemberType">
+		<xs:annotation>
+			<xs:documentation>dataset member S-100 infotmation types</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractFeatureMemberType">
+				<xs:sequence>
+					<xs:element ref="InformationType"/>
+				</xs:sequence>
+				<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GenericFeatureType">
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:any namespace="##local" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="DataSet" type="DatasetType"/>
+</xs:schema>
