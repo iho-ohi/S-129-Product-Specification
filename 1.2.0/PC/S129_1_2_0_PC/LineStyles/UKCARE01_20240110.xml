@@ -5,29 +5,43 @@
   <pen width="0.32">
     <color transparency="0.5">CHMGD</color>
   </pen>
-  <intervalLength>35</intervalLength>
+  <intervalLength>49</intervalLength>
   <dash>
     <start>2</start>
     <length>6</length>
   </dash>
   <dash>
-    <start>20.8</start>
+    <start>19</start>
     <length>6</length>
   </dash>
   <dash>
-    <start>28.8</start>
+    <start>27</start>
+    <length>6</length>
+  </dash>
+  <dash>
+    <start>35</start>
+    <length>6</length>
+  </dash>
+  <dash>
+    <start>43</start>
     <length>6</length>
   </dash>
   <symbol reference="EMAREMG1">
     <position>5</position>
   </symbol>
   <symbol reference="EMAREMG1">
-    <position>23.8</position>
+    <position>22</position>
   </symbol>
   <symbol reference="EMAREMG1">
-    <position>31.8</position>
+    <position>30</position>
+  </symbol>
+  <symbol reference="EMAREMG1">
+    <position>38</position>
+  </symbol>
+  <symbol reference="EMAREMG1">
+    <position>46</position>
   </symbol>
   <symbol reference="EMUKCARE_20231221_v2">
-    <position>14.2</position>
+    <position>13.4</position>
   </symbol>
 </lineStyle>
