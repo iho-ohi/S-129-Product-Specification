@@ -11,10 +11,10 @@
   <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
   <rect class="symbolBox layout" fill="none" x="-4.8" y="2.7" height="4.2" width="9.700001" />
   <rect class="svgBox layout" fill="none" x="-4.8" y="-1.5" height="4.2" width="9.700001" />
-  <path d=" M -1.9,2.2 L -1.9,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
-  <path d=" M -4.3,-1 L -4.3,1.7 L -4,2.2 L -3,2.2 L -2.7,1.7 L -2.7,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
-  <path d=" M -1.9,0.6 L -0.3,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
-  <path d=" M -1.9,0.6 L -0.3,2.2" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
-  <path d=" M 2.09,-0.5 L 1.7,-1 L 0.9,-1 L 0.5,-0.5 L 0.5,1.7 L 0.9,2.2 L 1.7,2.2 L 2.09,1.7" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
-  <path d=" M 2.8,2.2 L 2.8,-1 L 2.9,-1 L 3.6,0.6 L 4.3,-1 L 4.4,-1 L 4.4,2.2" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M -1.5,2 L -1.5,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M -3.5,-1 L -3.5,1.5 L -3.1,2 L -2.4,2 L -2.1,1.5 L -2.1,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M -1.5,0.5 L -0.1,-1" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M -1.5,0.5 L -0.1,2" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M 1.6,-0.5 L 1.2,-1 L 0.6,-1 L 0.2,-0.5 L 0.2,1.5 L 0.6,2 L 1.2,2 L 1.6,1.5" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
+  <path d=" M 2.1,2 L 2.1,-1 L 2.2,-1 L 2.8,0.4 L 3.4,-1 L 3.5,-1 L 3.5,2" class="sl f0 sCHMGD" style="stroke-width:0.32; fill-opacity: 0.5;" />
 </svg>
