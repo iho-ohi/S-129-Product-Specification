@@ -12,8 +12,8 @@
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>1.2.0</S100FC:versionNumber>
-  <S100FC:versionDate>2024-04-26</S100FC:versionDate>
+  <S100FC:versionNumber>1.2.1-20240620</S100FC:versionNumber>
+  <S100FC:versionDate>2024-06-20</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
@@ -73,8 +73,8 @@
       <S100FC:code>maximumDraught</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
 	  <S100FC:uom>
-		<S100Base:name>metres</S100Base:name>
-		<S100Base:symbol>m</S100Base:symbol>
+      <S100Base:name>metres</S100Base:name>
+      <S100Base:symbol>m</S100Base:symbol>
 	  </S100FC:uom>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
@@ -103,8 +103,8 @@
       <S100FC:code>expectedPassingSpeed</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
 	  <S100FC:uom>
-		<S100Base:name>metres per seconds</S100Base:name>
-		<S100Base:symbol>m/s</S100Base:symbol>
+      <S100Base:name>metres per seconds</S100Base:name>
+      <S100Base:symbol>m/s</S100Base:symbol>
 	  </S100FC:uom>	  
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
@@ -125,8 +125,8 @@
       <S100FC:code>distanceAboveUKCLimit</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
 	  <S100FC:uom>
-		<S100Base:name>metres</S100Base:name>
-		<S100Base:symbol>m</S100Base:symbol>
+      <S100Base:name>metres</S100Base:name>
+      <S100Base:symbol>m</S100Base:symbol>
 	  </S100FC:uom>
     </S100FC:S100_FC_SimpleAttribute>
 	
@@ -155,7 +155,6 @@
         </S100FC:listedValue>
       </S100FC:listedValues>      
     </S100FC:S100_FC_SimpleAttribute>
-
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Under Keel Clearance Calculation Requested</S100FC:name>
       <S100FC:definition>Indication of how the plan was calculated.</S100FC:definition>
@@ -176,6 +175,7 @@
       </S100FC:listedValues>
     </S100FC:S100_FC_SimpleAttribute>        
   </S100FC:S100_FC_SimpleAttributes>
+
 
   <!--attributes - complexAttribute-->
   <S100FC:S100_FC_ComplexAttributes>
@@ -199,6 +199,50 @@
       </S100FC:subAttributeBinding>
     </S100FC:S100_FC_ComplexAttribute>
   </S100FC:S100_FC_ComplexAttributes>
+
+
+  <!--ADD : Roles-->
+	<S100FC:S100_FC_Roles>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Component of</S100FC:name>
+			<S100FC:definition>A pointer to the aggregate in a whole-part relationship.</S100FC:definition>
+			<S100FC:code>componentOf</S100FC:code>
+			<S100FC:remarks>Definition may need to be discussed with S-101 team and GI registry manager</S100FC:remarks>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Consists of</S100FC:name>
+			<S100FC:definition>A pointer to a part in a whole-part relationship</S100FC:definition>
+			<S100FC:code>consistsOf</S100FC:code>
+			<S100FC:remarks>Definition may need to be discussed with S-101 team and GI registry manager</S100FC:remarks>
+		</S100FC:S100_FC_Role>
+	</S100FC:S100_FC_Roles>
+
+
+  <!--ADD : Feature Association-->
+	<S100FC:S100_FC_FeatureAssociations>
+	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">       
+	 		<S100FC:name>UKC Non Navigable Area</S100FC:name>           <!-- TODO: Modify this part </!-->
+	 		<S100FC:definition></S100FC:definition>
+	 		<S100FC:code>UKCNonNavigableArea</S100FC:code>      
+	 		<S100FC:role ref="componentOf"/>
+	 		<S100FC:role ref="consistsOf"/>
+	 	</S100FC:S100_FC_FeatureAssociation>
+	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
+	 		<S100FC:name>UKC Alomost Non Navigable Area</S100FC:name>   <!-- TODO: Modify this part </!-->
+	 		<S100FC:definition></S100FC:definition>
+	 		<S100FC:code>UKCAlomostNonNavigableArea</S100FC:code>
+	 		<S100FC:role ref="componentOf"/>
+	 		<S100FC:role ref="consistsOf"/>
+	 	</S100FC:S100_FC_FeatureAssociation>
+    <S100FC:S100_FC_FeatureAssociation isAbstract="false">
+	 		<S100FC:name>UKC Control Point</S100FC:name>                <!-- TODO: Modify this part </!-->
+	 		<S100FC:definition></S100FC:definition>
+	 		<S100FC:code>UKCControlPoint</S100FC:code>
+	 		<S100FC:role ref="componentOf"/>
+	 		<S100FC:role ref="consistsOf"/>
+	 	</S100FC:S100_FC_FeatureAssociation>
+	</S100FC:S100_FC_FeatureAssociations> 
+
 
   <!--features-->
   <S100FC:S100_FC_FeatureTypes>
@@ -272,7 +316,34 @@
         </S100FC:permittedValues>
         <S100FC:attribute ref="underKeelClearanceCalculationRequested"/>
       </S100FC:attributeBinding>
-      <S100FC:featureUseType>meta</S100FC:featureUseType>
+      <S100FC:featureUseType>meta</S100FC:featureUseType> 
+      <S100FC:featureBinding roleType="aggregation">                        <!--ADD : Feature binding-->
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCNonNavigableArea"/>                     <!-- TODO: Modify this part </!-->
+				<S100FC:role ref="consistsOf"/>
+				<S100FC:featureType ref="UnderKeelClearanceNonNavigableArea"/>
+			</S100FC:featureBinding>
+      <S100FC:featureBinding roleType="aggregation">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCAlomostNonNavigableArea"/>              <!-- TODO: Modify this part </!-->
+				<S100FC:role ref="consistsOf"/>
+				<S100FC:featureType ref="UnderKeelClearanceAlmostNonNavigableArea"/>
+			</S100FC:featureBinding>
+      <S100FC:featureBinding roleType="aggregation">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCControlPoint"/>                         <!-- TODO: Modify this part </!-->
+				<S100FC:role ref="consistsOf"/>
+				<S100FC:featureType ref="UnderKeelClearanceControlPoint"/>
+			</S100FC:featureBinding>      
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
 
@@ -289,6 +360,15 @@
         <S100FC:attribute ref="scaleMinimum"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
+      <S100FC:featureBinding roleType="aggregation">                        <!--ADD : Feature binding-->
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCNonNavigableArea"/>                     <!-- TODO: Modify this part </!-->
+				<S100FC:role ref="componentOf"/>
+			<S100FC:featureType ref="UnderKeelClearancePlan"/>
+			</S100FC:featureBinding>
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
 
@@ -304,7 +384,7 @@
         </S100FC:multiplicity>
         <S100FC:attribute ref="scaleMinimum"/>
       </S100FC:attributeBinding>
-	  <S100FC:attributeBinding sequential="false">
+	    <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
@@ -312,6 +392,15 @@
         <S100FC:attribute ref="distanceAboveUKCLimit"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
+      <S100FC:featureBinding roleType="aggregation">                        <!--ADD : Feature binding-->
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCAlomostNonNavigableArea"/>              <!-- TODO: Modify this part </!--> 
+				<S100FC:role ref="componentOf"/>    
+			<S100FC:featureType ref="UnderKeelClearancePlan"/>
+			</S100FC:featureBinding>
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
 
@@ -356,8 +445,16 @@
         <S100FC:attribute ref="fixedTimeRange"/>
       </S100FC:attributeBinding>    
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
+      <S100FC:featureBinding roleType="aggregation">                <!--ADD : Feature binding-->
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
+				</S100FC:multiplicity>
+				<S100FC:association ref="UKCControlPoint"/>                 <!-- TODO: Modify this part </!-->
+				<S100FC:role ref="componentOf"/>
+			<S100FC:featureType ref="UnderKeelClearancePlan"/>
+			</S100FC:featureBinding>
       <S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
   </S100FC:S100_FC_FeatureTypes>  
-
 </S100FC:S100_FC_FeatureCatalogue>
