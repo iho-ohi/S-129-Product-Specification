@@ -72,10 +72,10 @@
       <S100FC:definition>The maximum ship draught in metres, used as base for the calculation.</S100FC:definition>
       <S100FC:code>maximumDraught</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
-	  <S100FC:uom>
-      <S100Base:name>metres</S100Base:name>
-      <S100Base:symbol>m</S100Base:symbol>
-	  </S100FC:uom>
+      <S100FC:uom>
+        <S100Base:name>metres</S100Base:name>
+        <S100Base:symbol>m</S100Base:symbol>
+      </S100FC:uom>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Scale Minimum</S100FC:name>
@@ -102,10 +102,10 @@
       <S100FC:definition>The expected passing speed for a ship for a nominated Under Keel Clearance Control Point.</S100FC:definition>
       <S100FC:code>expectedPassingSpeed</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
-	  <S100FC:uom>
-      <S100Base:name>metres per seconds</S100Base:name>
-      <S100Base:symbol>m/s</S100Base:symbol>
-	  </S100FC:uom>	  
+      <S100FC:uom>
+        <S100Base:name>metres per seconds</S100Base:name>
+        <S100Base:symbol>m/s</S100Base:symbol>
+      </S100FC:uom>	  
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Time Start</S100FC:name>
@@ -124,10 +124,10 @@
       <S100FC:definition>The distance of the lowest part of the ship's keel above the established Under Keel Clearance Limit for the waterway, expressed in metres.</S100FC:definition>
       <S100FC:code>distanceAboveUKCLimit</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
-	  <S100FC:uom>
-      <S100Base:name>metres</S100Base:name>
-      <S100Base:symbol>m</S100Base:symbol>
-	  </S100FC:uom>
+      <S100FC:uom>
+        <S100Base:name>metres</S100Base:name>
+        <S100Base:symbol>m</S100Base:symbol>
+      </S100FC:uom>
     </S100FC:S100_FC_SimpleAttribute>
 	
     <!--attributes - enumeration-->
