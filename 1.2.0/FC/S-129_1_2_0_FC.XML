@@ -57,14 +57,14 @@
       <S100FC:name>Source Route Name</S100FC:name>
       <S100FC:definition>Identification of the route used as a source for the calculation.</S100FC:definition>
       <S100FC:code>sourceRouteName</S100FC:code>
-	  <S100FC:remark>Using the value of S-421.Route.routeInfoName.</S100FC:remark>
+	  <S100FC:remarks>Using the value of S-421.Route.routeInfoName.</S100FC:remarks>
       <S100FC:valueType>text</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Source Route Version</S100FC:name>
       <S100FC:definition>Identification of the route used as a source for the calculation.</S100FC:definition>
       <S100FC:code>sourceRouteVersion</S100FC:code>
-	  <S100FC:remark>Using the value of S-421.RouteHistory.routeHistoryEditionNo.</S100FC:remark>
+	  <S100FC:remarks>Using the value of S-421.RouteHistory.routeHistoryEditionNo.</S100FC:remarks>
       <S100FC:valueType>text</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
@@ -249,7 +249,7 @@
     <S100FC:S100_FC_FeatureType>
       <S100FC:name>Under Keel Clearance Plan</S100FC:name>
       <S100FC:definition>This feature is MetaFeature of UKCM information</S100FC:definition>
-      <S100FC:code>underKeelClearancePlan</S100FC:code>
+      <S100FC:code>UnderKeelClearancePlan</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -350,7 +350,7 @@
     <S100FC:S100_FC_FeatureType>
       <S100FC:name>Under Keel Clearance Non Navigable Area</S100FC:name>
       <S100FC:definition>Non Navigation Area</S100FC:definition>
-      <S100FC:code>underKeelClearanceNonNavigableArea</S100FC:code>
+      <S100FC:code>UnderKeelClearanceNonNavigableArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
 	  <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -375,7 +375,7 @@
     <S100FC:S100_FC_FeatureType>
       <S100FC:name>Under Keel Clearance Almost Non Navigable Area</S100FC:name>
       <S100FC:definition>Almost Non Navigable Area</S100FC:definition>
-      <S100FC:code>underKeelClearanceAlmostNonNavigableArea</S100FC:code>
+      <S100FC:code>UnderKeelClearanceAlmostNonNavigableArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -407,7 +407,7 @@
     <S100FC:S100_FC_FeatureType>
       <S100FC:name>Under Keel Clearance Control Point</S100FC:name>
       <S100FC:definition>UnderKeelClearance ControlPoint</S100FC:definition>
-      <S100FC:code>underKeelClearanceControlPoint</S100FC:code>
+      <S100FC:code>UnderKeelClearanceControlPoint</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
 	  <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
