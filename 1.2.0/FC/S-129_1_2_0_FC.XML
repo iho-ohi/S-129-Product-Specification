@@ -109,7 +109,7 @@
       <S100FC:code>expectedPassingSpeed</S100FC:code>
       <S100FC:valueType>real</S100FC:valueType>
       <S100FC:uom>
-        <S100Base:name>metres per seconds</S100Base:name>
+        <S100Base:name>metres per second</S100Base:name>
         <S100Base:symbol>m/s</S100Base:symbol>
       </S100FC:uom>
       <S100FC:constraints>
