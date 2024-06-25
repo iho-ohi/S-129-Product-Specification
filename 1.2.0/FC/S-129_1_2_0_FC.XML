@@ -76,6 +76,12 @@
         <S100Base:name>metres</S100Base:name>
         <S100Base:symbol>m</S100Base:symbol>
       </S100FC:uom>
+      <S100FC:constraints>
+        <S100CD:range>
+          <S100Base:lowerBound>0</S100Base:lowerBound>
+          <S100Base:closure>gtSemiInterval</S100Base:closure>
+        </S100CD:range>
+      </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Scale Minimum</S100FC:name>
@@ -105,7 +111,13 @@
       <S100FC:uom>
         <S100Base:name>metres per seconds</S100Base:name>
         <S100Base:symbol>m/s</S100Base:symbol>
-      </S100FC:uom>	  
+      </S100FC:uom>
+      <S100FC:constraints>
+        <S100CD:range>
+          <S100Base:lowerBound>0</S100Base:lowerBound>
+          <S100Base:closure>geSemiInterval</S100Base:closure>
+        </S100CD:range>
+      </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Time Start</S100FC:name>
@@ -128,6 +140,12 @@
         <S100Base:name>metres</S100Base:name>
         <S100Base:symbol>m</S100Base:symbol>
       </S100FC:uom>
+      <S100FC:constraints>
+        <S100CD:range>
+          <S100Base:lowerBound>0</S100Base:lowerBound>
+          <S100Base:closure>gtSemiInterval</S100Base:closure>
+        </S100CD:range>
+      </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
 	
     <!--attributes - enumeration-->
