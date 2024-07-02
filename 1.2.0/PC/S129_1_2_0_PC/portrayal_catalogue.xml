@@ -37,7 +37,7 @@
     <symbol id="EMUKCARE">
       <description>
         <name>EMUKCARE</name>
-        <description>Embedded symbol UKCM</description>
+        <description>Embedded complex line symbol for Under Keel Clearance Plan Area</description>
         <language>en</language>
       </description>
       <fileName>EMUKCARE.svg</fileName>
@@ -57,13 +57,13 @@
       <fileType>LineStyle</fileType>
       <fileFormat>XML</fileFormat>
     </lineStyle>
-    <lineStyle id="UKCARE01_20240110">
+    <lineStyle id="UKCARE01">
        <description>
-          <name>UKCARE01_20240110</name>
-          <description>boundary of an under keel clearance analysed area</description>
+          <name>UKCARE01</name>
+          <description>Boundary of Under Keel Clearance Plan Area</description>
           <language>eng</language>
        </description>
-       <fileName>UKCARE01_20240110.xml</fileName>
+       <fileName>UKCARE01.xml</fileName>
        <fileType>LineStyle</fileType>
        <fileFormat>XML</fileFormat>
     </lineStyle>
