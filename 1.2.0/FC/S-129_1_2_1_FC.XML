@@ -152,6 +152,12 @@
         </S100CD:range>
       </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
+    <S100FC:S100_FC_SimpleAttribute>
+      <S100FC:name>Interoperability Identifier</S100FC:name>
+      <S100FC:definition>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</S100FC:definition>
+      <S100FC:code>interoperabilityIdentifier</S100FC:code>
+      <S100FC:valueType>URN</S100FC:valueType>
+    </S100FC:S100_FC_SimpleAttribute>
 	
     <!--attributes - enumeration-->
     <S100FC:S100_FC_SimpleAttribute>
@@ -316,6 +322,13 @@
         </S100FC:multiplicity>
         <S100FC:attribute ref="maximumDraught"/>
       </S100FC:attributeBinding>
+      <S100FC:attributeBinding>
+        <S100FC:multiplicity>
+          <S100Base:lower>0</S100Base:lower>
+          <S100Base:upper  xsi:nil="false" infinite="false">1</S100Base:upper>
+        </S100FC:multiplicity>
+        <S100FC:attribute ref="interoperabilityIdentifier"/>
+      </S100FC:attributeBinding>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
@@ -375,12 +388,19 @@
       <S100FC:definition>An area of under keel clearance less than the calculated safe limit.</S100FC:definition>
       <S100FC:code>UnderKeelClearanceNonNavigableArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
-	  <S100FC:attributeBinding sequential="false">
+      <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:attribute ref="scaleMinimum"/>
+      </S100FC:attributeBinding>
+      <S100FC:attributeBinding>
+        <S100FC:multiplicity>
+          <S100Base:lower>0</S100Base:lower>
+          <S100Base:upper  xsi:nil="false" infinite="false">1</S100Base:upper>
+        </S100FC:multiplicity>
+        <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
       <S100FC:featureBinding roleType="aggregation">                        <!--ADD : Feature binding-->
@@ -413,6 +433,13 @@
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:attribute ref="distanceAboveUKCLimit"/>
+      </S100FC:attributeBinding>
+      <S100FC:attributeBinding>
+        <S100FC:multiplicity>
+          <S100Base:lower>0</S100Base:lower>
+          <S100Base:upper  xsi:nil="false" infinite="false">1</S100Base:upper>
+        </S100FC:multiplicity>
+        <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
       <S100FC:featureBinding roleType="aggregation">                        <!--ADD : Feature binding-->
@@ -459,6 +486,13 @@
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:attribute ref="distanceAboveUKCLimit"/>
+      </S100FC:attributeBinding>
+      <S100FC:attributeBinding>
+        <S100FC:multiplicity>
+          <S100Base:lower>0</S100Base:lower>
+          <S100Base:upper  xsi:nil="false" infinite="false">1</S100Base:upper>
+        </S100FC:multiplicity>
+        <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
