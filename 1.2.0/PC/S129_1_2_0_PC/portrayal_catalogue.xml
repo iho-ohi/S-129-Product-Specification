@@ -16,8 +16,8 @@
   <symbols>
     <symbol id="UKCCONPT">
       <description>
-        <name>Control Point</name>
-        <description>Control Point in UKC</description>
+        <name>UKCCONPT</name>
+        <description>Symbol for Under Keel Clearance Control Point</description>
         <language>en</language>
       </description>
       <fileName>UKCCONPT.svg</fileName>
