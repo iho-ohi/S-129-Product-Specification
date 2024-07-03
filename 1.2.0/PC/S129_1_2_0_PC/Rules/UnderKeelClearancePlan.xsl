@@ -22,7 +22,7 @@
           <viewingGroup>33022</viewingGroup>
           <displayPlane>UNDERRADAR</displayPlane>
           <drawingPriority>12</drawingPriority>
-          <lineStyleReference reference="UKCARE01_20240110"/>
+          <lineStyleReference reference="UKCARE01"/>
         </lineInstruction>
       </xsl:when>  
       <xsl:otherwise>
