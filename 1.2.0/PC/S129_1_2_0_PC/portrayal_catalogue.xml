@@ -14,13 +14,13 @@
   </colorProfiles>
 
   <symbols>
-    <symbol id="CP">
+    <symbol id="UKCCONPT">
       <description>
         <name>Control Point</name>
         <description>Control Point in UKC</description>
         <language>en</language>
       </description>
-      <fileName>CP.svg</fileName>
+      <fileName>UKCCONPT.svg</fileName>
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>

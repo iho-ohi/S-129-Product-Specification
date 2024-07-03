@@ -9,7 +9,7 @@
       <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
       
-      <xsl:with-param name="symbolReference" select="'CP'"/>
+      <xsl:with-param name="symbolReference" select="'UKCCONPT'"/>
       <xsl:with-param name="rotation" select="0"/>
       <xsl:with-param name="rotationCRS" select="'portrayalCRS'"/>
       <xsl:with-param name="scaleFactor" select="1"/>
