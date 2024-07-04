@@ -257,7 +257,7 @@
 	 		<S100FC:role ref="consistsOf"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
-	 		<S100FC:name>UKC Alomost Non Navigable Area Aggregation</S100FC:name>   <!-- TODO: Modify this part </!-->
+	 		<S100FC:name>UKC Almost Non Navigable Area Aggregation</S100FC:name>   <!-- TODO: Modify this part </!-->
 	 		<S100FC:definition></S100FC:definition>
 	 		<S100FC:code>UnderKeelClearanceAlmostNonNavigableAreaAggregation</S100FC:code>
 	 		<S100FC:role ref="componentOf"/>
