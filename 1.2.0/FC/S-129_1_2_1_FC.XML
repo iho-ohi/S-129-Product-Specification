@@ -136,7 +136,7 @@
       <S100FC:code>timeEnd</S100FC:code>
       <S100FC:valueType>dateTime</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
-	  <S100FC:S100_FC_SimpleAttribute>
+    <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Distance Above UKC Limit</S100FC:name>
       <S100FC:definition>The distance of the lowest part of the ship's keel above the established Under Keel Clearance Limit for the waterway, expressed in metres.</S100FC:definition>
       <S100FC:code>distanceAboveUKCLimit</S100FC:code>
@@ -158,7 +158,7 @@
       <S100FC:code>interoperabilityIdentifier</S100FC:code>
       <S100FC:valueType>URN</S100FC:valueType>
     </S100FC:S100_FC_SimpleAttribute>
-	
+
     <!--attributes - enumeration-->
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Under Keel Clearance Purpose</S100FC:name>
@@ -392,7 +392,7 @@
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceControlPoint"/>
       </S100FC:featureBinding>
-      <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+      <S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
 
     <S100FC:S100_FC_FeatureType>                                      <!--ADD : Under Keel Clearance Plan area feature-->        
@@ -400,7 +400,7 @@
       <S100FC:definition>UnderKeelClearance Plan Area</S100FC:definition>
       <S100FC:code>UnderKeelClearancePlanArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
-	    <S100FC:attributeBinding sequential="false">
+      <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
@@ -416,15 +416,14 @@
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
       <S100FC:featureBinding roleType="aggregation">      
-				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
-				</S100FC:multiplicity>
-				<S100FC:association ref="UnderKeelClearancePlanAreaAggregation"/>         
-				<S100FC:role ref="componentOf"/>
-			<S100FC:featureType ref="UnderKeelClearancePlan"/>
-			</S100FC:featureBinding>
-      <S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
+        <S100FC:multiplicity>
+          <S100Base:lower>1</S100Base:lower>
+          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
+        </S100FC:multiplicity>
+        <S100FC:association ref="UnderKeelClearancePlanAreaAggregation"/>         
+        <S100FC:role ref="componentOf"/>
+      <S100FC:featureType ref="UnderKeelClearancePlan"/>
+      </S100FC:featureBinding>
       <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
     </S100FC:S100_FC_FeatureType>
 
@@ -472,7 +471,7 @@
         </S100FC:multiplicity>
         <S100FC:attribute ref="scaleMinimum"/>
       </S100FC:attributeBinding>
-	    <S100FC:attributeBinding sequential="false">
+      <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
@@ -504,14 +503,14 @@
       <S100FC:definition>Selected critical passage point or line.</S100FC:definition>
       <S100FC:code>UnderKeelClearanceControlPoint</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
-	  <S100FC:attributeBinding sequential="false">
+    <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:attribute ref="name"/>
       </S100FC:attributeBinding>
-	  <S100FC:attributeBinding sequential="false">
+    <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
