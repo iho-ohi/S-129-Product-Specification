@@ -503,14 +503,14 @@
       <S100FC:definition>Selected critical passage point or line.</S100FC:definition>
       <S100FC:code>UnderKeelClearanceControlPoint</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
-    <S100FC:attributeBinding sequential="false">
+      <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:attribute ref="name"/>
       </S100FC:attributeBinding>
-    <S100FC:attributeBinding sequential="false">
+      <S100FC:attributeBinding sequential="false">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
