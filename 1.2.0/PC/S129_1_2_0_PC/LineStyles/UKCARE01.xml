@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015 - 03 - 13"?>
-<?S100Meta name="UKCARE01" exposition="boundary of an under keel clearance analysed area"?>
+<?S100Meta name="UKCARE01" exposition="Boundary of Under Keel Clearance Plan Area"?>
 <lineStyle offset="0">
   <pen width="0.32">
     <color transparency="0.5">CHMGD</color>
@@ -41,7 +41,7 @@
   <symbol reference="EMAREMG1">
     <position>46</position>
   </symbol>
-  <symbol reference="EMUKCARE_20231221_v2">
+  <symbol reference="EMUKCARE">
     <position>13.4</position>
   </symbol>
 </lineStyle>

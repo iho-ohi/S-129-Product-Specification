@@ -14,13 +14,13 @@
   </colorProfiles>
 
   <symbols>
-    <symbol id="CP">
+    <symbol id="UKCCONPT">
       <description>
-        <name>Control Point</name>
-        <description>Control Point in UKC</description>
+        <name>UKCCONPT</name>
+        <description>Symbol for Under Keel Clearance Control Point</description>
         <language>en</language>
       </description>
-      <fileName>CP.svg</fileName>
+      <fileName>UKCCONPT.svg</fileName>
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>
@@ -34,13 +34,13 @@
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
    </symbol>
-    <symbol id="EMUKCARE_20231221_v2">
+    <symbol id="EMUKCARE">
       <description>
-        <name>EMUKCARE_20231221_v2</name>
-        <description>Embedded symbol UKCM</description>
+        <name>EMUKCARE</name>
+        <description>Embedded complex line symbol for Under Keel Clearance Plan Area</description>
         <language>en</language>
       </description>
-      <fileName>EMUKCARE_20231221_v2.svg</fileName>
+      <fileName>EMUKCARE.svg</fileName>
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>
@@ -57,13 +57,13 @@
       <fileType>LineStyle</fileType>
       <fileFormat>XML</fileFormat>
     </lineStyle>
-    <lineStyle id="UKCARE01_20240110">
+    <lineStyle id="UKCARE01">
        <description>
-          <name>UKCARE01_20240110</name>
-          <description>boundary of an under keel clearance analysed area</description>
+          <name>UKCARE01</name>
+          <description>Boundary of Under Keel Clearance Plan Area</description>
           <language>eng</language>
        </description>
-       <fileName>UKCARE01_20240110.xml</fileName>
+       <fileName>UKCARE01.xml</fileName>
        <fileType>LineStyle</fileType>
        <fileFormat>XML</fileFormat>
     </lineStyle>
