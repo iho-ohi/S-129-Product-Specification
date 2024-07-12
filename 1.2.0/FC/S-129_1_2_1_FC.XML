@@ -356,7 +356,7 @@
         <S100FC:attribute ref="underKeelClearanceCalculationRequested"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>meta</S100FC:featureUseType> 
-      <S100FC:featureBinding roleType="aggregation">                     
+      <S100FC:featureBinding roleType="association">                     
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
@@ -365,7 +365,7 @@
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearancePlanArea"/>
       </S100FC:featureBinding>
-      <S100FC:featureBinding roleType="aggregation">                       
+      <S100FC:featureBinding roleType="association">                       
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
@@ -374,7 +374,7 @@
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceNonNavigableArea"/>
       </S100FC:featureBinding>
-      <S100FC:featureBinding roleType="aggregation">
+      <S100FC:featureBinding roleType="association">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
@@ -383,7 +383,7 @@
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceAlmostNonNavigableArea"/>
       </S100FC:featureBinding>
-      <S100FC:featureBinding roleType="aggregation">
+      <S100FC:featureBinding roleType="association">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
