@@ -12,8 +12,8 @@
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>1.2.1-20240716</S100FC:versionNumber>
-  <S100FC:versionDate>2024-07-16</S100FC:versionDate>
+  <S100FC:versionNumber>1.2.1-20240717</S100FC:versionNumber>
+  <S100FC:versionDate>2024-07-17</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
@@ -247,30 +247,30 @@
   <!--ADD : Feature Association-->
 	<S100FC:S100_FC_FeatureAssociations>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">       
-	 		<S100FC:name>UKC Plan Area Aggregation</S100FC:name>                    
+	 		<S100FC:name>UKC Plan Area Composition</S100FC:name>                    
 	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearancePlanAreaAggregation</S100FC:code>      
+	 		<S100FC:code>UnderKeelClearancePlanAreaComposition</S100FC:code>      
 	 		<S100FC:role ref="componentOf"/>
 	 		<S100FC:role ref="consistsOf"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">       
-	 		<S100FC:name>UKC Non Navigable Area Aggregation</S100FC:name>          
+	 		<S100FC:name>UKC Non Navigable Area Composition</S100FC:name>          
 	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceNonNavigableAreaAggregation</S100FC:code>      
+	 		<S100FC:code>UnderKeelClearanceNonNavigableAreaComposition</S100FC:code>      
 	 		<S100FC:role ref="componentOf"/>
 	 		<S100FC:role ref="consistsOf"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
-	 		<S100FC:name>UKC Almost Non Navigable Area Aggregation</S100FC:name>    
+	 		<S100FC:name>UKC Almost Non Navigable Area Composition</S100FC:name>    
 	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceAlmostNonNavigableAreaAggregation</S100FC:code>
+	 		<S100FC:code>UnderKeelClearanceAlmostNonNavigableAreaComposition</S100FC:code>
 	 		<S100FC:role ref="componentOf"/>
 	 		<S100FC:role ref="consistsOf"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
     <S100FC:S100_FC_FeatureAssociation isAbstract="false">
-	 		<S100FC:name>UKC Control Point Aggregation</S100FC:name>               
+	 		<S100FC:name>UKC Control Point Composition</S100FC:name>               
 	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceControlPointAggregation</S100FC:code>
+	 		<S100FC:code>UnderKeelClearanceControlPointComposition</S100FC:code>
 	 		<S100FC:role ref="componentOf"/>
 	 		<S100FC:role ref="consistsOf"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
@@ -361,7 +361,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearancePlanAreaAggregation"/>                   
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>                   
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearancePlanArea"/>
       </S100FC:featureBinding>
@@ -370,7 +370,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaAggregation"/>                    
+        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>                    
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -379,7 +379,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaAggregation"/>            
+        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>            
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceAlmostNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -388,7 +388,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceControlPointAggregation"/>                     
+        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>                     
         <S100FC:role ref="consistsOf"/>
         <S100FC:featureType ref="UnderKeelClearanceControlPoint"/>
       </S100FC:featureBinding>
@@ -397,7 +397,7 @@
 
     <S100FC:S100_FC_FeatureType>                                      <!--ADD : Under Keel Clearance Plan area feature-->        
       <S100FC:name>Under Keel Clearance Plan Area</S100FC:name>
-      <S100FC:definition>The area for which an under keel clearance plan has been calculated for a particular vessel, for a particular passage.</S100FC:definition>
+      <S100FC:definition>UnderKeelClearance Plan Area</S100FC:definition>
       <S100FC:code>UnderKeelClearancePlanArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
       <S100FC:attributeBinding sequential="false">
@@ -415,12 +415,12 @@
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
-      <S100FC:featureBinding roleType="aggregation">      
+      <S100FC:featureBinding roleType="composition">      
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearancePlanAreaAggregation"/>         
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>         
         <S100FC:role ref="componentOf"/>
       <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -447,12 +447,12 @@
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
-      <S100FC:featureBinding roleType="aggregation">
+      <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaAggregation"/>
+        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>
         <S100FC:role ref="componentOf"/>
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -486,12 +486,12 @@
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
-      <S100FC:featureBinding roleType="aggregation">
+      <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaAggregation"/>
+        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>
         <S100FC:role ref="componentOf"/>    
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -546,12 +546,12 @@
         <S100FC:attribute ref="fixedTimeRange"/>
       </S100FC:attributeBinding>    
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
-      <S100FC:featureBinding roleType="aggregation">
+      <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceControlPointAggregation"/>
+        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>
         <S100FC:role ref="componentOf"/>
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
