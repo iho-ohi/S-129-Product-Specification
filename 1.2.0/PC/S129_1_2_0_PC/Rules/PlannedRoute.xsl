@@ -13,7 +13,7 @@
       <xsl:with-param name="capStyle" select="'Butt'"/>
       <xsl:with-param name="joinStyle" select="'Miter'"/>     
       <xsl:with-param name="penWidth" select="1"/>
-      <xsl:with-param name="colorToken" select="'ORG'"/>
+      <xsl:with-param name="colorToken" select="'PLRTE'"/>
       <xsl:with-param name="trasparency" select="1"/>      
     </xsl:call-template>
   </xsl:template>
