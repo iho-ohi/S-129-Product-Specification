@@ -395,7 +395,7 @@
 
     <S100FC:S100_FC_FeatureType>                                      <!--ADD : Under Keel Clearance Plan area feature-->        
       <S100FC:name>Under Keel Clearance Plan Area</S100FC:name>
-      <S100FC:definition>UnderKeelClearance Plan Area</S100FC:definition>
+      <S100FC:definition>The area for which an under keel clearance plan has been calculated for a particular vessel, for a particular passage.</S100FC:definition>
       <S100FC:code>UnderKeelClearancePlanArea</S100FC:code>
       <S100FC:remarks></S100FC:remarks>
       <S100FC:attributeBinding sequential="false">
