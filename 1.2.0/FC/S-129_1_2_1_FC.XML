@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <S100FC:S100_FC_FeatureCatalogue 
-  xmlns:S100FC="http://www.iho.int/S100FC/5.0" 
+  xmlns:S100FC="http://www.iho.int/S100FC/5.2" 
   xmlns:S100Base="http://www.iho.int/S100Base/5.0"
   xmlns:S100CI="http://www.iho.int/S100CI/5.0"
   xmlns:S100CD="http://www.iho.int/S100CD/5.0"
   xmlns:xlink="https://schemas.s100dev.net/schemas/S100/5.0.0/w3c/XML/2008/06/xlink.xsd"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/schemas/S100/5.0.0/S100FC/20220610/S100FC.xsd">
+  xsi:schemaLocation="http://www.iho.int/S100FC/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20231214/S100FC.xsd">
 
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
@@ -412,6 +412,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
+        <S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
@@ -444,6 +445,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
+        <S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
@@ -483,6 +485,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
+        <S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
