@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S-129/gml/cs0/1.0" targetNamespace="http://www.iho.int/S-129/gml/cs0/1.0" elementFormDefault="qualified" version="1.2.1-20240704">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S-129/gml/cs0/1.0" targetNamespace="http://www.iho.int/S-129/gml/cs0/1.0" elementFormDefault="qualified" version="1.2.0-20240710">
 	<!-- ========================================================================================== -->
 	<!-- S100 XML/GML Schema for S-129                                                              -->
 	<!-- ========================================================================================== -->
@@ -168,6 +168,33 @@
 							<xs:documentation/>
 						</xs:annotation>
 					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearancePlanArea" type="UnderKeelClearancePlanAreaType"/>
+	<xs:complexType name="UnderKeelClearancePlanAreaType">
+		<xs:annotation>
+			<xs:documentation>UnderKeelClearance Plan Area</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="scaleMinimum" type="xs:integer" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The minimum scale at which the feature may be used for example for ECDIS presentation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="componentOf" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
 					<xs:element name="geometry" maxOccurs="unbounded">
 						<xs:complexType>
 							<xs:choice>
@@ -311,6 +338,7 @@
 			<xs:documentation>group of informtion, feature and meta objects, all GML members</xs:documentation>
 		</xs:annotation>
 			<xs:element name="UnderKeelClearancePlan"/>
+			<xs:element name="UnderKeelClearancePlanArea"/>
 			<xs:element name="UnderKeelClearanceNonNavigableArea"/>
 			<xs:element name="UnderKeelClearanceAlmostNonNavigableArea"/>
 			<xs:element name="UnderKeelClearanceControlPoint"/>
