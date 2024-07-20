@@ -35,7 +35,9 @@
             </xsl:element>
           </xsl:element>
           <xsl:element name="areaFillReference">
-            <xsl:value-of select="$areaFillReference"/>
+            <xsl:attribute name="reference">
+              <xsl:value-of select="$areaFillReference"/>
+            </xsl:attribute>
           </xsl:element>
         </xsl:element>
       </xsl:when>
