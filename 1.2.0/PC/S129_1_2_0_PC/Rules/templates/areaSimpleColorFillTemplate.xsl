@@ -9,13 +9,14 @@
     <xsl:param name="drawingPriority"/>
     <xsl:param name="colorToken"/>
     <xsl:param name="transparency"/>
+    <xsl:param name="areaFillReference"/>
 
     <xsl:choose>
       <xsl:when test="$featureReference!=''">
         <xsl:element name="areaInstruction">
-        <xsl:element name="featureReference">
-          <xsl:value-of select="$featureReference"/>
-        </xsl:element>
+          <xsl:element name="featureReference">
+            <xsl:value-of select="$featureReference"/>
+          </xsl:element>
           <xsl:element name="viewingGroup">            
               <xsl:value-of select="$viewingGroup"/>            
           </xsl:element>
@@ -32,6 +33,9 @@
               </xsl:attribute>
               <xsl:value-of select="$colorToken"/>
             </xsl:element>
+          </xsl:element>
+          <xsl:element name="areaFillReference">
+            <xsl:value-of select="$areaFillReference"/>
           </xsl:element>
         </xsl:element>
       </xsl:when>

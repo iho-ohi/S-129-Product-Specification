@@ -44,6 +44,16 @@
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>
+    <symbol id="DIAMOND1P">
+      <description>
+         <name>DIAMOND1P</name>
+         <description>area of depth less than the safety contour</description>
+         <language>eng</language>
+      </description>
+      <fileName>DIAMOND1P.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+   </symbol>    
   </symbols>
 
   <lineStyles>
@@ -77,6 +87,11 @@
     </areaFill>
     <areaFill id="NNA">
       <fileName>NNA.xml</fileName>
+      <fileType>AreaFill</fileType>
+      <fileFormat>XML</fileFormat>
+    </areaFill>
+    <areaFill id="DIAMOND1">
+      <fileName>DIAMOND1.xml</fileName>
       <fileType>AreaFill</fileType>
       <fileFormat>XML</fileFormat>
     </areaFill>

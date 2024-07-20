@@ -13,6 +13,7 @@
       <xsl:with-param name="drawingPriority" select="9"/>
       <xsl:with-param name="colorToken" select="'GOLDN'"/>
       <xsl:with-param name="transparency" select="0.5"/>
+      <xsl:with-param name="areaFillReference" select="'DIAMOND1'"/>
     </xsl:call-template>
 
     <!-- <xsl:call-template name="AreaHatchFillTemplate">
