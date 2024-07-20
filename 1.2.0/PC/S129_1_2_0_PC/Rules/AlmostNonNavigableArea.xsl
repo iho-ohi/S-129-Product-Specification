@@ -11,7 +11,7 @@
       <xsl:with-param name="viewingGroup" select="33022"/>
       <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
       <xsl:with-param name="drawingPriority" select="9"/>
-      <xsl:with-param name="colorToken" select="'ORG'"/>
+      <xsl:with-param name="colorToken" select="'GOLDN'"/>
       <xsl:with-param name="transparency" select="0.5"/>
     </xsl:call-template>
 

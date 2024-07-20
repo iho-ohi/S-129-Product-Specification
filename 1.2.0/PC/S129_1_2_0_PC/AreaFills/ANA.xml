@@ -2,5 +2,5 @@
 <colorFill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="S100AreaFill.xsd">  
   <!-- Color profile -->
-  <color transparency="0.5">ORG</color>
+  <color transparency="0.5">GOLDN</color>
 </colorFill>

@@ -3,7 +3,7 @@
 xsi:noNamespaceSchemaLocation="s100LineStyle.xsd">
   <intervalLength>6</intervalLength>
   <pen width="0.3">
-    <color>ORG</color>
+    <color>PLRTE</color>
   </pen>
   <dash>
     <start>0</start>

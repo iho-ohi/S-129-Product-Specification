@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cp:colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cp="http://www.iho.int/S100ColorProfile/5.1">
 	<colors>
-		<color token="ORG" name="orange">
-			<description>Orange color for Almost Non Navigable Area</description>
-		</color>
+		<color token="GOLDN" name="gold">
+			<description>Golden color for Almost Non Navigable Area</description>
+		</color>		
 		<color token="RED" name="red">
 			<description>Red color for Non Navigable Area</description>
 		</color>
@@ -18,6 +18,12 @@
 		</color>
 		<color token="SNDG2" name="black">
 			<description>Sounding shallow</description>
+		</color>
+        <color token="PLRTE" name="red">
+            <description>Planned route</description>
+        </color>		
+		<color token="ORG" name="orange">
+			<description>Orange color</description>
 		</color>
 	</colors>
 	<palette name="Day" css="daySvgStyle.css">
@@ -105,6 +111,34 @@
 				<blue>0</blue>
 			</srgb>
 		</item>
+		<item token="GOLDN">
+			<cie>
+				<xyL>
+					<x>0.45</x>
+					<y>0.48</y>
+					<L>70</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>255</red>
+				<green>215</green>
+				<blue>0</blue>
+			</srgb>
+		</item>
+		<item token="PLRTE">
+			<cie>
+			  <xyL>
+				<x>0.58</x>
+				<y>0.35</y>
+				<L>18</L>
+			  </xyL>
+			</cie>
+			<srgb>
+			  <red>214</red>
+			  <green>63</green>
+			  <blue>36</blue>
+			</srgb>
+		  </item>
 	</palette>
 	<palette name="Dusk" css="duskSvgStyle.css">
 		<item token="ORG">
@@ -191,6 +225,34 @@
 				<blue>179</blue>
 			</srgb>
 		</item>
+		<item token="GOLDN">
+			<cie>
+				<xyL>
+					<x>0.45</x>
+					<y>0.48</y>
+					<L>24</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>158</red>
+				<green>133</green>
+				<blue>2</blue>
+			</srgb>
+		</item>
+		<item token="PLRTE">
+			<cie>
+			  <xyL>
+				<x>0.58</x>
+				<y>0.35</y>
+				<L>8</L>
+			  </xyL>
+			</cie>
+			<srgb>
+			  <red>149</red>
+			  <green>41</green>
+			  <blue>22</blue>
+			</srgb>
+		  </item>		
 	</palette>
 	<palette name="Night" css="nightSvgStyle.css">
 		<item token="ORG">
@@ -277,5 +339,33 @@
 				<blue>71</blue>
 			</srgb>
 		</item>
+		<item token="GOLDN">
+			<cie>
+				<xyL>
+					<x>0.45</x>
+					<y>0.48</y>
+					<L>3</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>58</red>
+				<green>48</green>
+				<blue>0</blue>
+			</srgb>
+		</item>
+		<item token="PLRTE">
+			<cie>
+			  <xyL>
+				<x>0.58</x>
+				<y>0.35</y>
+				<L>0.9</L>
+			  </xyL>
+			</cie>
+			<srgb>
+			  <red>51</red>
+			  <green>8</green>
+			  <blue>3</blue>
+			</srgb>
+		  </item>		
 	</palette>
 </cp:colorProfile>
