@@ -70,7 +70,13 @@
       Can be used to supplement information provided by “sourceRouteName”, especially if “sourceRouteName” provides insufficient route information.
       If provided, for example, using S-421, the value of “S-421.Route.routeEditionNo” is used.
       </S100FC:remarks>
-      <S100FC:valueType>text</S100FC:valueType>
+      <S100FC:valueType>integer</S100FC:valueType>
+      <S100FC:constraints>
+        <S100CD:range>
+          <S100Base:lowerBound>1</S100Base:lowerBound>
+          <S100Base:closure>geSemiInterval</S100Base:closure>
+        </S100CD:range>
+      </S100FC:constraints>      
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Maximum Draught</S100FC:name>
