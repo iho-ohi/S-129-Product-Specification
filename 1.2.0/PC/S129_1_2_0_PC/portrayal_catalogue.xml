@@ -145,7 +145,7 @@
       <fileFormat>XSLT</fileFormat>
       <ruleType>TopLevelTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="route">
+    <ruleFile id="PlannedRoute">
       <fileName>PlannedRoute.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
@@ -157,7 +157,7 @@
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>    
-    <ruleFile id="controlpoint">
+    <ruleFile id="ControlPoint">
       <fileName>ControlPoint.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
@@ -169,7 +169,7 @@
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="NavigableArea">
+    <ruleFile id="AlmostNonNavigableArea">
       <fileName>AlmostNonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
