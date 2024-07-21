@@ -71,11 +71,21 @@
 
   <areaFills>
     <areaFill id="ANA">
+      <description>
+        <name>ANA</name>
+        <description>Area fill for Under Keel Clearance Almost Non Navigable Area</description>
+        <language>eng</language>
+     </description>
       <fileName>ANA.xml</fileName>
       <fileType>AreaFill</fileType>
       <fileFormat>XML</fileFormat>
     </areaFill>
     <areaFill id="NNA">
+      <description>
+        <name>NNA</name>
+        <description>Area fill for Under Keel Clearance Non Navigable Area</description>
+        <language>eng</language>
+     </description>
       <fileName>NNA.xml</fileName>
       <fileType>AreaFill</fileType>
       <fileFormat>XML</fileFormat>
