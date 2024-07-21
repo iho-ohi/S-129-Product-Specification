@@ -140,42 +140,77 @@
 
   <rules>
     <ruleFile id="main">
+      <description>
+        <name>main</name>
+        <description>Top level rule</description>
+        <language>eng</language>
+     </description>
       <fileName>main.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>TopLevelTemplate</ruleType>
     </ruleFile>
     <ruleFile id="PlannedRoute">
+      <description>
+        <name>PlannedRoute</name>
+        <description>Rules for PlannedRoute</description>
+        <language>eng</language>
+     </description>
       <fileName>PlannedRoute.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="UnderKeelClearancePlanArea">
+      <description>
+        <name>UnderKeelClearancePlanArea</name>
+        <description>Rules for feature type UnderKeelClearancePlanArea</description>
+        <language>eng</language>
+     </description>
       <fileName>UnderKeelClearancePlanArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
-    </ruleFile>    
+    </ruleFile>
     <ruleFile id="ControlPoint">
+      <description>
+        <name>ControlPoint</name>
+        <description>Rules for feature type UnderKeelClearanceControlPoint</description>
+        <language>eng</language>
+     </description>
       <fileName>ControlPoint.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="InformationBox">
+      <description>
+        <name>InformationBox</name>
+        <description>Rules for Information Box</description>
+        <language>eng</language>
+     </description>
       <fileName>InformationBox.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="AlmostNonNavigableArea">
+      <description>
+        <name>AlmostNonNavigableArea</name>
+        <description>Rules for feature type UnderKeelClearanceAlmostNonNavigableArea</description>
+        <language>eng</language>
+     </description>
       <fileName>AlmostNonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="NonNavigableArea">
+      <description>
+        <name>NonNavigableArea</name>
+        <description>Rules for feature type UnderKeelClearanceNonNavigableArea</description>
+        <language>eng</language>
+     </description>
       <fileName>NonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
