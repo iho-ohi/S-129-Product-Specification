@@ -157,6 +157,9 @@
       <S100FC:definition>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</S100FC:definition>
       <S100FC:code>interoperabilityIdentifier</S100FC:code>
       <S100FC:valueType>URN</S100FC:valueType>
+      <S100FC:constraints>
+        <S100CD:textPattern>urn:mrn:[Organisational ID]:...:...</S100CD:textPattern>
+      </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
 
     <!--attributes - enumeration-->
