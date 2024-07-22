@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <S100FC:S100_FC_FeatureCatalogue 
   xmlns:S100FC="http://www.iho.int/S100FC/5.2" 
   xmlns:S100Base="http://www.iho.int/S100Base/5.0"
@@ -12,8 +12,8 @@
   <S100FC:name>Feature Catalogue for S-129</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>1.2.0-20240719</S100FC:versionNumber>
-  <S100FC:versionDate>2024-07-19</S100FC:versionDate>
+  <S100FC:versionNumber>1.2.0-20240721</S100FC:versionNumber>
+  <S100FC:versionDate>2024-07-21</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
@@ -70,7 +70,13 @@
       Can be used to supplement information provided by “sourceRouteName”, especially if “sourceRouteName” provides insufficient route information.
       If provided, for example, using S-421, the value of “S-421.Route.routeEditionNo” is used.
       </S100FC:remarks>
-      <S100FC:valueType>text</S100FC:valueType>
+      <S100FC:valueType>integer</S100FC:valueType>
+      <S100FC:constraints>
+        <S100CD:range>
+          <S100Base:lowerBound>1</S100Base:lowerBound>
+          <S100Base:closure>geSemiInterval</S100Base:closure>
+        </S100CD:range>
+      </S100FC:constraints>      
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Maximum Draught</S100FC:name>
@@ -157,14 +163,16 @@
       <S100FC:definition>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</S100FC:definition>
       <S100FC:code>interoperabilityIdentifier</S100FC:code>
       <S100FC:valueType>URN</S100FC:valueType>
+      <S100FC:constraints>
+        <S100CD:textPattern>urn:mrn:[Organisational ID]:...:...</S100CD:textPattern>
+      </S100FC:constraints>
     </S100FC:S100_FC_SimpleAttribute>
 
     <!--attributes - enumeration-->
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Under Keel Clearance Purpose</S100FC:name>
       <S100FC:definition>The relevant phase of a UKC passage plan.</S100FC:definition>
-      <S100FC:code>underKeelClearancePurpose</S100FC:code> 
-      <S100FC:remarks>remarks</S100FC:remarks>      
+      <S100FC:code>underKeelClearancePurpose</S100FC:code>
       <S100FC:valueType>enumeration</S100FC:valueType>
       <S100FC:listedValues>
         <S100FC:listedValue>
@@ -188,7 +196,6 @@
       <S100FC:name>Under Keel Clearance Calculation Requested</S100FC:name>
       <S100FC:definition>Indication of the aim of the UKC plan: To find the maximum safe vessel draught for transiting the UKCM region, or to find sailing windows for a nominated vessel draught.</S100FC:definition>
       <S100FC:code>underKeelClearanceCalculationRequested</S100FC:code>
-      <S100FC:remarks>remarks</S100FC:remarks>
       <S100FC:valueType>enumeration</S100FC:valueType>
       <S100FC:listedValues>
         <S100FC:listedValue>
@@ -244,30 +251,30 @@
 
   <!--ADD : Feature Association-->
 	<S100FC:S100_FC_FeatureAssociations>
-	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">       
-	 		<S100FC:name>UKC Plan Area Composition</S100FC:name>                    
-	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearancePlanAreaComposition</S100FC:code>      
-	 		<S100FC:role ref="theCollection"/>
-	 		<S100FC:role ref="theComponent"/>
-	 	</S100FC:S100_FC_FeatureAssociation>
-	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">       
-	 		<S100FC:name>UKC Non Navigable Area Composition</S100FC:name>          
-	 		<S100FC:definition></S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceNonNavigableAreaComposition</S100FC:code>      
+	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
+	 		<S100FC:name>UKC Plan Area Composition</S100FC:name>
+	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Plan Area and Under Keel Clearance Plan</S100FC:definition>
+	 		<S100FC:code>UnderKeelClearancePlanAreaComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
-	 		<S100FC:name>UKC Almost Non Navigable Area Composition</S100FC:name>    
-	 		<S100FC:definition></S100FC:definition>
+	 		<S100FC:name>UKC Non Navigable Area Composition</S100FC:name>
+	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Non Navigable Area and Under Keel Clearance Plan</S100FC:definition>
+	 		<S100FC:code>UnderKeelClearanceNonNavigableAreaComposition</S100FC:code>
+	 		<S100FC:role ref="theCollection"/>
+	 		<S100FC:role ref="theComponent"/>
+	 	</S100FC:S100_FC_FeatureAssociation>
+	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
+	 		<S100FC:name>UKC Almost Non Navigable Area Composition</S100FC:name>
+	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Almost Non Navigable Area and Under Keel Clearance Plan</S100FC:definition>
 	 		<S100FC:code>UnderKeelClearanceAlmostNonNavigableAreaComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
     <S100FC:S100_FC_FeatureAssociation isAbstract="false">
-	 		<S100FC:name>UKC Control Point Composition</S100FC:name>               
-	 		<S100FC:definition></S100FC:definition>
+	 		<S100FC:name>UKC Control Point Composition</S100FC:name>
+	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Control Point and Under Keel Clearance Plan</S100FC:definition>
 	 		<S100FC:code>UnderKeelClearanceControlPointComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
