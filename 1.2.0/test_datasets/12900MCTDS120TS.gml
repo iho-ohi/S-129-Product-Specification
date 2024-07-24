@@ -11,8 +11,8 @@
     <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
     <S100:productIdentifier>INT.IHO.S-129.1.1.0</S100:productIdentifier>
     <S100:applicationProfile>1</S100:applicationProfile>
-    <S100:datasetFileIdentifier>DUKC Torres Strait 64285.0</S100:datasetFileIdentifier>
-    <S100:datasetTitle>DUKC Torres Strait 64285.0</S100:datasetTitle>
+    <S100:datasetFileIdentifier>Test Dataset Torres Strait</S100:datasetFileIdentifier>
+    <S100:datasetTitle>Test Dataset Torres Strait</S100:datasetTitle>
     <S100:datasetReferenceDate>2024-04-15</S100:datasetReferenceDate>
     <S100:datasetLanguage>eng</S100:datasetLanguage>
     <S100:datasetTopicCategory>oceans</S100:datasetTopicCategory>
@@ -20,24 +20,24 @@
     <S100:updateNumber>0</S100:updateNumber>
   </S100:DatasetIdentificationInformation>
   <members>
-    <UnderKeelClearancePlan gml:id="DUKC_TORRES_STRAIT_64285_0">
+    <UnderKeelClearancePlan gml:id="TEST_PLAN_TORRES_STRAIT">
       <fixedTimeRange>
         <timeStart>2024-04-17T21:41:00Z</timeStart>
         <timeEnd>2024-04-18T01:13:00Z</timeEnd>
       </fixedTimeRange>
       <generationTime>2024-04-15T23:11:09Z</generationTime>
       <vesselID>9800738</vesselID>
-      <sourceRouteName>Herald Patches (Deep) to Varzin Passage (Deep) (LOADED TANKER)(Slow)</sourceRouteName>
+      <sourceRouteName>Test Route Name</sourceRouteName>
       <sourceRouteVersion>1152192</sourceRouteVersion>
       <maximumDraught>12.2</maximumDraught>
       <underKeelClearancePurpose code="2">actualPlan</underKeelClearancePurpose>
       <underKeelClearanceCalculationRequested code="1">timeWindow</underKeelClearanceCalculationRequested>
     </UnderKeelClearancePlan>
-    <UnderKeelClearancePlanArea gml:id="DUKC_TORRES_STRAIT_64285_0">
+    <UnderKeelClearancePlanArea gml:id="TEST_PLAN_TORRES_STRAIT">
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="DUKC_TORRES_STRAIT_64285_0_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="TEST_PLAN_TORRES_STRAIT_GEOM" srsName="EPSG:4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
