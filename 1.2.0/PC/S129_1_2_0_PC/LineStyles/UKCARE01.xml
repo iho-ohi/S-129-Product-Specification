@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015 - 03 - 13"?>
+<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015-03-13"?>
 <?S100Meta name="UKCARE01" exposition="Boundary of Under Keel Clearance Plan Area"?>
-<lineStyle offset="0">
+<ls:lineStyle offset="0" xmlns:ls="http://www.iho.int/S100LineStyle/5.2">
+  <intervalLength>49</intervalLength>
   <pen width="0.32">
     <color transparency="0.5">CHMGD</color>
   </pen>
-  <intervalLength>49</intervalLength>
   <dash>
     <start>2</start>
     <length>6</length>
@@ -44,4 +44,4 @@
   <symbol reference="EMUKCARE">
     <position>13.5</position>
   </symbol>
-</lineStyle>
+</ls:lineStyle>

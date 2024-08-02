@@ -9,12 +9,12 @@
   <xsl:include href="ControlPoint.xsl"/>
   <xsl:include href="InformationBox.xsl"/>
 
-  <xsl:param name="PlainBoundaries">true</xsl:param>
+  <xsl:param name="PlainBoundaries"/>
 
   <xsl:template match="/">
-    <displayList>
+    <p:displayList xmlns:p="http://www.iho.int/S100Presentation/5.2">
       <xsl:apply-templates select="Dataset/Features/*"></xsl:apply-templates>
-    </displayList>
+    </p:displayList>
   </xsl:template>
 
 </xsl:transform>

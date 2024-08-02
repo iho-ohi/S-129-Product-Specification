@@ -14,14 +14,14 @@
       </colorFill>
     </areaInstruction> -->
     <xsl:choose>
-      <xsl:when test="$PlainBoundaries='true'">
+      <xsl:when test="$PlainBoundaries != 'true'">
         <lineInstruction>
           <featureReference>
             <xsl:value-of select="@id"/>
           </featureReference>
-          <viewingGroup>33022</viewingGroup>
-          <displayPlane>UNDERRADAR</displayPlane>
-          <drawingPriority>12</drawingPriority>
+          <viewingGroup>99990</viewingGroup>
+          <displayPlane>UnderRadar</displayPlane>
+          <drawingPriority>6</drawingPriority>
           <lineStyleReference reference="UKCARE01"/>
         </lineInstruction>
       </xsl:when>  
@@ -30,9 +30,9 @@
           <featureReference>
             <xsl:value-of select="@id"/>
           </featureReference>
-          <viewingGroup>33022</viewingGroup>
-          <displayPlane>UNDERRADAR</displayPlane>
-          <drawingPriority>12</drawingPriority>
+          <viewingGroup>99990</viewingGroup>
+          <displayPlane>UnderRadar</displayPlane>
+          <drawingPriority>6</drawingPriority>
           <lineStyle>
             <capStyle/>
             <joinStyle/>

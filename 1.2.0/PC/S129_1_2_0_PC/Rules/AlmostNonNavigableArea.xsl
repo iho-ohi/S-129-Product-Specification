@@ -8,24 +8,19 @@
   
     <xsl:call-template name="AreaSimpleColorFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="33022"/>
-      <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
-      <xsl:with-param name="drawingPriority" select="9"/>
+      <xsl:with-param name="viewingGroup" select="99991"/>
+      <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
+      <xsl:with-param name="drawingPriority" select="6"/>
       <xsl:with-param name="colorToken" select="'GOLDN'"/>
       <xsl:with-param name="transparency" select="0.5"/>
-      <xsl:with-param name="symbolReference" select="'DIAMOND1P'"/>
-      <xsl:with-param name="rotation" select="0"/>
-      <xsl:with-param name="rotationCRS" select="'portrayalCRS'"/>
-      <xsl:with-param name="scaleFactor" select="1"/>
-      <xsl:with-param name="x1" select="22.5"/>
-      <xsl:with-param name="y1" select="0"/>
-      <xsl:with-param name="x2" select="0"/>
-      <xsl:with-param name="x2" select="43.13"/>
-      <xsl:with-param name="clipSymbols" select="true"/>
-      <xsl:with-param name="firstSymbolOffsetX" select="0"/>
-      <xsl:with-param name="firstSymbolOffsetY" select="0"/>
-      <xsl:with-param name="secondSymbolOffsetX" select="1"/>
-      <xsl:with-param name="secondSymbolOffsetY" select="0"/>
+      <xsl:with-param name="areaFillReference" select="'DIAMOND1'"/>
+    </xsl:call-template>
+    <xsl:call-template name="AreaSimpleColorFillTemplate">
+      <xsl:with-param name="featureReference" select="@id"/>
+      <xsl:with-param name="viewingGroup" select="90000"/>
+      <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
+      <xsl:with-param name="drawingPriority" select="9"/>
+      <xsl:with-param name="areaFillReference" select="'DIAMOND1'"/>
     </xsl:call-template>
 
     <!-- <xsl:call-template name="AreaHatchFillTemplate">

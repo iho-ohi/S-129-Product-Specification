@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<portrayalCatalog version="1.0" productId="S-129" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<pc:portrayalCatalog version="1.2.0" productId="S-129" xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2">
+  <pixmaps/>
+
   <colorProfiles>
     <colorProfile id="UKCColorProfile">
       <description>
         <name>UKC Color profile</name>
         <description>Color profile for UKC information</description>
-        <language>en</language>
+        <language>eng</language>
       </description>
       <fileName>colorProfile.xml</fileName>
       <fileType>ColorProfile</fileType>
@@ -18,7 +20,7 @@
       <description>
         <name>UKCCONPT</name>
         <description>Symbol for Under Keel Clearance Control Point</description>
-        <language>en</language>
+        <language>eng</language>
       </description>
       <fileName>UKCCONPT.svg</fileName>
       <fileType>Symbol</fileType>
@@ -28,7 +30,7 @@
       <description>
          <name>EMAREMG1</name>
          <description>Embedded symbol</description>
-         <language>en</language>
+         <language>eng</language>
       </description>
       <fileName>EMAREMG1.svg</fileName>
       <fileType>Symbol</fileType>
@@ -38,7 +40,7 @@
       <description>
         <name>EMUKCARE</name>
         <description>Embedded complex line symbol for Under Keel Clearance Plan Area</description>
-        <language>en</language>
+        <language>eng</language>
       </description>
       <fileName>EMUKCARE.svg</fileName>
       <fileType>Symbol</fileType>
@@ -55,6 +57,39 @@
       <fileFormat>SVG</fileFormat>
    </symbol>    
   </symbols>
+
+   <styleSheets>
+      <styleSheet id="daySvgStyle">
+         <description>
+            <name>Day</name>
+            <description>CSS file for day palette</description>
+            <language>eng</language>
+         </description>
+         <fileName>daySvgStyle.css</fileName>
+         <fileType>StyleSheet</fileType>
+         <fileFormat>XML</fileFormat> <!-- fileFormat will need to be updated when Part 9 is updated to include CSS file format. -->
+      </styleSheet>
+      <styleSheet id="duskSvgStyle">
+         <description>
+            <name>Dusk</name>
+            <description>CSS file for dusk palette</description>
+            <language>eng</language>
+         </description>
+         <fileName>duskSvgStyle.css</fileName>
+         <fileType>StyleSheet</fileType>
+         <fileFormat>XML</fileFormat> <!-- fileFormat will need to be updated when Part 9 is updated to include CSS file format. -->
+      </styleSheet>
+      <styleSheet id="nightSvgStyle">
+         <description>
+            <name>Night</name>
+            <description>CSS file for night palette</description>
+            <language>eng</language>
+         </description>
+         <fileName>nightSvgStyle.css</fileName>
+         <fileType>StyleSheet</fileType>
+         <fileFormat>XML</fileFormat> <!-- fileFormat will need to be updated when Part 9 is updated to include CSS file format. -->
+      </styleSheet>
+   </styleSheets>
 
   <lineStyles>
     <lineStyle id="ROUTE">
@@ -81,21 +116,11 @@
 
   <areaFills>
     <areaFill id="ANA">
-      <description>
-        <name>ANA</name>
-        <description>Area fill for Under Keel Clearance Almost Non Navigable Area</description>
-        <language>eng</language>
-     </description>
       <fileName>ANA.xml</fileName>
       <fileType>AreaFill</fileType>
       <fileFormat>XML</fileFormat>
     </areaFill>
     <areaFill id="NNA">
-      <description>
-        <name>NNA</name>
-        <description>Area fill for Under Keel Clearance Non Navigable Area</description>
-        <language>eng</language>
-     </description>
       <fileName>NNA.xml</fileName>
       <fileType>AreaFill</fileType>
       <fileFormat>XML</fileFormat>
@@ -107,39 +132,106 @@
     </areaFill>
   </areaFills>
 
-  <fonts>
-  </fonts>
+  <fonts/>
 
   <viewingGroups>
-    <viewingGroup id="UKCViewingGroup"></viewingGroup>
+    <viewingGroup id="99990">
+         <description>
+            <name>UKC Plan Area</name>
+            <description>Toggles visibility of UKC Plan Area features</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
+    <viewingGroup id="99991">
+         <description>
+            <name>UKC Almost Non-Navigable Area</name>
+            <description>Toggles visibility of UKC Almost Non-Navigable Area features</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
+    <viewingGroup id="99992">
+         <description>
+            <name>UKC Non-Navigable Area</name>
+            <description>Toggles visibility of UKC Non-Navigable Area features</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
+    <viewingGroup id="99993">
+         <description>
+            <name>UKC Control Point</name>
+            <description>Toggles visibility of UKC Control Point features</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
+    <viewingGroup id="99994">
+         <description>
+            <name>UKC Planned Route</name>
+            <description>Toggles visibility of UKC Planned Route</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
+    <viewingGroup id="99995">
+         <description>
+            <name>UKC Information Box</name>
+            <description>Toggles visibility of UKC Information Box</description>
+            <language>eng</language>
+         </description>
+	</viewingGroup>
   </viewingGroups>
 
-  <foundationMode>
-    <viewingGroup>UKCViewingGroup</viewingGroup>
-  </foundationMode>
+  <foundationMode/>
 
   <viewingGroupLayers>
     <viewingGroupLayer id="UKCViewingGroupLayer">
-      <viewingGroup>10000</viewingGroup>
+		<description>
+			<name>UKC Viewing Group Layer</name>
+			<description>Contains UKC Viewing Groups</description>
+			<language>eng</language>
+		</description>
+		<viewingGroup>99990</viewingGroup>
+		<viewingGroup>99991</viewingGroup>
+		<viewingGroup>99992</viewingGroup>
+		<viewingGroup>99993</viewingGroup>
+		<viewingGroup>99994</viewingGroup>
+		<viewingGroup>99995</viewingGroup>
     </viewingGroupLayer>
   </viewingGroupLayers>
 
   <displayModes>
-    <displayMode id="1">
-      <description>
-        <name>Standard</name>
-        <description>The Standard display</description>
-        <language>en</language>
-      </description>
-      <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
-    </displayMode>
+	  <displayMode id="DisplayBase">
+		  <description>
+			  <name>Display Base</name>
+			  <description>Always on display</description>
+			  <language>eng</language>
+		  </description>
+	  </displayMode>
+	  <displayMode id="StandardDisplay">
+		  <description>
+			  <name>Standard Display</name>
+			  <description>ECDIS default display</description>
+			  <language>eng</language>
+		  </description>
+		  <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
+	  </displayMode>
+	  <displayMode id="OtherInformation">
+		  <description>
+			  <name>Other Information</name>
+			  <description>All other objects in the SENC</description>
+			  <language>eng</language>
+		  </description>
+		  <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
+	  </displayMode>
   </displayModes>
 
-  <displayPlane>
-    <displayPlane id="UKCDisplayPlane">
-
+  <displayPlanes>
+    <displayPlane id="UnderRadar" order="-1">
+         <description>
+            <name>Under radar</name>
+            <description>Content displayed underneath Radar image</description>
+            <language>eng</language>
+         </description>
     </displayPlane>
-  </displayPlane>
+  </displayPlanes>
 
   <context>
     <parameter id="PlainBoundaries">
@@ -155,77 +247,42 @@
 
   <rules>
     <ruleFile id="main">
-      <description>
-        <name>main</name>
-        <description>Top level rule</description>
-        <language>eng</language>
-     </description>
       <fileName>main.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>TopLevelTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="PlannedRoute">
-      <description>
-        <name>PlannedRoute</name>
-        <description>Rules for PlannedRoute</description>
-        <language>eng</language>
-     </description>
+    <ruleFile id="route">
       <fileName>PlannedRoute.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="UnderKeelClearancePlanArea">
-      <description>
-        <name>UnderKeelClearancePlanArea</name>
-        <description>Rules for feature type UnderKeelClearancePlanArea</description>
-        <language>eng</language>
-     </description>
       <fileName>UnderKeelClearancePlanArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="ControlPoint">
-      <description>
-        <name>ControlPoint</name>
-        <description>Rules for feature type UnderKeelClearanceControlPoint</description>
-        <language>eng</language>
-     </description>
+    </ruleFile>    
+    <ruleFile id="controlpoint">
       <fileName>ControlPoint.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="InformationBox">
-      <description>
-        <name>InformationBox</name>
-        <description>Rules for Information Box</description>
-        <language>eng</language>
-     </description>
       <fileName>InformationBox.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="AlmostNonNavigableArea">
-      <description>
-        <name>AlmostNonNavigableArea</name>
-        <description>Rules for feature type UnderKeelClearanceAlmostNonNavigableArea</description>
-        <language>eng</language>
-     </description>
+    <ruleFile id="NavigableArea">
       <fileName>AlmostNonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="NonNavigableArea">
-      <description>
-        <name>NonNavigableArea</name>
-        <description>Rules for feature type UnderKeelClearanceNonNavigableArea</description>
-        <language>eng</language>
-     </description>
       <fileName>NonNavigableArea.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
@@ -254,4 +311,4 @@
 	-->
 
   </rules>
-</portrayalCatalog>
+</pc:portrayalCatalog>
