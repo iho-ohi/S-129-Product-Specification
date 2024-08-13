@@ -233,7 +233,7 @@
           <S100FC:code>2</S100FC:code>
         </S100FC:listedValue>
       </S100FC:listedValues>
-    </S100FC:S100_FC_SimpleAttribute>        
+    </S100FC:S100_FC_SimpleAttribute>
   </S100FC:S100_FC_SimpleAttributes>
 
   <!--attributes - complexAttribute-->
@@ -247,7 +247,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:attribute ref="timeStart"/>        
+        <S100FC:attribute ref="timeStart"/>
       </S100FC:subAttributeBinding>
       <S100FC:subAttributeBinding sequential="false">
         <S100FC:multiplicity>
@@ -287,7 +287,7 @@
         <S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
         <S100FC:attribute ref="nameUsage" />
       </S100FC:subAttributeBinding>
-    </S100FC:S100_FC_ComplexAttribute>    
+    </S100FC:S100_FC_ComplexAttribute>
   </S100FC:S100_FC_ComplexAttributes>
 
   <!--ADD : Roles-->
@@ -412,26 +412,26 @@
         </S100FC:multiplicity>
         <S100FC:permittedValues>
           <S100FC:value>1</S100FC:value>
-          <S100FC:value>2</S100FC:value>          
+          <S100FC:value>2</S100FC:value>
         </S100FC:permittedValues>
         <S100FC:attribute ref="underKeelClearanceCalculationRequested"/>
       </S100FC:attributeBinding>
       <S100FC:featureUseType>geographic</S100FC:featureUseType> 
-      <S100FC:featureBinding roleType="association">                     
+      <S100FC:featureBinding roleType="association">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>                   
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearancePlanArea"/>
       </S100FC:featureBinding>
-      <S100FC:featureBinding roleType="association">                       
+      <S100FC:featureBinding roleType="association">
         <S100FC:multiplicity>
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>                    
+        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -440,7 +440,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>            
+        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceAlmostNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -449,7 +449,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>                     
+        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceControlPoint"/>
       </S100FC:featureBinding>
@@ -480,9 +480,9 @@
       <S100FC:featureBinding roleType="composition">      
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
-          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
+          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>         
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>
         <S100FC:role ref="theCollection"/>
       <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -513,7 +513,7 @@
       <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
-          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
+          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>
         <S100FC:role ref="theCollection"/>
@@ -553,7 +553,7 @@
       <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
-          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>    
+          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>
         <S100FC:role ref="theCollection"/>    
@@ -614,7 +614,7 @@
       <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
           <S100Base:lower>1</S100Base:lower>
-          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>   
+          <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
         <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>
         <S100FC:role ref="theCollection"/>
