@@ -110,7 +110,7 @@
     </S100FC:S100_FC_SimpleAttribute>
     <S100FC:S100_FC_SimpleAttribute>
       <S100FC:name>Name Usage</S100FC:name>
-      <S100FC:definition>Classification of the type and display level of the name of a feature in an end-use system.</S100FC:definition>
+      <S100FC:definition>Classification of the type and display level of the name of a feature in an end-user system.</S100FC:definition>
       <S100FC:code>nameUsage</S100FC:code>
       <S100FC:valueType>enumeration</S100FC:valueType>
       <S100FC:listedValues>

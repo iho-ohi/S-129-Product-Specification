@@ -141,7 +141,7 @@
 			</xs:element>
 			<xs:element name="nameUsage" type="nameUsageType" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>Classification of the type and display level of the name of a feature in an end-use system.</xs:documentation>
+					<xs:documentation>Classification of the type and display level of the name of a feature in an end-user system.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
