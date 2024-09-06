@@ -33,7 +33,7 @@
       <underKeelClearancePurpose code="2">actualPlan</underKeelClearancePurpose>
       <underKeelClearanceCalculationRequested code="1">timeWindow</underKeelClearanceCalculationRequested>
     </UnderKeelClearancePlan>
-    <UnderKeelClearancePlanArea gml:id="TEST_PLAN_TORRES_STRAIT">
+    <UnderKeelClearancePlanArea gml:id="TEST_PLAN_AREA_TORRES_STRAIT">
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
