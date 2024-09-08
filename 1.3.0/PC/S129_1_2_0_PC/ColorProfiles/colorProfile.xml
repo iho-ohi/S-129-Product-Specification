@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cp:colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cp="http://www.iho.int/S100ColorProfile/5.1">
+<cp:colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cp="http://www.iho.int/S100ColorProfile/5.1" xsi:schemaLocation="http://www.iho.int/S100ColorProfile/5.1 https://schemas.s100dev.net/schemas/S100/5.1.0/S100PC/20230327/S100ColorProfile.xsd">
 	<colors>
 		<color token="GOLDN" name="gold">
 			<description>Golden color for Almost Non Navigable Area</description>
-		</color>		
+		</color>
 		<color token="RED" name="red">
 			<description>Red color for Non Navigable Area</description>
 		</color>
@@ -19,11 +19,14 @@
 		<color token="SNDG2" name="black">
 			<description>Sounding shallow</description>
 		</color>
-        <color token="PLRTE" name="red">
-            <description>Planned route</description>
-        </color>		
+		<color token="PLRTE" name="red">
+			<description>Planned route</description>
+		</color>
 		<color token="ORG" name="orange">
 			<description>Orange color</description>
+		</color>
+		<color token="DEPCN" name="grey">
+			<description>depth contour</description>
 		</color>
 	</colors>
 	<palette name="Day" css="daySvgStyle.css">
@@ -127,18 +130,32 @@
 		</item>
 		<item token="PLRTE">
 			<cie>
-			  <xyL>
-				<x>0.58</x>
-				<y>0.35</y>
-				<L>18</L>
-			  </xyL>
+				<xyL>
+					<x>0.58</x>
+					<y>0.35</y>
+					<L>18</L>
+				</xyL>
 			</cie>
 			<srgb>
-			  <red>214</red>
-			  <green>63</green>
-			  <blue>36</blue>
+				<red>214</red>
+				<green>63</green>
+				<blue>36</blue>
 			</srgb>
-		  </item>
+		</item>
+		<item token="DEPCN">
+			<cie>
+				<xyL>
+					<x>0.28</x>
+					<y>0.31</y>
+					<L>25</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>118</red>
+				<green>140</green>
+				<blue>151</blue>
+			</srgb>
+		</item>
 	</palette>
 	<palette name="Dusk" css="duskSvgStyle.css">
 		<item token="ORG">
@@ -241,18 +258,32 @@
 		</item>
 		<item token="PLRTE">
 			<cie>
-			  <xyL>
-				<x>0.58</x>
-				<y>0.35</y>
-				<L>8</L>
-			  </xyL>
+				<xyL>
+					<x>0.58</x>
+					<y>0.35</y>
+					<L>8</L>
+				</xyL>
 			</cie>
 			<srgb>
-			  <red>149</red>
-			  <green>41</green>
-			  <blue>22</blue>
+				<red>149</red>
+				<green>41</green>
+				<blue>22</blue>
 			</srgb>
-		  </item>		
+		</item>
+		<item token="DEPCN">
+			<cie>
+				<xyL>
+					<x>0.28</x>
+					<y>0.31</y>
+					<L>10</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>76</red>
+				<green>91</green>
+				<blue>99</blue>
+			</srgb>
+		</item>
 	</palette>
 	<palette name="Night" css="nightSvgStyle.css">
 		<item token="ORG">
@@ -355,17 +386,31 @@
 		</item>
 		<item token="PLRTE">
 			<cie>
-			  <xyL>
-				<x>0.58</x>
-				<y>0.35</y>
-				<L>0.9</L>
-			  </xyL>
+				<xyL>
+					<x>0.58</x>
+					<y>0.35</y>
+					<L>0.9</L>
+				</xyL>
 			</cie>
 			<srgb>
-			  <red>51</red>
-			  <green>8</green>
-			  <blue>3</blue>
+				<red>51</red>
+				<green>8</green>
+				<blue>3</blue>
 			</srgb>
-		  </item>		
+		</item>
+		<item token="DEPCN" transparency="1.0">
+			<cie>
+				<xyL>
+					<x>0.28</x>
+					<y>0.31</y>
+					<L>1.25</L>
+				</xyL>
+			</cie>
+			<srgb>
+				<red>24</red>
+				<green>30</green>
+				<blue>33</blue>
+			</srgb>
+		</item>
 	</palette>
 </cp:colorProfile>
