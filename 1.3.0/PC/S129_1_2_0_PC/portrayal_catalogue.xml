@@ -165,7 +165,7 @@
     <viewingGroup id="99996">
       <description>
           <name>UKC Non-Navigable Area Symbol Fill</name>
-          <description>UKC Non-Navigable Area symbol fill</description>
+          <description>Toggles visibility of UKC Non-Navigable Area symbol fill</description>
           <language>eng</language>
       </description>
     </viewingGroup>
