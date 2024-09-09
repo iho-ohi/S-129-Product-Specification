@@ -10,7 +10,6 @@
   <xsl:include href="InformationBox.xsl"/>
 
   <xsl:param name="PlainBoundaries"/>
-  <xsl:param name="NonNavigableAreaPattern">true</xsl:param>
 
   <xsl:template match="/">
     <p:displayList xmlns:p="http://www.iho.int/S100Presentation/5.2">
