@@ -172,7 +172,7 @@
     <!--********** END Viewing groups for Independent Mariner Selectors **********-->    
   </viewingGroups>
 
-  <foundationMode></foundationMode>
+  <foundationMode/>
 
   <viewingGroupLayers>
     <viewingGroupLayer id="UKCViewingGroupLayer">
