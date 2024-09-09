@@ -159,13 +159,17 @@
         <language>eng</language>
       </description>
     </viewingGroup>
+
+    <!--********** Independent Mariner Selectors **********-->
+    <!-- These operate independently of the selected display mode -->
     <viewingGroup id="99996">
       <description>
-          <name>UKC Non-Navigable Area Symbol Pattern</name>
-          <description>Toggles visibility of symbol pattern for UKC Non-Navigable Area features</description>
+          <name>UKC Non-Navigable Area Symbol Fill</name>
+          <description>UKC Non-Navigable Area symbol fill</description>
           <language>eng</language>
       </description>
     </viewingGroup>
+    <!--********** END Viewing groups for Independent Mariner Selectors **********-->    
   </viewingGroups>
 
   <foundationMode></foundationMode>
@@ -184,14 +188,16 @@
       <viewingGroup>99994</viewingGroup>
       <viewingGroup>99995</viewingGroup>
     </viewingGroupLayer>
-    <viewingGroupLayer id="NonNavigableAreaWithPattern">
+    <!-- Independent mariner selectors -->
+    <viewingGroupLayer id="UKCNonNavigableAreaSymbolFill">
       <description>
-        <name>UKC Viewing Group Layer with Non-Navigable Area Symbol Fill</name>
-        <description>Contains UKC Viewing Groups with Non-Navigable Area symbol fill pattern</description>
+        <name>UKC Non-Navigable Area Symbol Fill Layer</name>
+        <description>UKC Non-Navigable Area symbol fill</description>
         <language>eng</language>
       </description>
       <viewingGroup>99996</viewingGroup>
     </viewingGroupLayer>
+    <!-- END Independent mariner selectors -->
   </viewingGroupLayers>
 
   <displayModes>
@@ -209,7 +215,6 @@
         <language>eng</language>
       </description>
       <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
-      <viewingGroupLayer>NonNavigableAreaWithPattern</viewingGroupLayer>
     </displayMode>
     <displayMode id="OtherInformation">
       <description>
@@ -218,7 +223,6 @@
         <language>eng</language>
       </description>
       <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
-      <viewingGroupLayer>NonNavigableAreaWithPattern</viewingGroupLayer>
     </displayMode>
   </displayModes>
 
