@@ -189,10 +189,10 @@
       <viewingGroup>99995</viewingGroup>
     </viewingGroupLayer>
     <!-- Independent mariner selectors -->
-    <viewingGroupLayer id="UKCNonNavigableAreaSymbolFill">
+    <viewingGroupLayer id="UKCNonNavigableAreaSymbolFillLayer">
       <description>
         <name>UKC Non-Navigable Area Symbol Fill Layer</name>
-        <description>UKC Non-Navigable Area symbol fill</description>
+        <description>UKC Non-Navigable Area symbol fill layer</description>
         <language>eng</language>
       </description>
       <viewingGroup>99996</viewingGroup>
