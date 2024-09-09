@@ -35,7 +35,7 @@
             <xsl:value-of select="$drawingPriority"/>
           </xsl:element>
           <xsl:element name="symbolFill">
-			<xsl:element name="areaCRS">GlobalGeometry</xsl:element>
+            <xsl:element name="areaCRS">GlobalGeometry</xsl:element>
             <xsl:element name="symbol">
               <xsl:attribute name="reference">
                 <xsl:value-of select="$symbolReference"/>
