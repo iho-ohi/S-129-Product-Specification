@@ -159,9 +159,6 @@
         <language>eng</language>
       </description>
     </viewingGroup>
-
-    <!--********** Independent Mariner Selectors **********-->
-    <!-- These operate independently of the selected display mode -->
     <viewingGroup id="99996">
       <description>
           <name>UKC Non-Navigable Area Symbol Fill</name>
@@ -169,7 +166,6 @@
           <language>eng</language>
       </description>
     </viewingGroup>
-    <!--********** END Viewing groups for Independent Mariner Selectors **********-->    
   </viewingGroups>
 
   <foundationMode/>
@@ -188,7 +184,6 @@
       <viewingGroup>99994</viewingGroup>
       <viewingGroup>99995</viewingGroup>
     </viewingGroupLayer>
-    <!-- Independent mariner selectors -->
     <viewingGroupLayer id="UKCNonNavigableAreaSymbolFillLayer">
       <description>
         <name>UKC Non-Navigable Area Symbol Fill Layer</name>
@@ -197,7 +192,6 @@
       </description>
       <viewingGroup>99996</viewingGroup>
     </viewingGroupLayer>
-    <!-- END Independent mariner selectors -->
   </viewingGroupLayers>
 
   <displayModes>
