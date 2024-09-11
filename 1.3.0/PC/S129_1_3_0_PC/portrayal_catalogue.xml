@@ -161,8 +161,8 @@
     </viewingGroup>
     <viewingGroup id="99996">
       <description>
-          <name>UKC Non-Navigable Area Symbol Fill</name>
-          <description>Toggles visibility of UKC Non-Navigable Area symbol fill</description>
+          <name>UKC Non-Navigable Area Pattern</name>
+          <description>Toggles visibility of UKC Non-Navigable Area pattern</description>
           <language>eng</language>
       </description>
     </viewingGroup>
@@ -184,10 +184,10 @@
       <viewingGroup>99994</viewingGroup>
       <viewingGroup>99995</viewingGroup>
     </viewingGroupLayer>
-    <viewingGroupLayer id="UKCNonNavigableAreaSymbolFillLayer">
+    <viewingGroupLayer id="UKCNonNavigableAreaPattern">
       <description>
-        <name>UKC Non-Navigable Area Symbol Fill Layer</name>
-        <description>UKC Non-Navigable Area symbol fill layer</description>
+        <name>UKC Non-Navigable Area Pattern</name>
+        <description>UKC Non-Navigable Area pattern</description>
         <language>eng</language>
       </description>
       <viewingGroup>99996</viewingGroup>
@@ -201,6 +201,7 @@
         <description>Always on display</description>
         <language>eng</language>
       </description>
+      <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
     </displayMode>
     <displayMode id="StandardDisplay">
       <description>
@@ -209,6 +210,7 @@
         <language>eng</language>
       </description>
       <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
+      <viewingGroupLayer>UKCNonNavigableAreaPattern</viewingGroupLayer>
     </displayMode>
     <displayMode id="OtherInformation">
       <description>
@@ -217,6 +219,7 @@
         <language>eng</language>
       </description>
       <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
+      <viewingGroupLayer>UKCNonNavigableAreaPattern</viewingGroupLayer>
     </displayMode>
   </displayModes>
 
