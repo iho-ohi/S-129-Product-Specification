@@ -8,11 +8,19 @@
     
     <xsl:call-template name="AreaSimpleColorFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="33022"/>
-      <xsl:with-param name="displayPlane" select="'UNDERRADAR'"/>
-      <xsl:with-param name="drawingPriority" select="9"/>
+      <xsl:with-param name="viewingGroup" select="99992"/>
+      <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
+      <xsl:with-param name="drawingPriority" select="6"/>
       <xsl:with-param name="colorToken" select="'RED'"/>
       <xsl:with-param name="transparency" select="0.5"/>
+      <!--<xsl:with-param name="areaFillReference" select="'DIAMOND1'"/>-->
+    </xsl:call-template>
+    <xsl:call-template name="AreaSimpleColorFillTemplate">
+      <xsl:with-param name="featureReference" select="@id"/>
+      <xsl:with-param name="viewingGroup" select="90000"/>
+      <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
+      <xsl:with-param name="drawingPriority" select="9"/>
+      <xsl:with-param name="areaFillReference" select="'DIAMOND1'"/>
     </xsl:call-template>
 
     <!-- <xsl:call-template name="AreaHatchFillTemplate">
