@@ -18,6 +18,7 @@
 
     <xsl:call-template name="symbolFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
+      <xsl:with-param name="viewingGroup" select="99992"/>
       <xsl:with-param name="viewingGroup" select="99996"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
@@ -36,6 +37,7 @@
 
     <xsl:call-template name="symbolFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
+      <xsl:with-param name="viewingGroup" select="99992"/>
       <xsl:with-param name="viewingGroup" select="99996"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
