@@ -92,16 +92,6 @@
    </styleSheets>
 
   <lineStyles>
-    <lineStyle id="ROUTE">
-      <description>
-        <name>ROUTE</name>
-        <description>route</description>
-        <language>eng</language>
-     </description>      
-      <fileName>ROUTE.xml</fileName>
-      <fileType>LineStyle</fileType>
-      <fileFormat>XML</fileFormat>
-    </lineStyle>
     <lineStyle id="UKCARE01">
        <description>
           <name>UKCARE01</name>
@@ -113,6 +103,8 @@
        <fileFormat>XML</fileFormat>
     </lineStyle>
   </lineStyles>
+
+  <areaFills/>
 
   <fonts/>
 
