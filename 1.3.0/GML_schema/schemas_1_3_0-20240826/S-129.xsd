@@ -374,11 +374,11 @@
 			<xs:documentation>group of informtion, feature and meta objects, all GML members</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
-			<xs:element name="UnderKeelClearancePlan"/>
-			<xs:element name="UnderKeelClearancePlanArea"/>
-			<xs:element name="UnderKeelClearanceNonNavigableArea"/>
-			<xs:element name="UnderKeelClearanceAlmostNonNavigableArea"/>
-			<xs:element name="UnderKeelClearanceControlPoint"/>
+			<xs:element ref="UnderKeelClearancePlan"/>
+			<xs:element ref="UnderKeelClearancePlanArea"/>
+			<xs:element ref="UnderKeelClearanceNonNavigableArea"/>
+			<xs:element ref="UnderKeelClearanceAlmostNonNavigableArea"/>
+			<xs:element ref="UnderKeelClearanceControlPoint"/>
 		</xs:choice>
 	</xs:group>
 	<xs:complexType name="ThisDatasetType">
