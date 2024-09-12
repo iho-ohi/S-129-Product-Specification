@@ -48,13 +48,13 @@
    <!-- versionDate: 2023-11-02 -->
    <!-- productId: S-129 -->
    <!-- producer: editor KMOU 727 Taejong-ro, Yeongdo-Gu, Busan 49112 South Korea sjlee@kmou.ac.kr www.kmou.ac.kr -->
-   <!-- Schema generated 2024:09:12T01:53:03 by Jason Rhee based on:
+   <!-- Schema updated 2024:09:12T01:53:03 by Jason Rhee based on:
          1. Catalogue file S-129_FC_1.3.0_20240826.XML, using
-         2. Earlier GML schema file by Raphael Malyankar (S129_1_1_1_RM.xsd) as baseline 
+         2. Previous Edition 1.1.0 GML schema file by Raphael Malyankar (S129_1_1_1_RM.xsd) as baseline 
          Changes reflect the following:
          a. Addition of "UnderKeelClearancePlanArea" feature
          b. Use of complex attribute "featureName" in place of simple attribute "name" in "UnderKeelClearanceControlPoint"
-         c. Inclusiong of "featureName" sub-attributes
+         c. Inclusion of "featureName" sub-attributes
          d. Inclusion of "interoperabilityIdentifier" as optional attribute in all features -->
 
    <!-- Not used in S-129 1.1 - no S100 codelist type in FC -->
