@@ -8,7 +8,7 @@
           <featureReference>
             <xsl:value-of select="@id"/>
           </featureReference>
-          <viewingGroup>99990</viewingGroup>
+          <viewingGroup>29010</viewingGroup>
           <displayPlane>UnderRadar</displayPlane>
           <drawingPriority>6</drawingPriority>
           <lineStyleReference reference="UKCARE01"/>
@@ -19,7 +19,7 @@
           <featureReference>
             <xsl:value-of select="@id"/>
           </featureReference>
-          <viewingGroup>99990</viewingGroup>
+          <viewingGroup>29010</viewingGroup>
           <displayPlane>UnderRadar</displayPlane>
           <drawingPriority>6</drawingPriority>
           <lineStyle>

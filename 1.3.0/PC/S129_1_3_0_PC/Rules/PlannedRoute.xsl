@@ -6,7 +6,7 @@
   <xsl:template match="PlannedRoute">
     <xsl:call-template name="SimpleLineTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="99994"/>
+      <xsl:with-param name="viewingGroup" select="29060"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="12"/>
       <xsl:with-param name="offset" select="1"/>

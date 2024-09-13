@@ -25,11 +25,11 @@
     
     <xsl:call-template name="textTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="33021"/>
+      <xsl:with-param name="viewingGroup" select="29070"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="8"/>
 
-      <xsl:with-param name="text" select="$temp"/>       
+      <xsl:with-param name="text" select="$temp"/>
       <xsl:with-param name="bodySize" select="10"/>
 
       <xsl:with-param name="verticalAlignment" select="'Top'"/>
@@ -38,7 +38,7 @@
       <xsl:with-param name="token_f" select="'BLK'"/>
       <xsl:with-param name="transparency_f" select="1"/>
       <xsl:with-param name="token_b" select="'WHITE'"/>
-      <xsl:with-param name="transparency_b" select="1"/>      
+      <xsl:with-param name="transparency_b" select="1"/>
       <xsl:with-param name="serifs" select="0"/>
       <xsl:with-param name="weight" select="'Light'"/>
       <xsl:with-param name="slant" select="'Upright'"/>

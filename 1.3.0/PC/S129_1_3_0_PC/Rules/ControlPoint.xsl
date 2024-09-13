@@ -5,7 +5,7 @@
   <xsl:template match="UnderKeelClearanceControlPoint">
     <xsl:call-template name="pointSimpleSymbolTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="99993"/>
+      <xsl:with-param name="viewingGroup" select="29050"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="21"/>
       
