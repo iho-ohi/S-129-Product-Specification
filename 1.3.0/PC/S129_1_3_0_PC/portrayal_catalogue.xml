@@ -193,7 +193,6 @@
         <description>Always on display</description>
         <language>eng</language>
       </description>
-      <viewingGroupLayer>UKCViewingGroupLayer</viewingGroupLayer>
     </displayMode>
     <displayMode id="StandardDisplay">
       <description>
