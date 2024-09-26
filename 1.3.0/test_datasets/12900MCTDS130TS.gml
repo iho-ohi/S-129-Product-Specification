@@ -5692,7 +5692,7 @@
     <UnderKeelClearanceControlPoint gml:id="CP_10">
       <featureName>
         <language>en</language>
-        <name>CP_10</name>
+        <name>CP10</name>
         <nameUsage code="1">Default Name Display</nameUsage>
       </featureName>
       <expectedPassingTime>2024-04-18T00:18:56Z</expectedPassingTime>
