@@ -40,15 +40,15 @@
     liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way
     out of the use of this software, even if advised of the possibility of such damage.
     ============================================================================================= -->
-   <!-- XML FC file name S-129_1_1_0_FC.XML -->
+   <!-- XML FC file name S-129_1_3_0_FC.XML -->
    <!-- name: Feature Catalogue for S-129 -->
    <!-- scope: Dynamic under keel clearance management information -->
    <!-- fieldOfApplication: Under keel clearance management -->
-   <!-- versionNumber: 1.1.0 -->
-   <!-- versionDate: 2023-11-02 -->
+   <!-- versionNumber: 1.3.0 -->
+   <!-- versionDate: 2024-09-26 -->
    <!-- productId: S-129 -->
    <!-- producer: editor KMOU 727 Taejong-ro, Yeongdo-Gu, Busan 49112 South Korea sjlee@kmou.ac.kr www.kmou.ac.kr -->
-   <!-- Schema updated 2024:09:12T01:53:03 by Jason Rhee based on:
+   <!-- Schema updated 2024:09:26T02:07:40 by Jason Rhee based on:
          1. Catalogue file S-129_FC_1.3.0_20240826.XML, using
          2. Previous Edition 1.1.0 GML schema file by Raphael Malyankar (S129_1_1_1_RM.xsd) as baseline 
          Changes reflect the following:
@@ -273,17 +273,17 @@
          <xs:documentation>The relevant phase of a UKC passage plan.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:enumeration value="prePlan">
+         <xs:enumeration value="Pre Plan">
             <xs:annotation>
                <xs:documentation>1: prePlan</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="actualPlan">
+         <xs:enumeration value="Actual Plan">
             <xs:annotation>
                <xs:documentation>2: actualPlan</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="actualUpdate">
+         <xs:enumeration value="Actual Update">
             <xs:annotation>
                <xs:documentation>3: actualUpdate</xs:documentation>
             </xs:annotation>
@@ -373,12 +373,12 @@
          <xs:documentation>Indication of the aim of the UKC plan: To find the maximum safe vessel draught for transiting the UKCM region, or to find sailing windows for a nominated vessel draught.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:enumeration value="timeWindow">
+         <xs:enumeration value="Time Window">
             <xs:annotation>
                <xs:documentation>1: timeWindow</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="maxDraught">
+         <xs:enumeration value="Maximum Draught">
             <xs:annotation>
                <xs:documentation>2: maxDraught</xs:documentation>
             </xs:annotation>
