@@ -329,9 +329,9 @@
          <xs:documentation>Custom enum: UnderKeelClearancePlan/underKeelClearancePurpose</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:enumeration value="prePlan"/>
-         <xs:enumeration value="actualPlan"/>
-         <xs:enumeration value="actualUpdate"/>
+         <xs:enumeration value="Pre Plan"/>
+         <xs:enumeration value="Actual Plan"/>
+         <xs:enumeration value="Actual Update"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="UnderKeelClearancePlan_underKeelClearancePurposeCode">
@@ -419,8 +419,8 @@
          <xs:documentation>Custom enum: UnderKeelClearancePlan/underKeelClearanceCalculationRequested</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:enumeration value="timeWindow"/>
-         <xs:enumeration value="maxDraught"/>
+         <xs:enumeration value="Time Window"/>
+         <xs:enumeration value="Maximum Draught"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="UnderKeelClearancePlan_underKeelClearanceCalculationRequestedCode">
