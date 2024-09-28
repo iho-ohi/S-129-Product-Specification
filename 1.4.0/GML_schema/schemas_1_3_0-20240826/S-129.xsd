@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.iho.int/S-129/gml/cs0/1.0" targetNamespace="http://www.iho.int/S-129/gml/cs0/1.0" elementFormDefault="qualified" version="1.3.0-202408026">
+	<!-- ========================================================================================== -->
+	<!-- S100 XML/GML Schema for S-129                                                              -->
+	<!-- ========================================================================================== -->
+	<xs:annotation>
+		<xs:documentation>Application schema for S-129 dataset</xs:documentation>
+	</xs:annotation>
+	<!-- ========================================================================================== -->
+	<!-- Import XSD for reference (s100gmlbase.xsd, S100_gmlProfile.xsd, S100_gmlProfileLevels.xsd) -->
+	<!-- ========================================================================================== -->
+	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
+	<xs:import namespace="http://www.iho.int/s100gml/5.0" schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
+	<!-- ========================================================================================== -->
+	<!-- common types - consider defining a common                                                  -->
+	<!-- ========================================================================================== -->
+	<xs:complexType name="S100_TruncatedDate">
+		<xs:annotation>
+			<xs:documentation>built in date types from W3C XML schema, implementing S-100 truncated date</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="gDay" type="xs:gDay"/>
+			<xs:element name="gMonth" type="xs:gMonth"/>
+			<xs:element name="gYear" type="xs:gYear"/>
+			<xs:element name="gMonthDay" type="xs:gMonthDay"/>
+			<xs:element name="gYearMonth" type="xs:gYearMonth"/>
+			<xs:element name="date" type="xs:date"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:simpleType name="ISO639-3">
+		<xs:annotation>
+			<xs:documentation>stub for ISO 639-3 language codes</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ISO639-2">
+		<xs:annotation>
+			<xs:documentation>stub for ISO 639-2 language codes</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ISO3166-alpha2">
+		<xs:annotation>
+			<xs:documentation>stub for ISO 3166 alpha2 country codes</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ========================================================================================== -->
+	<!-- types and elements for the simple attribute types definition                               -->
+	<!-- ========================================================================================== -->
+	<!-- ========================================================================================== -->
+	<!-- Enumeration                                                                                -->
+	<!-- ========================================================================================== -->
+	<xs:simpleType name="nameUsageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Default Name Display">
+				<xs:annotation>
+					<xs:documentation>The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Alternate Name Display">
+				<xs:annotation>
+					<xs:documentation>The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="underKeelClearancePurposeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Pre Plan">
+				<xs:annotation>
+					<xs:documentation>An indicative UKC plan that identifies potential sailing windows for a nominated vessel draught; days, weeks or months prior to the planned passage through the UKCM region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Actual Plan">
+				<xs:annotation>
+					<xs:documentation>A detailed Under Keel Clearance plan that identifies sailing windows and no-go areas, integrating live weather data, hours or days prior to transiting the Under Keel Clearance Management region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Actual Update">
+				<xs:annotation>
+					<xs:documentation>A near real-time, detailed, Under Keel Clearance plan that identifies sailing windows and no-go areas, using live weather, vessel position and traffic data, while the vessel is transiting the Under Keel Clearance Management region.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="underKeelClearanceCalculationRequestedType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Time Window">
+				<xs:annotation>
+					<xs:documentation>The available time window(s) for a given draught.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Maximum Draught">
+				<xs:annotation>
+					<xs:documentation>The maximum draught for a given time window.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ========================================================================================== -->
+	<!-- types and elements for the complex attribute types definition                              -->
+	<!-- ========================================================================================== -->
+	<xs:complexType name="fixedTimeRangeType">
+		<xs:annotation>
+			<xs:documentation>Time interval.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="timeStart" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The start time of an active period.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeEnd" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The end time of an active period.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="featureNameType">
+		<xs:annotation>
+			<xs:documentation>Provides the name of an entity, defines the national language of the name, and provides the option to display the name at various system display settings.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="language" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The individual name of a feature.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nameUsage" type="nameUsageType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Classification of the type and display level of the name of a feature in an end-use system.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearancePlan" type="UnderKeelClearancePlanType"/>
+	<xs:complexType name="UnderKeelClearancePlanType">
+		<xs:annotation>
+			<xs:documentation>A UKC plan calculated for a particular vessel, for a particular passage.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="fixedTimeRange" type="fixedTimeRangeType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Time interval.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="generationTime" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Time the UKC plan was generated.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="vesselID" type="xs:string" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Vessel identifier, based on MRN. Can be either IMO or MMSI based.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="sourceRouteName" type="xs:string" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Identification of the route used as a source for the calculation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="sourceRouteVersion" type="xs:integer" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Identification of the route used as a source for the calculation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="maximumDraught" type="xs:double" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The maximum vessel draught in metres, used as base for the calculation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="underKeelClearancePurpose" type="underKeelClearancePurposeType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The relevant phase of a UKC passage plan.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="underKeelClearanceCalculationRequested" type="underKeelClearanceCalculationRequestedType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Indication of the aim of the UKC plan: To find the maximum safe vessel draught for transiting the UKCM region, or to find sailing windows for a nominated vessel draught.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="theComponent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearancePlanArea" type="UnderKeelClearancePlanAreaType"/>
+	<xs:complexType name="UnderKeelClearancePlanAreaType">
+		<xs:annotation>
+			<xs:documentation>The area for which an under keel clearance plan has been calculated for a particular vessel, for a particular passage.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="scaleMinimum" type="xs:integer" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The minimum scale at which the feature may be used for example for ECDIS presentation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="theCollection" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="geometry" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:choice>
+								<xs:element ref="S100:surfaceProperty"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearanceNonNavigableArea" type="UnderKeelClearanceNonNavigableAreaType"/>
+	<xs:complexType name="UnderKeelClearanceNonNavigableAreaType">
+		<xs:annotation>
+			<xs:documentation>An area of under keel clearance less than the calculated safe limit.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="scaleMinimum" type="xs:integer" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The minimum scale at which the feature may be used for example for ECDIS presentation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="theCollection" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="geometry" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:choice>
+								<xs:element ref="S100:surfaceProperty"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearanceAlmostNonNavigableArea" type="UnderKeelClearanceAlmostNonNavigableAreaType"/>
+	<xs:complexType name="UnderKeelClearanceAlmostNonNavigableAreaType">
+		<xs:annotation>
+			<xs:documentation>An area of under keel clearance almost less than the calculated safe limit, as established for the waterway.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="scaleMinimum" type="xs:integer" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The minimum scale at which the feature may be used for example for ECDIS presentation.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="distanceAboveUKCLimit" type="xs:double" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The distance of the lowest part of the ship&#39;s keel above the established Under Keel Clearance Limit for the waterway, expressed in metres.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="theCollection" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="geometry" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:choice>
+								<xs:element ref="S100:surfaceProperty"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UnderKeelClearanceControlPoint" type="UnderKeelClearanceControlPointType"/>
+	<xs:complexType name="UnderKeelClearanceControlPointType">
+		<xs:annotation>
+			<xs:documentation>Selected critical passage point or line.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="S100:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="featureName" type="featureNameType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Provides the name of an entity, defines the national language of the name, and provides the option to display the name at various system display settings.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="expectedPassingTime" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The expected passing time for a ship for a nominated Under Keel Clearance Control Point.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="expectedPassingSpeed" type="xs:double" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The expected passing speed for a ship for a nominated Under Keel Clearance Control Point.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="distanceAboveUKCLimit" type="xs:double" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The distance of the lowest part of the ship&#39;s keel above the established Under Keel Clearance Limit for the waterway, expressed in metres.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="interoperabilityIdentifier" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="fixedTimeRange" type="fixedTimeRangeType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Time interval.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="theCollection" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation/>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="geometry" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:choice>
+								<xs:element ref="S100:pointProperty"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:group name="MemberObjects">
+		<xs:annotation>
+			<xs:documentation>group of informtion, feature and meta objects, all GML members</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="UnderKeelClearancePlan"/>
+			<xs:element ref="UnderKeelClearancePlanArea"/>
+			<xs:element ref="UnderKeelClearanceNonNavigableArea"/>
+			<xs:element ref="UnderKeelClearanceAlmostNonNavigableArea"/>
+			<xs:element ref="UnderKeelClearanceControlPoint"/>
+		</xs:choice>
+	</xs:group>
+	<xs:complexType name="ThisDatasetType">
+		<xs:complexContent>
+			<xs:extension base="S100:DatasetType">
+				<xs:sequence>
+					<xs:element name="members">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractFeatureMemberType">
+									<xs:sequence>
+										<xs:group ref="MemberObjects" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Dataset" type="ThisDatasetType"/>
+</xs:schema>
