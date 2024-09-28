@@ -9,11 +9,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.iho.int/S100FC/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20231214/S100FC.xsd">
 
-  <S100FC:name>Feature Catalogue for S-129</S100FC:name>
+  <S100FC:name>Under Keel Clearance Management</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>1.4.0-20240927</S100FC:versionNumber>
-  <S100FC:versionDate>2024-09-27</S100FC:versionDate>
+  <S100FC:versionNumber>1.4.0-20240928</S100FC:versionNumber>
+  <S100FC:versionDate>2024-09-28</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
