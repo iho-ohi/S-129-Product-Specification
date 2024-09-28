@@ -9,7 +9,7 @@
 
     <xsl:call-template name="AreaSimpleColorFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="99992"/>
+      <xsl:with-param name="viewingGroup" select="29030"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
       <xsl:with-param name="colorToken" select="'RED'"/>
@@ -18,7 +18,8 @@
 
     <xsl:call-template name="symbolFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="99996"/>
+      <xsl:with-param name="viewingGroup" select="29030"/>
+      <xsl:with-param name="viewingGroup" select="29040"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
       <xsl:with-param name="symbolReference" select="'DIAMOND1P'"/>
@@ -36,7 +37,8 @@
 
     <xsl:call-template name="symbolFillTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
-      <xsl:with-param name="viewingGroup" select="99996"/>
+      <xsl:with-param name="viewingGroup" select="29030"/>
+      <xsl:with-param name="viewingGroup" select="29040"/>
       <xsl:with-param name="displayPlane" select="'UnderRadar'"/>
       <xsl:with-param name="drawingPriority" select="6"/>
       <xsl:with-param name="symbolReference" select="'DIAMOND1P'"/>

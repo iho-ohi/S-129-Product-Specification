@@ -28,6 +28,9 @@
           <xsl:element name="viewingGroup">
               <xsl:value-of select="$viewingGroup"/>
           </xsl:element>
+          <xsl:element name="viewingGroup">
+              <xsl:value-of select="$viewingGroup"/>
+          </xsl:element>
           <xsl:element name="displayPlane">
             <xsl:value-of select="$displayPlane"/>
           </xsl:element>
