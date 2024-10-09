@@ -4,27 +4,25 @@
   <xsl:output indent="yes" version="1.0"/>
 
   <xsl:template name="textTemplate">
-    <xsl:param name="featureReference"></xsl:param>
-    <xsl:param name="viewingGroup"></xsl:param>
-    <xsl:param name="displayPlane"></xsl:param>
-    <xsl:param name="drawingPriority"></xsl:param>
-
-    <xsl:param name="text"></xsl:param>
-    <xsl:param name="verticalAlignment"></xsl:param>
-    <xsl:param name="horizontalAlignment"></xsl:param>
-    <xsl:param name="bodySize"></xsl:param>
-    
-    <xsl:param name="token_f"></xsl:param>
-    <xsl:param name="transparency_f"></xsl:param>
-    <xsl:param name="token_b"></xsl:param>
-    <xsl:param name="transparency_b"></xsl:param>
-    <xsl:param name="serifs"></xsl:param>
-    <xsl:param name="weight"></xsl:param>
-    <xsl:param name="slant"></xsl:param>
-    <xsl:param name="proportion"></xsl:param>
-    <xsl:param name="offsetX"></xsl:param>
-    <xsl:param name="offsetY"></xsl:param>
-    <xsl:param name="rotation"></xsl:param>
+    <xsl:param name="featureReference"/>
+    <xsl:param name="viewingGroup" select="21"/>
+    <xsl:param name="displayPlane" select="'UnderRadar'"/>
+    <xsl:param name="drawingPriority" select="24"/>
+    <xsl:param name="text"/>
+    <xsl:param name="verticalAlignment" select="'Top'"/>
+    <xsl:param name="horizontalAlignment" select="'Center'"/>
+    <xsl:param name="bodySize" select="9"/>
+    <xsl:param name="token_f" select="'BLK'"/>
+    <xsl:param name="transparency_f" select="0"/>
+    <xsl:param name="token_b"/>
+    <xsl:param name="transparency_b" select="0"/>
+    <xsl:param name="serifs" select="'false'"/>
+    <xsl:param name="weight" select="'Medium'"/>
+    <xsl:param name="slant" select="'Upright'"/>
+    <xsl:param name="proportion" select="'Proportional'"/>
+    <xsl:param name="offsetX" select="0"/>
+    <xsl:param name="offsetY" select="-3.51"/>
+    <xsl:param name="rotation" select="0"/>
 
     <xsl:choose>
       <xsl:when test="$featureReference!=''">
@@ -56,9 +54,27 @@
                   <xsl:value-of select="$bodySize"/>
                 </xsl:element>
                 
+                <xsl:element name="foreground">
+                  <xsl:attribute name="transparency">
+                    <xsl:value-of select="$transparency_f"/>
+                  </xsl:attribute>
+                  <xsl:value-of select="$token_f"/>
+                </xsl:element>
+				<xsl:if test="not($token_b = '')">
+					<xsl:element name="background">
+					  <xsl:attribute name="transparency">
+						<xsl:value-of select="$transparency_b"/>
+					  </xsl:attribute>
+					  <xsl:value-of select="$token_b"/>
+					</xsl:element>
+				</xsl:if>
+
                 <xsl:element name="fontCharacteristics">
                   <xsl:element name="serifs">
                     <xsl:value-of select="$serifs"/>
+                  </xsl:element>
+                  <xsl:element name="proportion">
+                    <xsl:value-of select="$proportion"/>
                   </xsl:element>
                   <xsl:element name="weight">
                     <xsl:value-of select="$weight"/>
@@ -66,27 +82,8 @@
                   <xsl:element name="slant">
                     <xsl:value-of select="$slant"/>
                   </xsl:element>
-                  <xsl:element name="proportion">
-                    <xsl:value-of select="$proportion"/>
-                  </xsl:element>
                 </xsl:element>
                 
-                <xsl:element name="foreground">
-                  <xsl:element name="token">
-                    <xsl:value-of select="$token_f"/>
-                  </xsl:element>
-                  <xsl:element name="transparency">
-                    <xsl:value-of select="$transparency_f"/>
-                  </xsl:element>
-                </xsl:element>
-                <xsl:element name="background">
-                  <xsl:element name="token">
-                    <xsl:value-of select="$token_b"/>
-                  </xsl:element>
-                  <xsl:element name="transparency">
-                    <xsl:value-of select="$transparency_b"/>
-                  </xsl:element>
-                </xsl:element>               
               </xsl:element>
               <xsl:element name="offset">
               <xsl:element name="x">

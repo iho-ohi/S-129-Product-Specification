@@ -109,6 +109,13 @@
   <fonts/>
 
   <viewingGroups>
+	  <viewingGroup id="21">
+        <description>
+          <name>Text: Name or number</name>
+          <description>Name or Number of Buoys, Beacons, Daymarks, Light Vessels, Light Floats, Offshore Platforms</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
     <viewingGroup id="29010">
       <description>
         <name>UKC Plan Area</name>
@@ -183,6 +190,30 @@
         <language>eng</language>
       </description>
       <viewingGroup>29040</viewingGroup>
+    </viewingGroupLayer>
+     <viewingGroupLayer id="100">
+       <description>
+         <name>Chart text</name>
+         <description>Chart text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>21</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="102">
+       <description>
+         <name>Other Text</name>
+         <description>Text other than important text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>21</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="102a">
+       <description>
+         <name>Names</name>
+         <description>Geographic Names - e.g. Anchorages, Buoys, Bridges, Docks, Lights, etc.</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>21</viewingGroup>
     </viewingGroupLayer>
   </viewingGroupLayers>
 

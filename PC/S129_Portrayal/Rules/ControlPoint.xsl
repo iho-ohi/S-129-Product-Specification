@@ -16,6 +16,11 @@
       <xsl:with-param name="offsetX" select="0"/>
       <xsl:with-param name="offsetY" select="0"/>
     </xsl:call-template>
+	
+	<xsl:call-template name="textTemplate">
+      <xsl:with-param name="featureReference" select="@id"/>
+      <xsl:with-param name="text" select="./featureName/name"/>
+	</xsl:call-template>
   </xsl:template>
   
 </xsl:transform>
