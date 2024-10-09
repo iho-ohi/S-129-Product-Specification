@@ -20,6 +20,8 @@
 	<xsl:call-template name="textTemplate">
       <xsl:with-param name="featureReference" select="@id"/>
       <xsl:with-param name="text" select="./featureName/name"/>
+	  <xsl:with-param name="featureViewingGroup" select="29050"/>
+	  <xsl:with-param name="textViewingGroup" select="21"/>
 	</xsl:call-template>
   </xsl:template>
   

@@ -5,7 +5,8 @@
 
   <xsl:template name="textTemplate">
     <xsl:param name="featureReference"/>
-    <xsl:param name="viewingGroup" select="21"/>
+    <xsl:param name="featureViewingGroup"/>
+    <xsl:param name="textViewingGroup" select="21"/>
     <xsl:param name="displayPlane" select="'UnderRadar'"/>
     <xsl:param name="drawingPriority" select="24"/>
     <xsl:param name="text"/>
@@ -30,8 +31,13 @@
           <xsl:element name="featureReference">
             <xsl:value-of select="$featureReference"/>
           </xsl:element>
+		  <xsl:if test="not($featureViewingGroup = '')">
+			  <xsl:element name="viewingGroup">
+				<xsl:value-of select="$featureViewingGroup"/>
+			  </xsl:element>
+		  </xsl:if>
           <xsl:element name="viewingGroup">
-            <xsl:value-of select="$viewingGroup"/>
+            <xsl:value-of select="$textViewingGroup"/>
           </xsl:element>
           <xsl:element name="displayPlane">
             <xsl:value-of select="$displayPlane"/>
