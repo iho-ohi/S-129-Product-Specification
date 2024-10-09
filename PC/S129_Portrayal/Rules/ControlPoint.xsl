@@ -13,8 +13,8 @@
       <xsl:with-param name="rotation" select="0"/>
       <xsl:with-param name="rotationCRS" select="'portrayalCRS'"/>
       <xsl:with-param name="scaleFactor" select="1"/>
-      <xsl:with-param name="offsetX" select="-15"/>
-      <xsl:with-param name="offsetY" select="10"/>
+      <xsl:with-param name="offsetX" select="0"/>
+      <xsl:with-param name="offsetY" select="0"/>
     </xsl:call-template>
   </xsl:template>
   
