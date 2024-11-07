@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://www.iho.int/S129/1.3"
+<xs:schema xmlns="http://www.iho.int/S129/2.0"
            xmlns:S100="http://www.iho.int/s100gml/5.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.iho.int/S129/1.3"
+           targetNamespace="http://www.iho.int/S129/2.0"
            elementFormDefault="qualified"
-           version="1.3.0-20240912">
+           version="2.0.0-20241027">
    <xs:import namespace="http://www.opengis.net/gml/3.2"
               schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
    <xs:import namespace="http://www.iho.int/s100gml/5.0"
@@ -40,24 +40,17 @@
     liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way
     out of the use of this software, even if advised of the possibility of such damage.
     ============================================================================================= -->
-   <!-- XML FC file name S-129_1_3_0_FC.XML -->
-   <!-- name: Feature Catalogue for S-129 -->
+   <!-- XML FC file name S-129_FC_Ed%202.0.0.20241025.XML -->
+   <!-- name: Under Keel Clearance Management -->
    <!-- scope: Dynamic under keel clearance management information -->
    <!-- fieldOfApplication: Under keel clearance management -->
-   <!-- versionNumber: 1.3.0 -->
-   <!-- versionDate: 2024-09-26 -->
+   <!-- versionNumber: 2.0.0 -->
+   <!-- versionDate: 2024-09-28 -->
    <!-- productId: S-129 -->
-   <!-- producer: editor KMOU 727 Taejong-ro, Yeongdo-Gu, Busan 49112 South Korea sjlee@kmou.ac.kr www.kmou.ac.kr -->
-   <!-- Schema updated 2024:09:26T02:07:40 by Jason Rhee based on:
-         1. Catalogue file S-129_FC_1.3.0_20240826.XML, using
-         2. Previous Edition 1.1.0 GML schema file by Raphael Malyankar (S129_1_1_1_RM.xsd) as baseline 
-         Changes reflect the following:
-         a. Addition of "UnderKeelClearancePlanArea" feature
-         b. Use of complex attribute "featureName" in place of simple attribute "name" in "UnderKeelClearanceControlPoint"
-         c. Inclusion of "featureName" sub-attributes
-         d. Inclusion of "interoperabilityIdentifier" as optional attribute in all features -->
-
-   <!-- Not used in S-129 1.1 - no S100 codelist type in FC -->
+   <!-- producer: editor KMOU 727 Taejong-ro, Yeongdo-Gu, Busan 49112 Republic of Korea sjlee@kmou.ac.kr www.kmou.ac.kr Seojeong Lee -->
+   <!-- Schema generated 2024-10-28T17:12:56-07:00 by Raphael Malyankar from catalogue file S-129_FC_Ed%202.0.0.20241025.XML -->
+   
+   <!-- Not used in S-129 2.0 - no S100 codelist type in FC -->
    <!--
    <xs:simpleType name="codelistTypeType">
       <xs:annotation>
@@ -90,12 +83,6 @@
       </xs:restriction>
    </xs:simpleType>
    -->
-   <xs:simpleType name="scaleMinimumType">
-      <xs:annotation>
-         <xs:documentation>The minimum scale at which the object may be used, e.g., for ECDIS presentation.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer"><!--No constraints--></xs:restriction>
-   </xs:simpleType>
    <xs:simpleType name="generationTimeType">
       <xs:annotation>
          <xs:documentation>Time the UKC plan was generated.</xs:documentation>
@@ -118,23 +105,113 @@
       <xs:annotation>
          <xs:documentation>Identification of the route used as a source for the calculation.</xs:documentation>
       </xs:annotation>
-      <xs:restriction base="xs:string"/>
+      <xs:restriction base="xs:integer">
+         <xs:minInclusive value="1"/>
+      </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="maximumDraughtType">
       <xs:annotation>
          <xs:documentation>The maximum vessel draught in metres, used as base for the calculation.</xs:documentation>
       </xs:annotation>
-      <xs:restriction base="xs:decimal"><!--No constraints--></xs:restriction>
+      <xs:restriction base="xs:decimal">
+         <xs:minExclusive value="0"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="scaleMinimumType">
+      <xs:annotation>
+         <xs:documentation>The minimum scale at which the feature may be used for example for ECDIS presentation.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer"><!--No constraints--></xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="nameType">
+      <xs:annotation>
+         <xs:documentation>The individual name of a feature.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:complexType name="nameUsageType">
+      <xs:annotation>
+         <xs:documentation>Classification of the type and display level of the name of a feature in an end-user system.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="nameUsageLabel">
+            <xs:attribute name="code" type="nameUsageCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="nameUsageLabel">
+      <xs:annotation>
+         <xs:documentation>Classification of the type and display level of the name of a feature in an end-user system.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Default Name Display">
+            <xs:annotation>
+               <xs:documentation>1: The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Alternate Name Display">
+            <xs:annotation>
+               <xs:documentation>2: The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="nameUsageCode">
+      <xs:annotation>
+         <xs:documentation>Classification of the type and display level of the name of a feature in an end-user system.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="featureName_nameUsageType">
+      <xs:annotation>
+         <xs:documentation>Restricted values of nameUsage in featureName</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="featureName_nameUsageLabel">
+            <xs:attribute name="code" type="featureName_nameUsageCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="featureName_nameUsageLabel">
+      <xs:annotation>
+         <xs:documentation>Restricted values of featureName/nameUsage</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Default Name Display"/>
+         <xs:enumeration value="Alternate Name Display"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="featureName_nameUsageCode">
+      <xs:annotation>
+         <xs:documentation>Restricted values of featureName/nameUsage</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="languageType">
       <xs:annotation>
          <xs:documentation>The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string"/>
-   </xs:simpleType>   
-   <xs:simpleType name="nameType">
-      <xs:annotation>
-         <xs:documentation>The individual name of a feature.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string"/>
    </xs:simpleType>
@@ -148,7 +225,9 @@
       <xs:annotation>
          <xs:documentation>The expected passing speed for a ship for a nominated Under Keel Clearance Control Point.</xs:documentation>
       </xs:annotation>
-      <xs:restriction base="xs:decimal"><!--No constraints--></xs:restriction>
+      <xs:restriction base="xs:decimal">
+         <xs:minInclusive value="0"/>
+      </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="timeStartType">
       <xs:annotation>
@@ -172,91 +251,7 @@
       <xs:annotation>
          <xs:documentation>A common unique identifier for entities which describe a single real-world feature, and which is used to identify instances of the feature in end-user systems where the feature may be included in multiple data product types.</xs:documentation>
       </xs:annotation>
-      <xs:restriction base="xs:anyURI"><!--No constraints--></xs:restriction>
-   </xs:simpleType>
-   <xs:complexType name="nameUsageType">
-      <xs:annotation>
-         <xs:documentation>Classification of the type and display level of the name of a feature in an end-use system.</xs:documentation>
-      </xs:annotation>
-      <xs:simpleContent>
-         <xs:extension base="nameUsageLabel">
-            <xs:attribute name="code"
-                          type="nameUsageCode"
-                          use="required"/>
-         </xs:extension>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:simpleType name="nameUsageLabel">
-      <xs:annotation>
-         <xs:documentation>Classification of the type and display level of the name of a feature in an end-use system.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="Default Name Display">
-            <xs:annotation>
-               <xs:documentation>1: defaultNameDisplay</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="Alternate Name Display">
-            <xs:annotation>
-               <xs:documentation>2: alternateNameDisplay</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="nameUsageCode">
-      <xs:annotation>
-         <xs:documentation>Classification of the type and display level of the name of a feature in an end-use system.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer">
-         <xs:enumeration value="1">
-            <xs:annotation>
-               <xs:documentation>The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="2">
-            <xs:annotation>
-               <xs:documentation>The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType name="featureName_nameUsageType">
-      <xs:annotation>
-         <xs:documentation>Restricted values of nameUsage in featureName</xs:documentation>
-      </xs:annotation>
-      <xs:simpleContent>
-         <xs:extension base="featureName_nameUsageLabel">
-            <xs:attribute name="code"
-                          type="featureName_nameUsageCode"
-                          use="required"/>
-         </xs:extension>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:simpleType name="featureName_nameUsageLabel">
-      <xs:annotation>
-         <xs:documentation>Custom enum: featureName/nameUsage</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="Default Name Display"/>
-         <xs:enumeration value="Alternate Name Display"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="featureName_nameUsageCode">
-      <xs:annotation>
-         <xs:documentation>Custom enum: featureName/nameUsage</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer">
-         <xs:enumeration value="1">
-            <xs:annotation>
-               <xs:documentation>The name is intended to be displayed when the end-user system is set to the default name/text display setting.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="2">
-            <xs:annotation>
-               <xs:documentation>The name is intended to be displayed when the end-user system is set to an alternate name/text display setting, for example an alternate language.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
+      <xs:restriction base="xs:anyURI"/>
    </xs:simpleType>
    <xs:complexType name="underKeelClearancePurposeType">
       <xs:annotation>
@@ -275,17 +270,17 @@
       <xs:restriction base="xs:string">
          <xs:enumeration value="Pre Plan">
             <xs:annotation>
-               <xs:documentation>1: prePlan</xs:documentation>
+               <xs:documentation>1: An indicative UKC plan that identifies potential sailing windows for a nominated vessel draught; days, weeks or months prior to the planned passage through the UKCM region.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="Actual Plan">
             <xs:annotation>
-               <xs:documentation>2: actualPlan</xs:documentation>
+               <xs:documentation>2: A detailed Under Keel Clearance plan that identifies sailing windows and no-go areas, integrating live weather data, hours or days prior to transiting the Under Keel Clearance Management region.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="Actual Update">
             <xs:annotation>
-               <xs:documentation>3: actualUpdate</xs:documentation>
+               <xs:documentation>3: A near real-time, detailed, Under Keel Clearance plan that identifies sailing windows and no-go areas, using live weather, vessel position and traffic data, while the vessel is transiting the Under Keel Clearance Management region.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
       </xs:restriction>
@@ -375,12 +370,12 @@
       <xs:restriction base="xs:string">
          <xs:enumeration value="Time Window">
             <xs:annotation>
-               <xs:documentation>1: timeWindow</xs:documentation>
+               <xs:documentation>1: The available time window(s) for a given draught.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="Maximum Draught">
             <xs:annotation>
-               <xs:documentation>2: maxDraught</xs:documentation>
+               <xs:documentation>2: The maximum draught for a given time window.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
       </xs:restriction>
@@ -392,7 +387,7 @@
       <xs:restriction base="xs:integer">
          <xs:enumeration value="1">
             <xs:annotation>
-               <xs:documentation>The available time window(s) for a given draught</xs:documentation>
+               <xs:documentation>The available time window(s) for a given draught.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="2">
@@ -457,16 +452,10 @@
          <xs:documentation>Provides the name of an entity, defines the national language of the name, and provides the option to display the name at various system display settings.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="language"
-                     type="languageType"
-                     minOccurs="1"
-                     maxOccurs="1"/>
-         <xs:element name="name"
-                     type="nameType"
-                     minOccurs="1"
-                     maxOccurs="1"/>
+         <xs:element name="language" type="languageType" minOccurs="1" maxOccurs="1"/>
+         <xs:element name="name" type="nameType" minOccurs="1" maxOccurs="1"/>
          <xs:element name="nameUsage"
-                     type="nameUsageType"
+                     type="featureName_nameUsageType"
                      minOccurs="0"
                      maxOccurs="1"/>
       </xs:sequence>
@@ -499,7 +488,7 @@
                            type="maximumDraughtType"
                            minOccurs="0"
                            maxOccurs="1"/>
-                           <xs:element name="interoperabilityIdentifier"
+               <xs:element name="interoperabilityIdentifier"
                            type="interoperabilityIdentifierType"
                            minOccurs="0"
                            maxOccurs="1"/>
@@ -511,6 +500,17 @@
                            type="UnderKeelClearancePlan_underKeelClearanceCalculationRequestedType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="theComponent"
+                           type="gml:ReferenceType"
+                           minOccurs="1"
+                           maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>UnderKeelClearancePlanArea 0..*</xs:documentation>
+                     <xs:documentation>UnderKeelClearanceNonNavigableArea 0..*</xs:documentation>
+                     <xs:documentation>UnderKeelClearanceAlmostNonNavigableArea 0..*</xs:documentation>
+                     <xs:documentation>UnderKeelClearanceControlPoint 1..*</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -530,6 +530,14 @@
                            type="interoperabilityIdentifierType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="theCollection"
+                           type="gml:ReferenceType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation>UnderKeelClearancePlan</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element name="geometry" maxOccurs="unbounded">
                   <xs:complexType>
                      <xs:choice>
@@ -543,7 +551,7 @@
    </xs:complexType>
    <xs:complexType name="UnderKeelClearanceNonNavigableAreaType" abstract="false">
       <xs:annotation>
-         <xs:documentation>Non Navigation Area</xs:documentation>
+         <xs:documentation>An area of under keel clearance less than the calculated safe limit.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:extension base="S100:AbstractFeatureType">
@@ -552,10 +560,18 @@
                            type="scaleMinimumType"
                            minOccurs="0"
                            maxOccurs="1"/>
-                           <xs:element name="interoperabilityIdentifier"
+               <xs:element name="interoperabilityIdentifier"
                            type="interoperabilityIdentifierType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="theCollection"
+                           type="gml:ReferenceType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation>UnderKeelClearancePlan</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element name="geometry" maxOccurs="unbounded">
                   <xs:complexType>
                      <xs:choice>
@@ -569,7 +585,7 @@
    </xs:complexType>
    <xs:complexType name="UnderKeelClearanceAlmostNonNavigableAreaType" abstract="false">
       <xs:annotation>
-         <xs:documentation>Almost Non Navigable Area</xs:documentation>
+         <xs:documentation>An area of under keel clearance almost less than the calculated safe limit, as established for the waterway.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:extension base="S100:AbstractFeatureType">
@@ -582,10 +598,18 @@
                            type="distanceAboveUKCLimitType"
                            minOccurs="0"
                            maxOccurs="1"/>
-                           <xs:element name="interoperabilityIdentifier"
+               <xs:element name="interoperabilityIdentifier"
                            type="interoperabilityIdentifierType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="theCollection"
+                           type="gml:ReferenceType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation>UnderKeelClearancePlan</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element name="geometry" maxOccurs="unbounded">
                   <xs:complexType>
                      <xs:choice>
@@ -599,7 +623,7 @@
    </xs:complexType>
    <xs:complexType name="UnderKeelClearanceControlPointType" abstract="false">
       <xs:annotation>
-         <xs:documentation>UnderKeelClearance ControlPoint</xs:documentation>
+         <xs:documentation>Selected critical passage point or line.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:extension base="S100:AbstractFeatureType">
@@ -628,6 +652,14 @@
                            type="fixedTimeRangeType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="theCollection"
+                           type="gml:ReferenceType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation>UnderKeelClearancePlan</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element name="geometry" maxOccurs="unbounded">
                   <xs:complexType>
                      <xs:choice>
