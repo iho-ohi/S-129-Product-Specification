@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Dataset xmlns:S129="http://www.iho.int/S129/gml/cs0/1.0" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" gml:id="12900MCTDS130TS" xmlns="http://www.iho.int/S129/1.3">
+<Dataset xmlns:S129="http://www.iho.int/S129/gml/cs0/1.0" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" gml:id="12900MCTDS130TS" xmlns="http://www.iho.int/S129/2.0">
   <gml:boundedBy>
-    <gml:Envelope srsName="EPSG:4326" srsDimension="2">
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
       <gml:lowerCorner>-10.46 142.41</gml:lowerCorner>
       <gml:upperCorner>-10.61 141.85</gml:upperCorner>
     </gml:Envelope>
@@ -9,7 +9,8 @@
   <S100:DatasetIdentificationInformation>
     <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
     <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
-    <S100:productIdentifier>INT.IHO.S-129.1.3.0</S100:productIdentifier>
+    <S100:productIdentifier>S-129</S100:productIdentifier>
+    <S100:productEdition>2.0.0</S100:productIdentifier>
     <S100:applicationProfile>1</S100:applicationProfile>
     <S100:datasetFileIdentifier>12900MCTDS130TS.gml</S100:datasetFileIdentifier>
     <S100:datasetTitle>Test Dataset Torres Strait</S100:datasetTitle>
@@ -35,14 +36,14 @@
     </UnderKeelClearancePlan>
     <UnderKeelClearancePlanArea gml:id="TEST_PLAN_AREA_TORRES_STRAIT">
       <gml:boundedBy>
-        <gml:Envelope srsName="EPSG:4326" srsDimension="2">
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:lowerCorner>-10.46 142.41</gml:lowerCorner>
           <gml:upperCorner>-10.61 141.85</gml:upperCorner>
         </gml:Envelope>
       </gml:boundedBy>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="TEST_PLAN_TORRES_STRAIT_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="TEST_PLAN_TORRES_STRAIT_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -60,7 +61,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_0_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_0_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -78,7 +79,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_3_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_3_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -96,7 +97,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_4_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_4_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -114,7 +115,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_6_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_6_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -132,7 +133,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_9_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_9_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -150,7 +151,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_15_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_15_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -168,7 +169,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_18_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_18_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -186,7 +187,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_19_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_19_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -204,7 +205,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_22_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_22_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -222,7 +223,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_25_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_25_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -240,7 +241,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_31_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_31_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -258,7 +259,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_34_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_34_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -276,7 +277,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_39_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_39_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -294,7 +295,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_52_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_52_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -312,7 +313,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_55_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_55_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -330,7 +331,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_56_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_56_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -348,7 +349,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_57_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_57_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -426,7 +427,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_59_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_59_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -444,7 +445,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_60_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_60_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -462,7 +463,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_61_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_61_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -480,7 +481,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_65_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_65_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -498,7 +499,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_66_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_66_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -516,7 +517,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_67_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_67_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -534,7 +535,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_70_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_70_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -552,7 +553,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_73_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_73_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -570,7 +571,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_81_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_81_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -588,7 +589,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_88_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_88_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -606,7 +607,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_99_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_99_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -624,7 +625,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_102_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_102_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -642,7 +643,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_103_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_103_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -690,7 +691,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_106_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_106_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -708,7 +709,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_110_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_110_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -726,7 +727,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_113_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_113_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -744,7 +745,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_119_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_119_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -762,7 +763,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_120_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_120_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -780,7 +781,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_122_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_122_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -798,7 +799,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_125_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_125_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -816,7 +817,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_129_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_129_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -834,7 +835,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_130_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_130_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -852,7 +853,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_134_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_134_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -870,7 +871,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_135_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_135_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -888,7 +889,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_136_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_136_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -906,7 +907,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_140_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_140_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -924,7 +925,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_157_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_157_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -952,7 +953,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_161_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_161_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -970,7 +971,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_163_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_163_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -988,7 +989,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_165_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_165_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1006,7 +1007,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_175_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_175_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1024,7 +1025,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_184_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_184_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1042,7 +1043,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_188_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_188_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1060,7 +1061,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_190_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_190_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1078,7 +1079,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_193_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_193_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1096,7 +1097,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_202_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_202_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1114,7 +1115,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_203_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_203_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1132,7 +1133,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_207_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_207_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1150,7 +1151,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_213_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_213_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1168,7 +1169,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_217_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_217_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1186,7 +1187,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_220_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_220_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1204,7 +1205,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_228_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_228_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1222,7 +1223,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_229_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_229_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1240,7 +1241,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_230_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_230_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1263,7 +1264,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_231_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_231_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1281,7 +1282,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_232_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_232_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1299,7 +1300,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_233_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_233_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1317,7 +1318,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_234_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_234_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1335,7 +1336,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_240_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_240_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1353,7 +1354,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_243_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_243_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1371,7 +1372,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_263_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_263_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1389,7 +1390,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_264_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_264_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1407,7 +1408,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_265_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_265_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1425,7 +1426,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_268_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_268_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1443,7 +1444,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_273_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_273_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1461,7 +1462,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_275_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_275_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1479,7 +1480,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_282_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_282_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1497,7 +1498,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_284_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_284_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1515,7 +1516,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_288_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_288_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1533,7 +1534,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_290_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_290_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1551,7 +1552,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_294_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_294_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1569,7 +1570,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_295_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_295_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1587,7 +1588,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_296_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_296_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1605,7 +1606,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_297_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_297_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1623,7 +1624,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_298_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_298_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1641,7 +1642,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_308_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_308_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1659,7 +1660,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_312_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_312_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1677,7 +1678,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_316_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_316_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1695,7 +1696,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_320_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_320_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1713,7 +1714,7 @@
       <scaleMinimum>1</scaleMinimum>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="NON_NAVIGABLE_321_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="NON_NAVIGABLE_321_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1732,7 +1733,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_1_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_1_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1751,7 +1752,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_2_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_2_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1770,7 +1771,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_5_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_5_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1789,7 +1790,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_7_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_7_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1808,7 +1809,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_8_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_8_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1827,7 +1828,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_10_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_10_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1846,7 +1847,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_11_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_11_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1865,7 +1866,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_12_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_12_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1884,7 +1885,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_13_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_13_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1903,7 +1904,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_14_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_14_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1922,7 +1923,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_16_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_16_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1941,7 +1942,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_17_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_17_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1960,7 +1961,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_20_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_20_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1979,7 +1980,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_21_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_21_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -1998,7 +1999,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_23_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_23_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2017,7 +2018,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_24_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_24_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2036,7 +2037,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_26_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_26_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2055,7 +2056,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_27_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_27_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2074,7 +2075,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_28_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_28_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2093,7 +2094,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_29_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_29_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2112,7 +2113,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_30_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_30_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2131,7 +2132,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_37_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_37_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2150,7 +2151,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_38_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_38_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2169,7 +2170,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_41_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_41_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2188,7 +2189,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_42_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_42_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2207,7 +2208,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_47_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_47_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2226,7 +2227,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_48_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_48_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2245,7 +2246,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_50_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_50_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2264,7 +2265,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_51_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_51_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2283,7 +2284,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_53_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_53_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2302,7 +2303,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_58_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_58_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2321,7 +2322,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_62_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_62_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2340,7 +2341,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_63_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_63_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2359,7 +2360,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_64_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_64_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2378,7 +2379,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_69_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_69_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2397,7 +2398,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_72_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_72_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2416,7 +2417,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_77_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_77_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2435,7 +2436,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_80_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_80_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2454,7 +2455,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_82_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_82_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2473,7 +2474,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_83_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_83_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2492,7 +2493,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_84_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_84_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2511,7 +2512,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_85_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_85_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2530,7 +2531,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_86_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_86_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2549,7 +2550,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_89_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_89_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2568,7 +2569,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_90_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_90_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2587,7 +2588,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_91_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_91_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2606,7 +2607,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_92_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_92_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2625,7 +2626,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_93_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_93_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2644,7 +2645,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_94_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_94_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2663,7 +2664,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_96_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_96_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2682,7 +2683,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_97_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_97_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2701,7 +2702,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_98_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_98_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2720,7 +2721,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_100_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_100_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2739,7 +2740,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_101_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_101_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2758,7 +2759,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_104_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_104_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2777,7 +2778,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_105_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_105_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2796,7 +2797,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_107_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_107_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2815,7 +2816,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_108_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_108_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2834,7 +2835,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_111_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_111_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2853,7 +2854,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_114_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_114_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2872,7 +2873,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_115_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_115_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2891,7 +2892,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_116_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_116_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2910,7 +2911,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_117_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_117_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2929,7 +2930,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_118_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_118_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2948,7 +2949,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_121_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_121_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2967,7 +2968,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_123_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_123_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -2986,7 +2987,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_124_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_124_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3005,7 +3006,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_126_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_126_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3024,7 +3025,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_128_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_128_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3043,7 +3044,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_131_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_131_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3062,7 +3063,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_132_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_132_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3081,7 +3082,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_133_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_133_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3100,7 +3101,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_137_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_137_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3119,7 +3120,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_138_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_138_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3138,7 +3139,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_139_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_139_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3157,7 +3158,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_141_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_141_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3176,7 +3177,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_144_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_144_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3195,7 +3196,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_145_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_145_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3214,7 +3215,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_147_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_147_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3233,7 +3234,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_149_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_149_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3252,7 +3253,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_150_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_150_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3271,7 +3272,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_152_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_152_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3290,7 +3291,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_154_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_154_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3309,7 +3310,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_155_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_155_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3328,7 +3329,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_156_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_156_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3347,7 +3348,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_158_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_158_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3366,7 +3367,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_159_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_159_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3385,7 +3386,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_160_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_160_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3404,7 +3405,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_162_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_162_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3423,7 +3424,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_164_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_164_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3442,7 +3443,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_166_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_166_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3461,7 +3462,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_167_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_167_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3480,7 +3481,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_168_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_168_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3499,7 +3500,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_169_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_169_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3518,7 +3519,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_170_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_170_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3537,7 +3538,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_171_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_171_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3556,7 +3557,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_172_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_172_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3575,7 +3576,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_173_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_173_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3594,7 +3595,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_174_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_174_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3613,7 +3614,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_176_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_176_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3632,7 +3633,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_177_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_177_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3651,7 +3652,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_178_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_178_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3670,7 +3671,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_179_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_179_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3689,7 +3690,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_180_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_180_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3708,7 +3709,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_181_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_181_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3727,7 +3728,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_182_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_182_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3746,7 +3747,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_183_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_183_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3765,7 +3766,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_185_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_185_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3784,7 +3785,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_186_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_186_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3803,7 +3804,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_187_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_187_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3822,7 +3823,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_189_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_189_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3841,7 +3842,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_191_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_191_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3860,7 +3861,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_192_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_192_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3879,7 +3880,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_194_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_194_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3903,7 +3904,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_195_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_195_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3922,7 +3923,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_196_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_196_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3941,7 +3942,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_197_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_197_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3960,7 +3961,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_198_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_198_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3979,7 +3980,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_199_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_199_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -3998,7 +3999,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_200_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_200_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4017,7 +4018,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_201_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_201_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4036,7 +4037,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_204_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_204_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4055,7 +4056,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_205_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_205_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4074,7 +4075,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_206_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_206_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4093,7 +4094,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_208_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_208_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4112,7 +4113,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_209_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_209_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4131,7 +4132,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_210_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_210_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4150,7 +4151,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_211_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_211_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4169,7 +4170,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_212_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_212_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4188,7 +4189,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_214_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_214_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4207,7 +4208,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_215_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_215_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4226,7 +4227,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_216_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_216_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4245,7 +4246,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_218_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_218_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4264,7 +4265,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_219_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_219_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4283,7 +4284,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_221_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_221_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4302,7 +4303,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_222_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_222_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4321,7 +4322,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_224_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_224_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4340,7 +4341,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_225_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_225_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4359,7 +4360,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_226_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_226_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4378,7 +4379,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_227_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_227_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4397,7 +4398,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_235_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_235_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4416,7 +4417,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_236_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_236_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4435,7 +4436,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_237_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_237_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4454,7 +4455,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_238_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_238_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4473,7 +4474,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_239_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_239_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4492,7 +4493,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_241_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_241_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4511,7 +4512,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_242_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_242_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4530,7 +4531,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_244_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_244_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4549,7 +4550,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_245_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_245_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4568,7 +4569,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_246_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_246_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4587,7 +4588,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_248_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_248_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4606,7 +4607,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_249_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_249_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4625,7 +4626,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_250_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_250_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4644,7 +4645,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_251_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_251_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4663,7 +4664,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_252_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_252_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4682,7 +4683,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_253_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_253_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4701,7 +4702,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_254_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_254_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4720,7 +4721,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_255_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_255_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4739,7 +4740,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_256_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_256_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4758,7 +4759,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_257_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_257_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4777,7 +4778,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_258_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_258_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4796,7 +4797,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_259_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_259_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4815,7 +4816,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_260_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_260_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4834,7 +4835,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_261_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_261_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4853,7 +4854,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_262_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_262_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4872,7 +4873,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_266_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_266_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4891,7 +4892,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_267_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_267_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4910,7 +4911,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_269_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_269_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4929,7 +4930,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_270_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_270_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4948,7 +4949,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_271_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_271_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4967,7 +4968,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_272_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_272_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -4986,7 +4987,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_274_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_274_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5005,7 +5006,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_276_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_276_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5024,7 +5025,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_277_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_277_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5043,7 +5044,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_278_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_278_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5062,7 +5063,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_279_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_279_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5081,7 +5082,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_280_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_280_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5100,7 +5101,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_281_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_281_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5119,7 +5120,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_283_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_283_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5138,7 +5139,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_285_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_285_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5157,7 +5158,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_286_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_286_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5176,7 +5177,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_287_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_287_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5195,7 +5196,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_289_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_289_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5214,7 +5215,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_291_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_291_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5233,7 +5234,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_292_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_292_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5252,7 +5253,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_293_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_293_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5271,7 +5272,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_300_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_300_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5290,7 +5291,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_301_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_301_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5309,7 +5310,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_302_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_302_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5328,7 +5329,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_303_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_303_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5347,7 +5348,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_304_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_304_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5366,7 +5367,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_305_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_305_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5385,7 +5386,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_306_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_306_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5404,7 +5405,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_307_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_307_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5423,7 +5424,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_311_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_311_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5442,7 +5443,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_313_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_313_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5461,7 +5462,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_314_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_314_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5480,7 +5481,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_315_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_315_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5499,7 +5500,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_318_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_318_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
@@ -5518,7 +5519,7 @@
       <distanceAboveUKCLimit>0.2</distanceAboveUKCLimit>
       <geometry>
         <S100:surfaceProperty>
-          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_319_GEOM" srsName="EPSG:4326" srsDimension="2">
+          <S100:Surface gml:id="ALMOST_NON_NAVIGABLE_319_GEOM" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
             <gml:patches>
               <gml:PolygonPatch>
                 <gml:exterior>
