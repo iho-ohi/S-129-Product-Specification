@@ -10,7 +10,7 @@
     <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
     <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
     <S100:productIdentifier>S-129</S100:productIdentifier>
-    <S100:productEdition>2.0.0</S100:productIdentifier>
+    <S100:productEdition>2.0.0</S100:productEdition>
     <S100:applicationProfile>1</S100:applicationProfile>
     <S100:datasetFileIdentifier>12900MCTDS130TS.gml</S100:datasetFileIdentifier>
     <S100:datasetTitle>Test Dataset Torres Strait</S100:datasetTitle>
