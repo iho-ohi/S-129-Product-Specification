@@ -268,7 +268,7 @@
       <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="UnderKeelClearanceNavigableArea">
+    <ruleFile id="UnderKeelClearanceAlmostNonNavigableArea">
       <fileName>UnderKeelClearanceAlmostNonNavigableArea.lua</fileName>
       <fileType>Rule</fileType>
       <fileFormat>LUA</fileFormat>
