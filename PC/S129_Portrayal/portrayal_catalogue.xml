@@ -144,20 +144,6 @@
         <language>eng</language>
       </description>
     </viewingGroup>
-    <viewingGroup id="29060">
-      <description>
-        <name>UKC Planned Route</name>
-        <description>Toggles visibility of UKC Planned Route</description>
-        <language>eng</language>
-      </description>
-    </viewingGroup>
-    <viewingGroup id="29070">
-      <description>
-        <name>UKC Information Box</name>
-        <description>Toggles visibility of UKC Information Box</description>
-        <language>eng</language>
-      </description>
-    </viewingGroup>
   </viewingGroups>
 
   <foundationMode/>
@@ -238,73 +224,73 @@
 
   <rules>
     <ruleFile id="main">
-      <fileName>main.xsl</fileName>
+      <fileName>main.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>TopLevelTemplate</ruleType>
     </ruleFile>
-    <ruleFile id="route">
-      <fileName>PlannedRoute.xsl</fileName>
+    <ruleFile id="Default">
+      <description>
+        <name>Default</name>
+        <description>Default</description>
+        <language>eng</language>
+      </description>
+      <fileName>Default.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="PortrayalAPI">
+      <description>
+         <name>PortrayalAPI</name>
+         <description>Portrayal API</description>
+         <language>eng</language>
+      </description>
+      <fileName>PortrayalAPI.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+   </ruleFile>
+   <ruleFile id="PortrayalModel">
+      <description>
+         <name>PortrayalModel</name>
+         <description>Portrayal Model</description>
+         <language>eng</language>
+      </description>
+      <fileName>PortrayalModel.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+   </ruleFile>
+    <ruleFile id="UnderKeelClearanceControlPoint">
+      <fileName>UnderKeelClearanceControlPoint.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="UnderKeelClearanceNavigableArea">
+      <fileName>UnderKeelClearanceAlmostNonNavigableArea.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="UnderKeelClearanceNonNavigableArea">
+      <fileName>UnderKeelClearanceNonNavigableArea.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="UnderKeelClearancePlanArea">
-      <fileName>UnderKeelClearancePlanArea.xsl</fileName>
+      <fileName>UnderKeelClearancePlanArea.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>SubTemplate</ruleType>
-    </ruleFile>    
-    <ruleFile id="controlpoint">
-      <fileName>ControlPoint.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="InformationBox">
-      <fileName>InformationBox.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="NavigableArea">
-      <fileName>AlmostNonNavigableArea.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="NonNavigableArea">
-      <fileName>NonNavigableArea.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="UnderKeelClearancePlan">
-      <fileName>UnderKeelClearancePlan.xsl</fileName>
+      <fileName>UnderKeelClearancePlan.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-    <!--
-    <ruleFile id="simpleline">
-      <fileName>SimpleLineTemplate.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>TopLevelTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="pointsimplesymbol">
-      <fileName>PointSimpleSymbolTemplate.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>TopLevelTemplate</ruleType>
-    </ruleFile>
-    <ruleFile id="areasimplecolorfill">
-      <fileName>areaSimpleColorFillTemplate.xsl</fileName>
-      <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
-      <ruleType>TopLevelTemplate</ruleType>
-    </ruleFile>
-  -->
-
   </rules>
 </pc:portrayalCatalog>
