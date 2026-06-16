@@ -30,38 +30,6 @@ function PortrayalMain(featureIDs)
 		contextParameters._observed = {}
 
 		local status, err = pcall(function ()
-			local nauticalInformation = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation')
-
-			if nauticalInformation then
-				local vg31030, vg31031
-
-				if nauticalInformation.pictorialRepresentation then
-					vg31031 = true
-				end
-
-				for _, information in ipairs(nauticalInformation.information) do
-					if information.text then
-						vg31030 = true
-					end
-
-					if information.fileReference then
-						vg31031 = true
-					end
-				end
-
-				local displayPlane = contextParameters.RADAR_OVERLAY and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
-
-				if vg31030 then
-					featurePortrayal:AddInstructions(displayPlane)
-					featurePortrayal:AddInstructions('ViewingGroup:31030;DrawingPriority:8;PointInstruction:INFORM01')
-				end
-
-				if vg31031 then
-					featurePortrayal:AddInstructions(displayPlane)
-					featurePortrayal:AddInstructions('ViewingGroup:31031;DrawingPriority:8;PointInstruction:INFORM01')
-				end
-			end
-
 			Debug.StartPerformance('Lua Code - Rules processing')
 
 			local scaleMinimum = feature['!scaleMinimum']

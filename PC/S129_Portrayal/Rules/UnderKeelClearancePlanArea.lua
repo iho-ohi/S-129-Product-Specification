@@ -1,5 +1,5 @@
 function UnderKeelClearancePlanArea(feature, featurePortrayal, contextParameters)
-    featurePortrayal:AddInstructions('ViewingGroup:29010;DrawingPriority:6;DisplayPlane:UnderRADAR')
+    featurePortrayal:AddInstructions('ViewingGroup:29010;DrawingPriority:6;DisplayPlane:UnderRadar')
 
     if contextParameters.PlainBoundaries then
         featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')

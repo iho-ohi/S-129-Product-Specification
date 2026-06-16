@@ -237,7 +237,7 @@
       </description>
       <fileName>Default.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>lua</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
     <ruleFile id="PortrayalAPI">
@@ -250,8 +250,8 @@
       <fileType>Rule</fileType>
       <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
-   </ruleFile>
-   <ruleFile id="PortrayalModel">
+    </ruleFile>
+    <ruleFile id="PortrayalModel">
       <description>
          <name>PortrayalModel</name>
          <description>Portrayal Model</description>
@@ -261,7 +261,18 @@
       <fileType>Rule</fileType>
       <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
-   </ruleFile>
+    </ruleFile>
+    <ruleFile id="S100Scripting">
+      <description>
+         <name>S100Scripting</name>
+         <description>Scripting support</description>
+         <language>eng</language>
+      </description>
+      <fileName>S100Scripting.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
     <ruleFile id="UnderKeelClearanceControlPoint">
       <fileName>UnderKeelClearanceControlPoint.lua</fileName>
       <fileType>Rule</fileType>
