@@ -300,28 +300,28 @@
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
 	 		<S100FC:name>UKC Plan Area Composition</S100FC:name>
 	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Plan Area and Under Keel Clearance Plan</S100FC:definition>
-	 		<S100FC:code>UnderKeelClearancePlanAreaComposition</S100FC:code>
+	 		<S100FC:code>UKCPlanAreaComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
 	 		<S100FC:name>UKC Non Navigable Area Composition</S100FC:name>
 	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Non Navigable Area and Under Keel Clearance Plan</S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceNonNavigableAreaComposition</S100FC:code>
+	 		<S100FC:code>UKCNonNavigableAreaComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
 	 	<S100FC:S100_FC_FeatureAssociation isAbstract="false">
 	 		<S100FC:name>UKC Almost Non Navigable Area Composition</S100FC:name>
 	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Almost Non Navigable Area and Under Keel Clearance Plan</S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceAlmostNonNavigableAreaComposition</S100FC:code>
+	 		<S100FC:code>UKCAlmostNonNavigableAreaComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
     <S100FC:S100_FC_FeatureAssociation isAbstract="false">
 	 		<S100FC:name>UKC Control Point Composition</S100FC:name>
 	 		<S100FC:definition>A feature association for the binding between Under Keel Clearance Control Point and Under Keel Clearance Plan</S100FC:definition>
-	 		<S100FC:code>UnderKeelClearanceControlPointComposition</S100FC:code>
+	 		<S100FC:code>UKCControlPointComposition</S100FC:code>
 	 		<S100FC:role ref="theCollection"/>
 	 		<S100FC:role ref="theComponent"/>
 	 	</S100FC:S100_FC_FeatureAssociation>
