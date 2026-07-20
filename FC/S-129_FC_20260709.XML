@@ -12,8 +12,8 @@
   <S100FC:name>Under Keel Clearance Management</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>2.1.0</S100FC:versionNumber>
-  <S100FC:versionDate>2026-07-19</S100FC:versionDate>
+  <S100FC:versionNumber>2.0.0</S100FC:versionNumber>
+  <S100FC:versionDate>2024-09-28</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
@@ -38,9 +38,6 @@
       </S100CI:CI_Individual>
     </S100CI:party>
   </S100FC:producer>
-
-  <!-- Updated by Jason Rhee 2026???? Changed association codes to replace UnderKeelCleatance... with UKC... -->
-  <!-- Updated by Raphael Malyankar 20260719 to correct association reference to use updated codes above; updated versionNumber to 2.1.0 (presumed) and version Date -->
 
   <S100FC:S100_FC_SimpleAttributes>
     <!--attributes-->
@@ -416,7 +413,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCPlanAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearancePlanArea"/>
       </S100FC:featureBinding>
@@ -425,7 +422,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCNonNavigableAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -434,7 +431,7 @@
           <S100Base:lower>0</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCAlmostNonNavigableAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceAlmostNonNavigableArea"/>
       </S100FC:featureBinding>
@@ -443,7 +440,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper xsi:nil="true" infinite="true"/>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCControlPointComposition"/>
+        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>
         <S100FC:role ref="theComponent"/>
         <S100FC:featureType ref="UnderKeelClearanceControlPoint"/>
       </S100FC:featureBinding>
@@ -476,7 +473,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCPlanAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearancePlanAreaComposition"/>
         <S100FC:role ref="theCollection"/>
       <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -509,7 +506,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCNonNavigableAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearanceNonNavigableAreaComposition"/>
         <S100FC:role ref="theCollection"/>
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -549,7 +546,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCAlmostNonNavigableAreaComposition"/>
+        <S100FC:association ref="UnderKeelClearanceAlmostNonNavigableAreaComposition"/>
         <S100FC:role ref="theCollection"/>    
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
@@ -610,7 +607,7 @@
           <S100Base:lower>1</S100Base:lower>
           <S100Base:upper infinite="false" xsi:nil="false">1</S100Base:upper>
         </S100FC:multiplicity>
-        <S100FC:association ref="UKCControlPointComposition"/>
+        <S100FC:association ref="UnderKeelClearanceControlPointComposition"/>
         <S100FC:role ref="theCollection"/>
         <S100FC:featureType ref="UnderKeelClearancePlan"/>
       </S100FC:featureBinding>
