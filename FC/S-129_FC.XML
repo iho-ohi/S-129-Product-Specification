@@ -12,7 +12,7 @@
   <S100FC:name>Under Keel Clearance Management</S100FC:name>
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>2.1.0</S100FC:versionNumber>
+  <S100FC:versionNumber>2.0.1</S100FC:versionNumber>
   <S100FC:versionDate>2026-07-19</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
@@ -41,6 +41,7 @@
 
   <!-- Updated by Jason Rhee 2026???? Changed association codes to replace UnderKeelCleatance... with UKC... -->
   <!-- Updated by Raphael Malyankar 20260719 to correct association reference to use updated codes above; updated versionNumber to 2.1.0 (presumed) and version Date -->
+  <!-- Updated versionNumber to 2.0.1 by Jason Rhee -->
 
   <S100FC:S100_FC_SimpleAttributes>
     <!--attributes-->
