@@ -46,13 +46,14 @@
    <!-- scope: Dynamic under keel clearance management information -->
    <!-- fieldOfApplication: Under keel clearance management -->
    <!-- versionNumber: 2.1.0 -->
-   <!-- versionDate: 2026-07-19 -->
+   <!-- versionDate: 2026-07-30 -->
    <!-- productId: S-129 -->
    <!-- producer: editor KMOU 727 Taejong-ro, Yeongdo-Gu, Busan 49112 Republic of Korea sjlee@kmou.ac.kr www.kmou.ac.kr Seojeong Lee -->
    <!-- Updated by Jason Rhee 2026???? Changed association codes to replace UnderKeelCleatance... with UKC... -->
    <!-- Updated by Raphael Malyankar 20260719 to correct association reference to use updated codes above; updated versionNumber to 2.1.0 (presumed) and version Date -->
    <!-- Schema generated 2026-07-19T00:29:04-07:00 by Raphael Malyankar from catalogue file S-129_FC.XML -->
-   
+   <!-- Manually updated by Jason Rhee 20260730 to add fixedTimeRange as optional attribute to UnderKeelClearanceNonNavigableArea -->
+
    <xs:simpleType name="generationTimeType">
       <xs:annotation>
          <xs:documentation>Time the UKC plan was generated.</xs:documentation>
@@ -542,6 +543,10 @@
                            type="interoperabilityIdentifierType"
                            minOccurs="0"
                            maxOccurs="unbounded"/>
+               <xs:element name="fixedTimeRange"
+                           type="fixedTimeRangeType"
+                           minOccurs="0"
+                           maxOccurs="1"/>
                <xs:element name="theCollection"
                            type="gml:ReferenceType"
                            minOccurs="1"
