@@ -13,7 +13,7 @@
   <S100FC:scope>Dynamic under keel clearance management information</S100FC:scope>
   <S100FC:fieldOfApplication>Under keel clearance management</S100FC:fieldOfApplication>
   <S100FC:versionNumber>2.1.0</S100FC:versionNumber>
-  <S100FC:versionDate>2026-07-19</S100FC:versionDate>
+  <S100FC:versionDate>2026-07-30</S100FC:versionDate>
     <S100FC:productId>S-129</S100FC:productId>
   <S100FC:producer>
     <S100CI:role>editor</S100CI:role>
@@ -41,6 +41,7 @@
 
   <!-- Updated by Jason Rhee 2026???? Changed association codes to replace UnderKeelCleatance... with UKC... -->
   <!-- Updated by Raphael Malyankar 20260719 to correct association reference to use updated codes above; updated versionNumber to 2.1.0 (presumed) and version Date -->
+  <!-- Updated by Jason Rhee 20260730 to add fixedTimeRange as optional attribute to UnderKeelClearanceNonNavigableArea -->
 
   <S100FC:S100_FC_SimpleAttributes>
     <!--attributes-->
@@ -503,6 +504,13 @@
         <S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
         <S100FC:attribute ref="interoperabilityIdentifier"/>
       </S100FC:attributeBinding>
+      <S100FC:attributeBinding sequential="false">
+        <S100FC:multiplicity>
+          <S100Base:lower>0</S100Base:lower>
+          <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+        </S100FC:multiplicity>
+        <S100FC:attribute ref="fixedTimeRange"/>
+      </S100FC:attributeBinding>   
       <S100FC:featureUseType>geographic</S100FC:featureUseType>
       <S100FC:featureBinding roleType="composition">
         <S100FC:multiplicity>
